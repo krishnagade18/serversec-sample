@@ -1,0 +1,41 @@
+require_relative 'spec_helper'
+
+autoscaling_groups = [
+    {name: 'Default-Environment', lb: 'awseb-e-j-AWSEBLoa-1IZOUQOU0D25E'}
+]
+
+autoscaling_groups.each do |asg|
+  describe auto_scaling_group("#{$environment}-#{asg[:name]}") do
+    it { should have_load_balancers(["#{$environment}-#{asg[:lb]}"]) }
+    it { should have_availability_zone_names(%w{us-east-1c us-east-1b us-east-1a}) }
+    it { should have_desired_capacity(1) }
+    it { should have_min_size(1) }
+    it { should have_max_size(4) }
+  end
+end
+
+describe auto_scaling_group("#{$environment}-Default-Environment").group_launch_configuration do
+  it { should have_image_id('ami-879760ec') }
+  it { should have_instance_type('t1.micro') }
+  it { should have_key_name($key_name) }
+
+  it { should have_block_device_mapping({
+                                            :device_name => '/dev/sdb',
+                                            :ebs => { :volume_size => 100 }
+                                        }) }
+  it { should have_number_of_block_device_mappings(1) }
+  #it { should have_user_data('xxx') }
+
+  elb_sg = find_sg_by_name_tag $vpc_id, "#{$environment}-ldrAppElbSecGroup"
+
+  # it { should have_ingress_rules([
+  #                                    {:port_range=>(8443..8443), :protocol=>:tcp, :ip_ranges=>%w{10.0.0.0/16 10.24.0.0/16'}},
+  #                                    {:port_range=>(9443..9443), :protocol=>:tcp, :ip_ranges=>%w{10.0.0.0/16 10.24.0.0/16'}},
+  #                                    {:port_range=>(22..22), :protocol=>:tcp, :ip_ranges=>['10.75.0.0/16']},
+  #
+  #                                    {:port_range=>(0..65535), :protocol=>:tcp, :groups=>[elb_sg.id]}
+  #                               ])}
+  it { should have_egress_rules([ {:port_range=>nil, :protocol=>:any, :ip_ranges=>['0.0.0.0/0']}])}
+end
+
+

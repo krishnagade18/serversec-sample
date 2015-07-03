@@ -1,0 +1,8 @@
+require_relative 'spec_helper'
+
+describe 'the example network' do
+
+  describe vpc('vpc-c5ec30a0') do
+    it { should be_default_tenancy }
+  end
+end

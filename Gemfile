@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'serverspec'
+gem 'serverspec-aws-resources', :github => 'stelligent/serverspec-aws-resources'
+gem 'aws-sdk', '< 2.0'
+gem 'rake'

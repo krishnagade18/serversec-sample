@@ -1,0 +1,3 @@
+source 'https://rubygems.org'
+gem 'serverspec'
+gem 'serverspec-aws-resources', :github => 'stelligent/serverspec-aws-resources'
