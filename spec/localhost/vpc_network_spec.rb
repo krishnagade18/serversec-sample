@@ -1,10 +1,10 @@
 require_relative 'spec_helper'
-
+contents=File.open('properties.txt').read.strip
 describe 'the network example' do
-  describe vpc('vpc-c5ec30a0') do
+  describe vpc(contents) do
     it { should be_default_tenancy }
   end
-describe vpc('vpc-c5ec30a0') do
+describe vpc(contents) do
     it { should be_available }
   end
 
