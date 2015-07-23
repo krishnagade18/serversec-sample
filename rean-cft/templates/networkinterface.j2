@@ -1,0 +1,18 @@
+"{{data.Name}}" : {
+    "Type" : "AWS::EC2::NetworkInterface",
+        "Properties" : {
+            "Description": "{{data.Description}}",
+            "SourceDestCheck": "{{data.SourceDestCheck}}",
+            "SubnetId": {{data.SubnetID|inline}},
+            "PrivateIpAddress": "{{data.PrivateIpAddress}}",
+            "Tags" :    [
+                {% for tag in data.Tags %}
+                    {% if not loop.last %}
+                        {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"},
+                    {% else %}
+                        {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"}
+                    {% endif %}
+                {% endfor %}
+            ]   
+        }
+}

@@ -1,0 +1,27 @@
+#VPC,Name,CidrBlock,EnableDnsSupport,EnableDnsHostnames,InstanceTenancy,Tags
+VPC,VPC1,10.0.0.0/16,false,false,dedicated,Name=VPC1|Region=US
+VPC,VPC2,10.0.1.0/16,false,false,dedicated,Name=VPC2|Region=EU
+#Subnet,Name,CidrBlock,AvailabilityZone,VpcId,Tags
+Subnet,Subnet1,20.0.0.0/24,us-west-2a,ref:VPC1,Name=rean-public-1
+#InternetGateway,Name,Tags
+InternetGateway,GW1,Name=rean-internet
+#VPNGateway,vpngwname,Type,Tags
+VPNGateway,myVPNGateway,ipsec.1,key1=value1|key2=value2
+#CustomerGateway,cgwname,BgpAsn,IpAddress,Type,Tags
+CustomerGateway,CustomerGateway1,64000,1.1.1.1,ipsec.1,key1=value1|key2=value2
+#VPCGatewayAttachment,attachigwname,VpcId,GatewayType,GatewayId
+VPCGatewayAttachment,AttachGateway1,ref:VPC,internet,ref:InternetGateway
+#VPNGatewayRoutePropagation,vpngwrpname,RouteTableIds,VpnGatewayId
+VPNGatewayRoutePropagation,VPNGatewayRouteProp1,ref:PrivateRouteTable|PrivateRouteTable1,ref:VPNGateway
+#NetworkAcl,aclname,VpcId,Tags
+NetworkAcl,aclname1,ref:VPC,key1=value1|key2=value2
+#SubnetNetworkAclAssociation,subnetaclassocname,SubnetId,NetworkAclId
+SubnetNetworkAclAssociation,subnetaclassoc1,ref:subnet1,ref:aclname1
+#NetworkAclEntry,aclentry1name,NetworkAclId,RuleNumber,RuleAction,Protocol,Egress,CidrBlock,Icmpcode, Icmptype,PortRangeFrom,PortRangeTo
+NetworkAclEntry,aclentry1,acl1,100,allow,-1,true,172.16.0.0/24,-1,-1,53,53
+#RouteTable,routetablename,VpcId,Tags
+RouteTable,routetable1,ref:VPC,key1=value1|key2=value2
+#Route, routename, RouteTableId, DestinationCidrBlock, name(with prifix (gateway|eni|ec2|rt))
+Route,route1,attachgateway,routetable1,0.0.0.0/0,gateway:internetgateway
+Route,route2,attachondemandaeni1,routetable1,0.0.0.0/0,eni:ondemandaeni1
+vpc,CAVPC,10.93.0.0/16,FALSE,FALSE,default,name=cavpc|env=prod

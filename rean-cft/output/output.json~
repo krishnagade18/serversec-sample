@@ -1,0 +1,424 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09", 
+    "Description": "Auto Generated CFT", 
+    "Resources": {
+        "DMZSN": {
+            "Type": "AWS::EC2::Subnet", 
+            "Properties": {
+                "CidrBlock": "10.93.0.0/24", 
+                "AvailabilityZone": "us-east-1b", 
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "DMZSN"
+                    }
+                ]
+            }
+        }, 
+        "APPSN": {
+            "Type": "AWS::EC2::Subnet", 
+            "Properties": {
+                "CidrBlock": "10.93.1.0/24", 
+                "AvailabilityZone": "us-east-1c", 
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "APPSN"
+                    }
+                ]
+            }
+        }, 
+        "DBSN": {
+            "Type": "AWS::EC2::Subnet", 
+            "Properties": {
+                "CidrBlock": "10.93.10.0/24", 
+                "AvailabilityZone": "us-east-1e", 
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "DBSN"
+                    }
+                ]
+            }
+        }, 
+        "IGAttachment": {
+            "Type": "AWS::EC2::VPCGatewayAttachment", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "InternetGatewayId": {
+                    "Ref": "MYInternetGateway"
+                }
+            }
+        }, 
+        "NACL1": {
+            "Type": "AWS::EC2::NetworkAcl", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "NACL1"
+                    }
+                ]
+            }
+        }, 
+        "NACL2": {
+            "Type": "AWS::EC2::NetworkAcl", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "NACL2"
+                    }
+                ]
+            }
+        }, 
+        "NACL3": {
+            "Type": "AWS::EC2::NetworkAcl", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "NACL3"
+                    }
+                ]
+            }
+        }, 
+        "DMZRT": {
+            "Type": "AWS::EC2::RouteTable", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "DMZRT"
+                    }
+                ]
+            }
+        }, 
+        "APPRT": {
+            "Type": "AWS::EC2::RouteTable", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "APPRT"
+                    }
+                ]
+            }
+        }, 
+        "DBRT": {
+            "Type": "AWS::EC2::RouteTable", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "DBRT"
+                    }
+                ]
+            }
+        }, 
+        "route1": {
+            "Type": "AWS::EC2::Route", 
+            "DependsOn": "IGAttachment", 
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "DMZRT"
+                }, 
+                "DestinationCidrBlock": "0.0.0.0/0", 
+                "GatewayId": {
+                    "Ref": "MYInternetGateway"
+                }
+            }
+        }, 
+        "route2": {
+            "Type": "AWS::EC2::Route", 
+            "DependsOn": "IGAttachment", 
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "APPRT"
+                }, 
+                "DestinationCidrBlock": "0.0.0.0/0", 
+                "NetworkInterfaceId": {
+                    "Ref": "sophoseni"
+                }
+            }
+        }, 
+        "route3": {
+            "Type": "AWS::EC2::Route", 
+            "DependsOn": "IGAttachment", 
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "DBRT"
+                }, 
+                "DestinationCidrBlock": "0.0.0.0/0", 
+                "NetworkInterfaceId": {
+                    "Ref": "sophoseni"
+                }
+            }
+        }, 
+        "subnetrta1": {
+            "Type": "AWS::EC2::SubnetRouteTableAssociation", 
+            "Properties": {
+                "SubnetId": {
+                    "Ref": "DMZSN"
+                }, 
+                "RouteTableId": {
+                    "Ref": "DMZRT"
+                }
+            }
+        }, 
+        "subnetrta2": {
+            "Type": "AWS::EC2::SubnetRouteTableAssociation", 
+            "Properties": {
+                "SubnetId": {
+                    "Ref": "APPSN"
+                }, 
+                "RouteTableId": {
+                    "Ref": "APPRT"
+                }
+            }
+        }, 
+        "subnetrta3": {
+            "Type": "AWS::EC2::SubnetRouteTableAssociation", 
+            "Properties": {
+                "SubnetId": {
+                    "Ref": "DBSN"
+                }, 
+                "RouteTableId": {
+                    "Ref": "DBRT"
+                }
+            }
+        }, 
+        "SGEgress1": {
+            "Type": "AWS::EC2::SecurityGroupEgress", 
+            "Properties": {
+                "IpProtocol": "tcp", 
+                "FromPort": "1", 
+                "ToPort": "65535", 
+                "GroupId": {
+                    "Fn::GetAtt": [
+                        "SecurityGroup1", 
+                        "GroupId"
+                    ]
+                }, 
+                "CidrIp": "0.0.0.0/0"
+            }
+        }, 
+        "SGEgress2": {
+            "Type": "AWS::EC2::SecurityGroupEgress", 
+            "Properties": {
+                "IpProtocol": "tcp", 
+                "FromPort": "1", 
+                "ToPort": "65535", 
+                "GroupId": {
+                    "Fn::GetAtt": [
+                        "SecurityGroup1", 
+                        "GroupId"
+                    ]
+                }, 
+                "SourceSecurityGroupId": {
+                    "Fn::GetAtt": [
+                        "SecurityGroup1", 
+                        "GroupId"
+                    ]
+                }
+            }
+        }, 
+        "SecurityGroup1": {
+            "Type": "AWS::EC2::SecurityGroup", 
+            "Properties": {
+                "VpcId": {
+                    "Ref": "MYVPC"
+                }, 
+                "GroupDescription": "MY SECURITY GROUP"
+            }
+        }, 
+        "sophoseni": {
+            "Type": "AWS::EC2::NetworkInterface", 
+            "Properties": {
+                "Description": "attach this later to sophos", 
+                "SourceDestCheck": "FALSE", 
+                "SubnetId": {
+                    "Ref": "DMZSN"
+                }, 
+                "PrivateIpAddress": "10.93.0.16", 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "sophoseni"
+                    }
+                ]
+            }
+        }, 
+        "SGingress1": {
+            "Type": "AWS::EC2::SecurityGroupIngress", 
+            "Properties": {
+                "IpProtocol": "tcp", 
+                "FromPort": "1", 
+                "ToPort": "65535", 
+                "GroupId": {
+                    "Fn::GetAtt": [
+                        "SecurityGroup1", 
+                        "GroupId"
+                    ]
+                }, 
+                "SourceSecurityGroupId": {
+                    "Fn::GetAtt": [
+                        "SecurityGroup1", 
+                        "GroupId"
+                    ]
+                }
+            }
+        }, 
+        "MYInternetGateway": {
+            "Type": "AWS::EC2::InternetGateway", 
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "MYInternetGateway"
+                    }
+                ]
+            }
+        }, 
+        "MYVPC": {
+            "Type": "AWS::EC2::VPC", 
+            "Properties": {
+                "CidrBlock": "10.93.0.0/16", 
+                "EnableDnsSupport": "FALSE", 
+                "EnableDnsHostnames": "FALSE", 
+                "InstanceTenancy": "default", 
+                "Tags": [
+                    {
+                        "Key": "name", 
+                        "Value": "MYVPC"
+                    }
+                ]
+            }
+        }, 
+        "aclentry1": {
+            "Type": "AWS::EC2::NetworkAclEntry", 
+            "Properties": {
+                "NetworkAclId": {
+                    "Ref": "NACL1"
+                }, 
+                "RuleNumber": "100", 
+                "RuleAction": "allow", 
+                "Protocol": "-1", 
+                "Egress": "true", 
+                "CidrBlock": "172.16.0.0/24", 
+                "Icmp": {
+                    "Code": "-1", 
+                    "Type": "-1"
+                }, 
+                "PortRange": {
+                    "From": "53", 
+                    "To": "53"
+                }
+            }
+        }, 
+        "aclentry2": {
+            "Type": "AWS::EC2::NetworkAclEntry", 
+            "Properties": {
+                "NetworkAclId": {
+                    "Ref": "NACL2"
+                }, 
+                "RuleNumber": "100", 
+                "RuleAction": "allow", 
+                "Protocol": "-1", 
+                "Egress": "false", 
+                "CidrBlock": "172.16.0.0/24", 
+                "Icmp": {
+                    "Code": "-1", 
+                    "Type": "-1"
+                }, 
+                "PortRange": {
+                    "From": "80", 
+                    "To": "80"
+                }
+            }
+        }, 
+        "aclentry3": {
+            "Type": "AWS::EC2::NetworkAclEntry", 
+            "Properties": {
+                "NetworkAclId": {
+                    "Ref": "NACL3"
+                }, 
+                "RuleNumber": "100", 
+                "RuleAction": "allow", 
+                "Protocol": "-1", 
+                "Egress": "false", 
+                "CidrBlock": "10.0.0.0/24", 
+                "Icmp": {
+                    "Code": "-1", 
+                    "Type": "-1"
+                }, 
+                "PortRange": {
+                    "From": "443", 
+                    "To": "443"
+                }
+            }
+        }, 
+        "subnet1acl1": {
+            "Type": "AWS::EC2::SubnetNetworkAclAssociation", 
+            "Properties": {
+                "SubnetId": {
+                    "Ref": "DMZSN"
+                }, 
+                "NetworkAclId": {
+                    "Ref": "NACL1"
+                }
+            }
+        }, 
+        "subnet1acl2": {
+            "Type": "AWS::EC2::SubnetNetworkAclAssociation", 
+            "Properties": {
+                "SubnetId": {
+                    "Ref": "APPSN"
+                }, 
+                "NetworkAclId": {
+                    "Ref": "NACL2"
+                }
+            }
+        }, 
+        "subnet1acl3": {
+            "Type": "AWS::EC2::SubnetNetworkAclAssociation", 
+            "Properties": {
+                "SubnetId": {
+                    "Ref": "DBSN"
+                }, 
+                "NetworkAclId": {
+                    "Ref": "NACL3"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1758 @@
+[
+    {
+        "vpc-2afbf14f": [
+            [
+                "igw-22410147,Name=phabricatorpoc|", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-530e6f78": [
+                    [
+                        "acl-5c879239,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-21762c56": [
+                    [
+                        "acl-5c879239,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-ac16647f": [
+                            "sg-17966b70"
+                        ], 
+                        "i-8c740e5f": [
+                            "sg-17966b70"
+                        ], 
+                        "i-d824b80b": [
+                            "sg-50cd3537"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "vpc-faaff09f": [
+            [
+                "igw-6d5bc708,Name=CAASCALC|", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-29b4ea13": [
+                    [
+                        "acl-915b0bf4,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-c5ec30a0": [
+            [
+                "igw-94ab53f1,", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-de053af6": [
+                    [
+                        "acl-0f94456a,network_acl_entries=[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]|", 
+                        "rtb-a763b1c2,routes=[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-2efa7686": [
+                            "sg-40502925"
+                        ], 
+                        "i-9c942f34": [
+                            "sg-40502925"
+                        ], 
+                        "i-2f61df86": [
+                            "sg-40502925"
+                        ], 
+                        "i-a155d009": [
+                            "sg-40502925"
+                        ], 
+                        "i-a31e9b0b": [
+                            "sg-40502925"
+                        ], 
+                        "i-db915e73": [
+                            "sg-40502925"
+                        ], 
+                        "i-90df7438": [
+                            "sg-dc68a7bb"
+                        ], 
+                        "i-aff14c07": [
+                            "sg-40502925"
+                        ], 
+                        "i-ead36042": [
+                            "sg-40502925"
+                        ], 
+                        "i-0b1dafa3": [
+                            "sg-40502925"
+                        ], 
+                        "i-370cb09f": [
+                            "sg-40502925"
+                        ], 
+                        "i-e84b093e": [
+                            "sg-40502925"
+                        ], 
+                        "i-a6f7ba71": [
+                            "sg-40502925"
+                        ], 
+                        "i-d7ca467f": [
+                            "sg-40502925"
+                        ], 
+                        "i-c91f5b60": [
+                            "sg-40502925"
+                        ], 
+                        "i-8e218926": [
+                            "sg-40502925"
+                        ], 
+                        "i-7dbb3ed5": [
+                            "sg-40502925"
+                        ], 
+                        "i-9fe26a48": [
+                            "sg-dda1c8b9"
+                        ], 
+                        "i-f3e2505b": [
+                            "sg-0887ef6d"
+                        ], 
+                        "i-0a6fa5a2": [
+                            "sg-5b3dd33c"
+                        ]
+                    }
+                ], 
+                "subnet-29aa575e": [
+                    [
+                        "acl-0f94456a,network_acl_entries=[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]|", 
+                        "rtb-a763b1c2,routes=[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-e15a0c32": [
+                            "sg-40502925"
+                        ], 
+                        "i-f7815c24": [
+                            "sg-40502925"
+                        ], 
+                        "i-d7f55804": [
+                            "sg-40502925"
+                        ], 
+                        "i-679fc0b4": [
+                            "sg-0887ef6d"
+                        ], 
+                        "i-26450ef5": [
+                            "sg-40502925"
+                        ], 
+                        "i-40733093": [
+                            "sg-0335fa64"
+                        ], 
+                        "i-9c70c94f": [
+                            "sg-3cb6bc58"
+                        ], 
+                        "i-db9ffb08": [
+                            "sg-0887ef6d"
+                        ], 
+                        "i-e05a0c33": [
+                            "sg-40502925"
+                        ], 
+                        "i-47cf1594": [
+                            "sg-40502925"
+                        ], 
+                        "i-834c1350": [
+                            "sg-0887ef6d"
+                        ], 
+                        "i-66537fb6": [
+                            "sg-40502925"
+                        ], 
+                        "i-dec2180d": [
+                            "sg-40502925"
+                        ], 
+                        "i-35fa57e6": [
+                            "sg-40502925"
+                        ], 
+                        "i-0ca933df": [
+                            "sg-40502925"
+                        ]
+                    }
+                ], 
+                "subnet-f3059bd8": [
+                    [
+                        "acl-0f94456a,network_acl_entries=[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]|", 
+                        "rtb-c3ef02a7,Name=PRAVATE ROUTE TABE|routes=[Route:172.31.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-3a10ad92": [
+                            "sg-40502925"
+                        ]
+                    }
+                ], 
+                "subnet-f7395acd": [
+                    [
+                        "acl-0f94456a,network_acl_entries=[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]|", 
+                        "rtb-a763b1c2,routes=[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-80c84d69": [
+                            "sg-40502925"
+                        ], 
+                        "i-4410aaad": [
+                            "sg-40502925"
+                        ], 
+                        "i-170a5c38": [
+                            "sg-40502925"
+                        ], 
+                        "i-73c86b9a": [
+                            "sg-40502925"
+                        ], 
+                        "i-afe53b46": [
+                            "sg-8acafeee"
+                        ]
+                    }
+                ], 
+                "subnet-570b1411": [
+                    [
+                        "acl-0f94456a,network_acl_entries=[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]|", 
+                        "rtb-a763b1c2,routes=[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-72ddc18d": [
+                            "sg-0887ef6d"
+                        ]
+                    }
+                ], 
+                "subnet-9f0557e8": [
+                    [
+                        "acl-0f94456a,network_acl_entries=[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]|", 
+                        "rtb-c3ef02a7,Name=PRAVATE ROUTE TABE|routes=[Route:172.31.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-3d889958": [
+            [
+                "igw-b7612dd2,environment=REAN DevOps|name=DevOps|purpose=REAN DevOps|", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-bce7f086": [
+                    [
+                        "acl-01100364,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-727ec69b": [
+                            "sg-69448a0e"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "vpc-32aabe57": [
+            [
+                "igw-a71b59c2,Name=Rean_test_igw|", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-181a7933": [
+                    [
+                        "acl-836c7ae6,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-61ba43c9": [
+                            "sg-ebe41c8c"
+                        ], 
+                        "i-7a41bfd2": [
+                            "sg-ebe41c8c"
+                        ], 
+                        "i-d7bd447f": [
+                            "sg-ebe41c8c"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "vpc-dc49deb9": [
+            [
+                "igw-4164c424,Name=sophosAD test|", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-a0ca7bd7": [
+                    [
+                        "acl-046be161,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-4677e523,Name=sophosADtest|routes=[Route:10.0.0.0/16   Route:172.31.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-5ef50775": [
+                    [
+                        "acl-046be161,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-4677e523,Name=sophosADtest|routes=[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-cf3085e4": [
+                    [
+                        "acl-046be161,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-96f0edf3": [
+            [
+                "all_cgw"
+            ], 
+            {
+                "subnet-4adccf70": [
+                    [
+                        "acl-e11a0584,Name=Jenkins_Test_Ankit|network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-5c093c39": [
+            [
+                "igw-1a5b357f,", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-1b1d9f30": [
+                    [
+                        "acl-a50328c0,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-d00a67fb": [
+                    [
+                        "acl-a50328c0,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-ec6dbb44": [
+                            "sg-e514d382"
+                        ]
+                    }
+                ], 
+                "subnet-7a7f1851": [
+                    [
+                        "acl-a50328c0,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-b2fc421a": [
+                            "sg-0cb8736b"
+                        ], 
+                        "i-9db26335": [
+                            "sg-311bdc56"
+                        ]
+                    }
+                ], 
+                "subnet-3105681a": [
+                    [
+                        "acl-a50328c0,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-b1d8d1d4,Name=Private_test1_rt|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-825e79e7": [
+            [
+                "igw-5826bc3d,Name=al_rmp_igw|", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-4de55b66": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-62f7c807,Name=al_rmp_route_priv|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-12a11bba": [
+                            "sg-658b4102"
+                        ], 
+                        "i-ec128545": [
+                            "sg-a9646ccd"
+                        ]
+                    }
+                ], 
+                "subnet-3821514f": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-21ead544,Name=al_rmp_route_pub|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-ac526c7c": [
+                            "sg-1c1b1378"
+                        ]
+                    }
+                ], 
+                "subnet-73e55b58": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-21ead544,Name=al_rmp_route_pub|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-f9168150": [
+                            "sg-c08b96a4"
+                        ]
+                    }
+                ], 
+                "subnet-88d7b0a3": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-21ead544,Name=al_rmp_route_pub|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-a99c7401": [
+                            "sg-967333f2"
+                        ]
+                    }
+                ], 
+                "subnet-a53217d2": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-25aa5a41,Name=private-east-1b|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-2435550f": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-25aa5a41,Name=private-east-1b|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-83866e2b": [
+                            "sg-967333f2"
+                        ]
+                    }
+                ], 
+                "subnet-13215164": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-62f7c807,Name=al_rmp_route_priv|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-c8376cbf": [
+                    [
+                        "acl-16e6be73,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-91a959f5,Name=public-1b-rt|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-408f8525": [
+            [
+                "igw-a45111c1,Name=devops-tools|", 
+                "all_cgw"
+            ], 
+            {
+                "subnet-d1c7cfeb": [
+                    [
+                        "acl-40b2a725,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-d6c7cfec": [
+                    [
+                        "acl-40b2a725,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ]
+            }
+        ]
+    }, 
+    {
+        "subnet": {
+            "subnet-3821514f": {
+                "cidr_block": "172.16.3.0/24", 
+                "Name": "al_rmp_pub2"
+            }, 
+            "i-834c1350": {
+                "public_dns_name": "", 
+                "Name": "swarup-2"
+            }, 
+            "i-83866e2b": {
+                "public_dns_name": "", 
+                "Name": "testhost"
+            }, 
+            "i-ac16647f": {
+                "public_dns_name": "ec2-52-2-125-162.compute-1.amazonaws.com", 
+                "Name": "Review Board"
+            }, 
+            "subnet-f7395acd": {
+                "cidr_block": "172.31.48.0/20", 
+                "Name": "WICS-NICS"
+            }, 
+            "i-679fc0b4": {
+                "public_dns_name": "ec2-52-3-57-228.compute-1.amazonaws.com", 
+                "Name": "Amazon_Linux_Supervisor1"
+            }, 
+            "i-0a6fa5a2": {
+                "elasticbeanstalk:environment-name": "Default-Environment", 
+                "Name": "Default-Environment", 
+                "elasticbeanstalk:environment-id": "e-jfxbzu23eq", 
+                "aws:cloudformation:logical-id": "AWSEBAutoScalingGroup", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:411815166437:stack/awseb-e-jfxbzu23eq-stack/18325900-1a65-11e5-ab28-50e2416294a8", 
+                "aws:cloudformation:stack-name": "awseb-e-jfxbzu23eq-stack", 
+                "aws:autoscaling:groupName": "awseb-e-jfxbzu23eq-stack-AWSEBAutoScalingGroup-1QARA48JDU5WB", 
+                "public_dns_name": "ec2-52-0-176-221.compute-1.amazonaws.com"
+            }, 
+            "i-d7f55804": {
+                "public_dns_name": "", 
+                "Name": "Ubuntu-14.04-zabbix server"
+            }, 
+            "i-d7ca467f": {
+                "public_dns_name": "ec2-52-2-219-187.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad-client"
+            }, 
+            "subnet-f3059bd8": {
+                "cidr_block": "172.31.64.0/20", 
+                "Name": "PRIVATE"
+            }, 
+            "vpc-5c093c39": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "VPC_test"
+            }, 
+            "i-a31e9b0b": {
+                "public_dns_name": "", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "ELK"
+            }, 
+            "i-f7815c24": {
+                "public_dns_name": "ec2-52-1-106-174.compute-1.amazonaws.com", 
+                "name": "AD-test-Instance-ASG", 
+                "aws:autoscaling:groupName": "AD-test-ASG"
+            }, 
+            "subnet-cf3085e4": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "test-private"
+            }, 
+            "subnet-c8376cbf": {
+                "cidr_block": "172.16.6.0/24", 
+                "Name": "public-east-1b"
+            }, 
+            "vpc-32aabe57": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.32.0.0/16", 
+                "Name": "Rean_test_VPC"
+            }, 
+            "i-727ec69b": {
+                "public_dns_name": "", 
+                "Name": "do-not-delete test-jen"
+            }, 
+            "subnet-29b4ea13": {
+                "cidr_block": "10.20.0.0/24", 
+                "Name": "CAASCALC"
+            }, 
+            "vpc-faaff09f": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.20.0.0/16", 
+                "Name": "CAASCALC"
+            }, 
+            "vpc-c5ec30a0": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "moosa-tes1-VPC"
+            }, 
+            "i-c91f5b60": {
+                "public_dns_name": "", 
+                "Name": "reancloud-ADLDS"
+            }, 
+            "i-73c86b9a": {
+                "public_dns_name": "", 
+                "Name": "tomcat"
+            }, 
+            "subnet-bce7f086": {
+                "environment": "REAN DevOps", 
+                "cidr_block": "10.71.0.0/16", 
+                "name": "PublicSubnet3", 
+                "purpose": "REAN DevOps"
+            }, 
+            "i-9fe26a48": {
+                "public_dns_name": "ec2-52-0-228-117.compute-1.amazonaws.com", 
+                "Ozy-Jmeter-Slave": "Ozy-Jmeter-Slave", 
+                "Name": "Ozy-Jmeter-Slave", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-db9ffb08": {
+                "public_dns_name": "ec2-52-2-215-90.compute-1.amazonaws.com", 
+                "Name": "Amazon_Linux_Supervisor"
+            }, 
+            "i-dec2180d": {
+                "public_dns_name": "", 
+                "Name": "Yogesh_Redhat"
+            }, 
+            "i-9c70c94f": {
+                "public_dns_name": "", 
+                "Name": "ipaclient"
+            }, 
+            "i-b2fc421a": {
+                "public_dns_name": "ec2-52-2-132-168.compute-1.amazonaws.com", 
+                "Name": "DontDelete_Jenkins_Test"
+            }, 
+            "i-9c942f34": {
+                "public_dns_name": "", 
+                "Name": "ubuntu-nagios-prasad"
+            }, 
+            "i-d824b80b": {
+                "Department": "Engineering", 
+                "public_dns_name": "ec2-54-208-132-115.compute-1.amazonaws.com", 
+                "Name": "ELK Testing"
+            }, 
+            "subnet-88d7b0a3": {
+                "cidr_block": "172.16.5.0/24", 
+                "Name": "public-east-1a"
+            }, 
+            "subnet-1b1d9f30": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public"
+            }, 
+            "vpc-3d889958": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.71.0.0/16", 
+                "purpose": "REAN Consulting - DO NOT TOUCH w/o Talking to Shane", 
+                "name": "DevOps"
+            }, 
+            "i-a99c7401": {
+                "public_dns_name": "", 
+                "Name": "Jumphost"
+            }, 
+            "i-ac526c7c": {
+                "public_dns_name": "", 
+                "Name": "sophos-tst-vpn-sai"
+            }, 
+            "i-e15a0c32": {
+                "public_dns_name": "ec2-52-2-139-140.compute-1.amazonaws.com", 
+                "Name": "Interview-2015-07-15-Client"
+            }, 
+            "i-2efa7686": {
+                "public_dns_name": "ec2-52-3-126-230.compute-1.amazonaws.com", 
+                "Name": "hw-test-raju"
+            }, 
+            "subnet-73e55b58": {
+                "cidr_block": "172.16.1.0/24", 
+                "Name": "al_rmp_pub1"
+            }, 
+            "subnet-d1c7cfeb": {
+                "cidr_block": "172.16.143.0/24", 
+                "Name": "devops-tools"
+            }, 
+            "i-e05a0c33": {
+                "public_dns_name": "ec2-52-2-111-217.compute-1.amazonaws.com", 
+                "Name": "Interview-2015-07-15-server"
+            }, 
+            "subnet-9f0557e8": {
+                "cidr_block": "172.31.96.0/20", 
+                "Name": "PRAVTE2"
+            }, 
+            "i-0ca933df": {
+                "public_dns_name": "ec2-52-3-65-4.compute-1.amazonaws.com", 
+                "Name": "reancloud_Sophos01"
+            }, 
+            "i-12a11bba": {
+                "public_dns_name": "", 
+                "Name": "test-pri-win-sai"
+            }, 
+            "i-72ddc18d": {
+                "public_dns_name": "", 
+                "Name": "ami-backup-test", 
+                "ReanBackup": "08:03-H2:D6:W2:M2"
+            }, 
+            "subnet-29aa575e": {
+                "cidr_block": "172.31.16.0/20", 
+                "Name": "Public"
+            }, 
+            "i-f3e2505b": {
+                "public_dns_name": "ec2-52-2-90-48.compute-1.amazonaws.com", 
+                "Name": "satish-jenkins-demo"
+            }, 
+            "i-47cf1594": {
+                "public_dns_name": "", 
+                "Name": "Yogesh_Ubuntu"
+            }, 
+            "subnet-d00a67fb": {
+                "cidr_block": "10.0.20.0/24", 
+                "Name": "public_test1"
+            }, 
+            "i-2f61df86": {
+                "public_dns_name": "", 
+                "Name": "DO-NOT-TERMINATE-Assignment"
+            }, 
+            "i-370cb09f": {
+                "public_dns_name": "ec2-52-3-126-21.compute-1.amazonaws.com", 
+                "Name": "sid TOMCAT test 1"
+            }, 
+            "vpc-408f8525": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.142.0/23", 
+                "Name": "devops-tools"
+            }, 
+            "vpc-dc49deb9": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "sophosADtest"
+            }, 
+            "i-7dbb3ed5": {
+                "public_dns_name": "ec2-52-0-57-189.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad1"
+            }, 
+            "subnet-2435550f": {
+                "cidr_block": "172.16.7.0/24", 
+                "Name": "private-east-1a"
+            }, 
+            "subnet-5ef50775": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "sophosAD-pub1"
+            }, 
+            "i-90df7438": {
+                "public_dns_name": "ec2-52-2-89-72.compute-1.amazonaws.com", 
+                "Name": "app-a"
+            }, 
+            "i-aff14c07": {
+                "public_dns_name": "", 
+                "Name": "karthik_linux"
+            }, 
+            "i-80c84d69": {
+                "public_dns_name": "ec2-52-0-137-23.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad-client1"
+            }, 
+            "subnet-530e6f78": {
+                "cidr_block": "172.16.141.0/24", 
+                "Name": "phabricatorpoc"
+            }, 
+            "i-9db26335": {
+                "public_dns_name": "ec2-54-175-197-118.compute-1.amazonaws.com", 
+                "Name": "Serverspec-VPC_Test"
+            }, 
+            "i-afe53b46": {
+                "public_dns_name": "", 
+                "Name": "test-sai"
+            }, 
+            "vpc-825e79e7": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "al_rmp_vpc"
+            }, 
+            "i-3a10ad92": {
+                "public_dns_name": "ec2-52-3-67-142.compute-1.amazonaws.com", 
+                "Name": "test-shanti"
+            }, 
+            "subnet-4de55b66": {
+                "cidr_block": "172.16.2.0/24", 
+                "Name": "al_rmp_pri1"
+            }, 
+            "i-a155d009": {
+                "public_dns_name": "", 
+                "Name": "ELK", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-4adccf70": {
+                "cidr_block": "10.10.10.0/24", 
+                "Name": "Jenkins_Subnet"
+            }, 
+            "subnet-d6c7cfec": {
+                "cidr_block": "172.16.142.0/24", 
+                "Name": "devops-tools"
+            }, 
+            "i-d7bd447f": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_server_test-DO-NOT-TERMINATE"
+            }, 
+            "i-26450ef5": {
+                "public_dns_name": "ec2-52-2-254-2.compute-1.amazonaws.com", 
+                "Name": "test-sh"
+            }, 
+            "i-ec6dbb44": {
+                "public_dns_name": "ec2-52-2-83-244.compute-1.amazonaws.com", 
+                "Name": "Test-NAT"
+            }, 
+            "subnet-a53217d2": {
+                "cidr_block": "172.16.8.0/24", 
+                "Name": "private-east-1b"
+            }, 
+            "subnet-3105681a": {
+                "cidr_block": "10.0.21.0/24", 
+                "Name": "private_test1"
+            }, 
+            "i-a6f7ba71": {
+                "public_dns_name": "ec2-52-5-60-231.compute-1.amazonaws.com", 
+                "Ozy-Jmeter-N.Virginia-Master": "Ozy-Jmeter-N.Virginia-Master", 
+                "Name": "Ozy_Jmeter_Master", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-181a7933": {
+                "cidr_block": "172.32.1.0/24", 
+                "Name": "Rean_test_public"
+            }, 
+            "i-7a41bfd2": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_client2-DO-NOT-TERMINATE"
+            }, 
+            "i-35fa57e6": {
+                "public_dns_name": "", 
+                "Name": "Ubuntu-14.04-zabbix client"
+            }, 
+            "i-8c740e5f": {
+                "Department": "Engineering", 
+                "public_dns_name": "", 
+                "Dont_stop_or_craig_will_yell_at_me": "Maybe", 
+                "Name": "UpSource POC"
+            }, 
+            "i-f9168150": {
+                "public_dns_name": "", 
+                "Name": "bastion-test-sai"
+            }, 
+            "i-db915e73": {
+                "public_dns_name": "", 
+                "Name": "test-certificate-RDP"
+            }, 
+            "i-66537fb6": {
+                "public_dns_name": "", 
+                "Name": "reancloud_Sophos"
+            }, 
+            "subnet-a0ca7bd7": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "sophosAD-pub2"
+            }, 
+            "i-170a5c38": {
+                "public_dns_name": "", 
+                "DO_NOT_TERMINATE": "YES", 
+                "DailyBkp": "7", 
+                "Name": "cfn-testing-16"
+            }, 
+            "subnet-570b1411": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "i-4410aaad": {
+                "public_dns_name": "", 
+                "Name": "RedHat_Test"
+            }, 
+            "subnet-7a7f1851": {
+                "cidr_block": "10.0.10.0/24", 
+                "Name": "Public-VPC_test"
+            }, 
+            "vpc-96f0edf3": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "Use": "Testing Jenkins Pipeline - Ankit", 
+                "cidr_block": "10.10.0.0/16", 
+                "Name": "Jenkins_VPC"
+            }, 
+            "i-61ba43c9": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_client1-DO-NOT-TERMINATE"
+            }, 
+            "subnet-13215164": {
+                "cidr_block": "172.16.4.0/24", 
+                "Name": "al_rmp_pri2"
+            }, 
+            "vpc-2afbf14f": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.140.0/23", 
+                "Name": "phabricatorpoc"
+            }, 
+            "i-8e218926": {
+                "public_dns_name": "", 
+                "Name": "Windows_AD"
+            }, 
+            "i-e84b093e": {
+                "public_dns_name": "", 
+                "Name": "jmeter-master"
+            }, 
+            "subnet-21762c56": {
+                "cidr_block": "172.16.140.0/24", 
+                "Name": "phabricatorpoc"
+            }, 
+            "subnet-de053af6": {
+                "cidr_block": "172.31.32.0/20"
+            }, 
+            "i-40733093": {
+                "public_dns_name": "", 
+                "Name": "AD-Splunk"
+            }, 
+            "i-0b1dafa3": {
+                "public_dns_name": "", 
+                "Name": "sid1"
+            }, 
+            "i-ec128545": {
+                "public_dns_name": "", 
+                "Name": "test-lin-vpn-sai"
+            }, 
+            "i-ead36042": {
+                "public_dns_name": "", 
+                "Name": "venu-reantrainee"
+            }
+        }, 
+        "ec2": {
+            "subnet-3821514f": {
+                "cidr_block": "172.16.3.0/24", 
+                "Name": "al_rmp_pub2"
+            }, 
+            "i-834c1350": {
+                "public_dns_name": "", 
+                "Name": "swarup-2"
+            }, 
+            "i-83866e2b": {
+                "public_dns_name": "", 
+                "Name": "testhost"
+            }, 
+            "i-ac16647f": {
+                "public_dns_name": "ec2-52-2-125-162.compute-1.amazonaws.com", 
+                "Name": "Review Board"
+            }, 
+            "subnet-f7395acd": {
+                "cidr_block": "172.31.48.0/20", 
+                "Name": "WICS-NICS"
+            }, 
+            "i-679fc0b4": {
+                "public_dns_name": "ec2-52-3-57-228.compute-1.amazonaws.com", 
+                "Name": "Amazon_Linux_Supervisor1"
+            }, 
+            "i-0a6fa5a2": {
+                "elasticbeanstalk:environment-name": "Default-Environment", 
+                "Name": "Default-Environment", 
+                "elasticbeanstalk:environment-id": "e-jfxbzu23eq", 
+                "aws:cloudformation:logical-id": "AWSEBAutoScalingGroup", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:411815166437:stack/awseb-e-jfxbzu23eq-stack/18325900-1a65-11e5-ab28-50e2416294a8", 
+                "aws:cloudformation:stack-name": "awseb-e-jfxbzu23eq-stack", 
+                "aws:autoscaling:groupName": "awseb-e-jfxbzu23eq-stack-AWSEBAutoScalingGroup-1QARA48JDU5WB", 
+                "public_dns_name": "ec2-52-0-176-221.compute-1.amazonaws.com"
+            }, 
+            "i-d7f55804": {
+                "public_dns_name": "", 
+                "Name": "Ubuntu-14.04-zabbix server"
+            }, 
+            "i-d7ca467f": {
+                "public_dns_name": "ec2-52-2-219-187.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad-client"
+            }, 
+            "subnet-f3059bd8": {
+                "cidr_block": "172.31.64.0/20", 
+                "Name": "PRIVATE"
+            }, 
+            "vpc-5c093c39": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "VPC_test"
+            }, 
+            "i-a31e9b0b": {
+                "public_dns_name": "", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "ELK"
+            }, 
+            "i-f7815c24": {
+                "public_dns_name": "ec2-52-1-106-174.compute-1.amazonaws.com", 
+                "name": "AD-test-Instance-ASG", 
+                "aws:autoscaling:groupName": "AD-test-ASG"
+            }, 
+            "subnet-cf3085e4": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "test-private"
+            }, 
+            "subnet-c8376cbf": {
+                "cidr_block": "172.16.6.0/24", 
+                "Name": "public-east-1b"
+            }, 
+            "vpc-32aabe57": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.32.0.0/16", 
+                "Name": "Rean_test_VPC"
+            }, 
+            "i-727ec69b": {
+                "public_dns_name": "", 
+                "Name": "do-not-delete test-jen"
+            }, 
+            "subnet-29b4ea13": {
+                "cidr_block": "10.20.0.0/24", 
+                "Name": "CAASCALC"
+            }, 
+            "vpc-faaff09f": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.20.0.0/16", 
+                "Name": "CAASCALC"
+            }, 
+            "vpc-c5ec30a0": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "moosa-tes1-VPC"
+            }, 
+            "i-c91f5b60": {
+                "public_dns_name": "", 
+                "Name": "reancloud-ADLDS"
+            }, 
+            "i-73c86b9a": {
+                "public_dns_name": "", 
+                "Name": "tomcat"
+            }, 
+            "subnet-bce7f086": {
+                "environment": "REAN DevOps", 
+                "cidr_block": "10.71.0.0/16", 
+                "name": "PublicSubnet3", 
+                "purpose": "REAN DevOps"
+            }, 
+            "i-9fe26a48": {
+                "public_dns_name": "ec2-52-0-228-117.compute-1.amazonaws.com", 
+                "Ozy-Jmeter-Slave": "Ozy-Jmeter-Slave", 
+                "Name": "Ozy-Jmeter-Slave", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-db9ffb08": {
+                "public_dns_name": "ec2-52-2-215-90.compute-1.amazonaws.com", 
+                "Name": "Amazon_Linux_Supervisor"
+            }, 
+            "i-dec2180d": {
+                "public_dns_name": "", 
+                "Name": "Yogesh_Redhat"
+            }, 
+            "i-9c70c94f": {
+                "public_dns_name": "", 
+                "Name": "ipaclient"
+            }, 
+            "i-b2fc421a": {
+                "public_dns_name": "ec2-52-2-132-168.compute-1.amazonaws.com", 
+                "Name": "DontDelete_Jenkins_Test"
+            }, 
+            "i-9c942f34": {
+                "public_dns_name": "", 
+                "Name": "ubuntu-nagios-prasad"
+            }, 
+            "i-d824b80b": {
+                "Department": "Engineering", 
+                "public_dns_name": "ec2-54-208-132-115.compute-1.amazonaws.com", 
+                "Name": "ELK Testing"
+            }, 
+            "subnet-88d7b0a3": {
+                "cidr_block": "172.16.5.0/24", 
+                "Name": "public-east-1a"
+            }, 
+            "subnet-1b1d9f30": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public"
+            }, 
+            "vpc-3d889958": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.71.0.0/16", 
+                "purpose": "REAN Consulting - DO NOT TOUCH w/o Talking to Shane", 
+                "name": "DevOps"
+            }, 
+            "i-a99c7401": {
+                "public_dns_name": "", 
+                "Name": "Jumphost"
+            }, 
+            "i-ac526c7c": {
+                "public_dns_name": "", 
+                "Name": "sophos-tst-vpn-sai"
+            }, 
+            "i-e15a0c32": {
+                "public_dns_name": "ec2-52-2-139-140.compute-1.amazonaws.com", 
+                "Name": "Interview-2015-07-15-Client"
+            }, 
+            "i-2efa7686": {
+                "public_dns_name": "ec2-52-3-126-230.compute-1.amazonaws.com", 
+                "Name": "hw-test-raju"
+            }, 
+            "subnet-73e55b58": {
+                "cidr_block": "172.16.1.0/24", 
+                "Name": "al_rmp_pub1"
+            }, 
+            "subnet-d1c7cfeb": {
+                "cidr_block": "172.16.143.0/24", 
+                "Name": "devops-tools"
+            }, 
+            "i-e05a0c33": {
+                "public_dns_name": "ec2-52-2-111-217.compute-1.amazonaws.com", 
+                "Name": "Interview-2015-07-15-server"
+            }, 
+            "subnet-9f0557e8": {
+                "cidr_block": "172.31.96.0/20", 
+                "Name": "PRAVTE2"
+            }, 
+            "i-0ca933df": {
+                "public_dns_name": "ec2-52-3-65-4.compute-1.amazonaws.com", 
+                "Name": "reancloud_Sophos01"
+            }, 
+            "i-12a11bba": {
+                "public_dns_name": "", 
+                "Name": "test-pri-win-sai"
+            }, 
+            "i-72ddc18d": {
+                "public_dns_name": "", 
+                "Name": "ami-backup-test", 
+                "ReanBackup": "08:03-H2:D6:W2:M2"
+            }, 
+            "subnet-29aa575e": {
+                "cidr_block": "172.31.16.0/20", 
+                "Name": "Public"
+            }, 
+            "i-f3e2505b": {
+                "public_dns_name": "ec2-52-2-90-48.compute-1.amazonaws.com", 
+                "Name": "satish-jenkins-demo"
+            }, 
+            "i-47cf1594": {
+                "public_dns_name": "", 
+                "Name": "Yogesh_Ubuntu"
+            }, 
+            "subnet-d00a67fb": {
+                "cidr_block": "10.0.20.0/24", 
+                "Name": "public_test1"
+            }, 
+            "i-2f61df86": {
+                "public_dns_name": "", 
+                "Name": "DO-NOT-TERMINATE-Assignment"
+            }, 
+            "i-370cb09f": {
+                "public_dns_name": "ec2-52-3-126-21.compute-1.amazonaws.com", 
+                "Name": "sid TOMCAT test 1"
+            }, 
+            "vpc-408f8525": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.142.0/23", 
+                "Name": "devops-tools"
+            }, 
+            "vpc-dc49deb9": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "sophosADtest"
+            }, 
+            "i-7dbb3ed5": {
+                "public_dns_name": "ec2-52-0-57-189.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad1"
+            }, 
+            "subnet-2435550f": {
+                "cidr_block": "172.16.7.0/24", 
+                "Name": "private-east-1a"
+            }, 
+            "subnet-5ef50775": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "sophosAD-pub1"
+            }, 
+            "i-90df7438": {
+                "public_dns_name": "ec2-52-2-89-72.compute-1.amazonaws.com", 
+                "Name": "app-a"
+            }, 
+            "i-aff14c07": {
+                "public_dns_name": "", 
+                "Name": "karthik_linux"
+            }, 
+            "i-80c84d69": {
+                "public_dns_name": "ec2-52-0-137-23.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad-client1"
+            }, 
+            "subnet-530e6f78": {
+                "cidr_block": "172.16.141.0/24", 
+                "Name": "phabricatorpoc"
+            }, 
+            "i-9db26335": {
+                "public_dns_name": "ec2-54-175-197-118.compute-1.amazonaws.com", 
+                "Name": "Serverspec-VPC_Test"
+            }, 
+            "i-afe53b46": {
+                "public_dns_name": "", 
+                "Name": "test-sai"
+            }, 
+            "vpc-825e79e7": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "al_rmp_vpc"
+            }, 
+            "i-3a10ad92": {
+                "public_dns_name": "ec2-52-3-67-142.compute-1.amazonaws.com", 
+                "Name": "test-shanti"
+            }, 
+            "subnet-4de55b66": {
+                "cidr_block": "172.16.2.0/24", 
+                "Name": "al_rmp_pri1"
+            }, 
+            "i-a155d009": {
+                "public_dns_name": "", 
+                "Name": "ELK", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-4adccf70": {
+                "cidr_block": "10.10.10.0/24", 
+                "Name": "Jenkins_Subnet"
+            }, 
+            "subnet-d6c7cfec": {
+                "cidr_block": "172.16.142.0/24", 
+                "Name": "devops-tools"
+            }, 
+            "i-d7bd447f": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_server_test-DO-NOT-TERMINATE"
+            }, 
+            "i-26450ef5": {
+                "public_dns_name": "ec2-52-2-254-2.compute-1.amazonaws.com", 
+                "Name": "test-sh"
+            }, 
+            "i-ec6dbb44": {
+                "public_dns_name": "ec2-52-2-83-244.compute-1.amazonaws.com", 
+                "Name": "Test-NAT"
+            }, 
+            "subnet-a53217d2": {
+                "cidr_block": "172.16.8.0/24", 
+                "Name": "private-east-1b"
+            }, 
+            "subnet-3105681a": {
+                "cidr_block": "10.0.21.0/24", 
+                "Name": "private_test1"
+            }, 
+            "i-a6f7ba71": {
+                "public_dns_name": "ec2-52-5-60-231.compute-1.amazonaws.com", 
+                "Ozy-Jmeter-N.Virginia-Master": "Ozy-Jmeter-N.Virginia-Master", 
+                "Name": "Ozy_Jmeter_Master", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-181a7933": {
+                "cidr_block": "172.32.1.0/24", 
+                "Name": "Rean_test_public"
+            }, 
+            "i-7a41bfd2": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_client2-DO-NOT-TERMINATE"
+            }, 
+            "i-35fa57e6": {
+                "public_dns_name": "", 
+                "Name": "Ubuntu-14.04-zabbix client"
+            }, 
+            "i-8c740e5f": {
+                "Department": "Engineering", 
+                "public_dns_name": "", 
+                "Dont_stop_or_craig_will_yell_at_me": "Maybe", 
+                "Name": "UpSource POC"
+            }, 
+            "i-f9168150": {
+                "public_dns_name": "", 
+                "Name": "bastion-test-sai"
+            }, 
+            "i-db915e73": {
+                "public_dns_name": "", 
+                "Name": "test-certificate-RDP"
+            }, 
+            "i-66537fb6": {
+                "public_dns_name": "", 
+                "Name": "reancloud_Sophos"
+            }, 
+            "subnet-a0ca7bd7": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "sophosAD-pub2"
+            }, 
+            "i-170a5c38": {
+                "public_dns_name": "", 
+                "DO_NOT_TERMINATE": "YES", 
+                "DailyBkp": "7", 
+                "Name": "cfn-testing-16"
+            }, 
+            "subnet-570b1411": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "i-4410aaad": {
+                "public_dns_name": "", 
+                "Name": "RedHat_Test"
+            }, 
+            "subnet-7a7f1851": {
+                "cidr_block": "10.0.10.0/24", 
+                "Name": "Public-VPC_test"
+            }, 
+            "vpc-96f0edf3": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "Use": "Testing Jenkins Pipeline - Ankit", 
+                "cidr_block": "10.10.0.0/16", 
+                "Name": "Jenkins_VPC"
+            }, 
+            "i-61ba43c9": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_client1-DO-NOT-TERMINATE"
+            }, 
+            "subnet-13215164": {
+                "cidr_block": "172.16.4.0/24", 
+                "Name": "al_rmp_pri2"
+            }, 
+            "vpc-2afbf14f": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.140.0/23", 
+                "Name": "phabricatorpoc"
+            }, 
+            "i-8e218926": {
+                "public_dns_name": "", 
+                "Name": "Windows_AD"
+            }, 
+            "i-e84b093e": {
+                "public_dns_name": "", 
+                "Name": "jmeter-master"
+            }, 
+            "subnet-21762c56": {
+                "cidr_block": "172.16.140.0/24", 
+                "Name": "phabricatorpoc"
+            }, 
+            "subnet-de053af6": {
+                "cidr_block": "172.31.32.0/20"
+            }, 
+            "i-40733093": {
+                "public_dns_name": "", 
+                "Name": "AD-Splunk"
+            }, 
+            "i-0b1dafa3": {
+                "public_dns_name": "", 
+                "Name": "sid1"
+            }, 
+            "i-ec128545": {
+                "public_dns_name": "", 
+                "Name": "test-lin-vpn-sai"
+            }, 
+            "i-ead36042": {
+                "public_dns_name": "", 
+                "Name": "venu-reantrainee"
+            }
+        }, 
+        "vpc": {
+            "subnet-3821514f": {
+                "cidr_block": "172.16.3.0/24", 
+                "Name": "al_rmp_pub2"
+            }, 
+            "i-834c1350": {
+                "public_dns_name": "", 
+                "Name": "swarup-2"
+            }, 
+            "i-83866e2b": {
+                "public_dns_name": "", 
+                "Name": "testhost"
+            }, 
+            "i-ac16647f": {
+                "public_dns_name": "ec2-52-2-125-162.compute-1.amazonaws.com", 
+                "Name": "Review Board"
+            }, 
+            "subnet-f7395acd": {
+                "cidr_block": "172.31.48.0/20", 
+                "Name": "WICS-NICS"
+            }, 
+            "i-679fc0b4": {
+                "public_dns_name": "ec2-52-3-57-228.compute-1.amazonaws.com", 
+                "Name": "Amazon_Linux_Supervisor1"
+            }, 
+            "i-0a6fa5a2": {
+                "elasticbeanstalk:environment-name": "Default-Environment", 
+                "Name": "Default-Environment", 
+                "elasticbeanstalk:environment-id": "e-jfxbzu23eq", 
+                "aws:cloudformation:logical-id": "AWSEBAutoScalingGroup", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-1:411815166437:stack/awseb-e-jfxbzu23eq-stack/18325900-1a65-11e5-ab28-50e2416294a8", 
+                "aws:cloudformation:stack-name": "awseb-e-jfxbzu23eq-stack", 
+                "aws:autoscaling:groupName": "awseb-e-jfxbzu23eq-stack-AWSEBAutoScalingGroup-1QARA48JDU5WB", 
+                "public_dns_name": "ec2-52-0-176-221.compute-1.amazonaws.com"
+            }, 
+            "i-d7f55804": {
+                "public_dns_name": "", 
+                "Name": "Ubuntu-14.04-zabbix server"
+            }, 
+            "i-d7ca467f": {
+                "public_dns_name": "ec2-52-2-219-187.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad-client"
+            }, 
+            "subnet-f3059bd8": {
+                "cidr_block": "172.31.64.0/20", 
+                "Name": "PRIVATE"
+            }, 
+            "vpc-5c093c39": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "VPC_test"
+            }, 
+            "i-a31e9b0b": {
+                "public_dns_name": "", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "ELK"
+            }, 
+            "i-f7815c24": {
+                "public_dns_name": "ec2-52-1-106-174.compute-1.amazonaws.com", 
+                "name": "AD-test-Instance-ASG", 
+                "aws:autoscaling:groupName": "AD-test-ASG"
+            }, 
+            "subnet-cf3085e4": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "test-private"
+            }, 
+            "subnet-c8376cbf": {
+                "cidr_block": "172.16.6.0/24", 
+                "Name": "public-east-1b"
+            }, 
+            "vpc-32aabe57": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.32.0.0/16", 
+                "Name": "Rean_test_VPC"
+            }, 
+            "i-727ec69b": {
+                "public_dns_name": "", 
+                "Name": "do-not-delete test-jen"
+            }, 
+            "subnet-29b4ea13": {
+                "cidr_block": "10.20.0.0/24", 
+                "Name": "CAASCALC"
+            }, 
+            "vpc-faaff09f": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.20.0.0/16", 
+                "Name": "CAASCALC"
+            }, 
+            "vpc-c5ec30a0": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "moosa-tes1-VPC"
+            }, 
+            "i-c91f5b60": {
+                "public_dns_name": "", 
+                "Name": "reancloud-ADLDS"
+            }, 
+            "i-73c86b9a": {
+                "public_dns_name": "", 
+                "Name": "tomcat"
+            }, 
+            "subnet-bce7f086": {
+                "environment": "REAN DevOps", 
+                "cidr_block": "10.71.0.0/16", 
+                "name": "PublicSubnet3", 
+                "purpose": "REAN DevOps"
+            }, 
+            "i-9fe26a48": {
+                "public_dns_name": "ec2-52-0-228-117.compute-1.amazonaws.com", 
+                "Ozy-Jmeter-Slave": "Ozy-Jmeter-Slave", 
+                "Name": "Ozy-Jmeter-Slave", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-db9ffb08": {
+                "public_dns_name": "ec2-52-2-215-90.compute-1.amazonaws.com", 
+                "Name": "Amazon_Linux_Supervisor"
+            }, 
+            "i-dec2180d": {
+                "public_dns_name": "", 
+                "Name": "Yogesh_Redhat"
+            }, 
+            "i-9c70c94f": {
+                "public_dns_name": "", 
+                "Name": "ipaclient"
+            }, 
+            "i-b2fc421a": {
+                "public_dns_name": "ec2-52-2-132-168.compute-1.amazonaws.com", 
+                "Name": "DontDelete_Jenkins_Test"
+            }, 
+            "i-9c942f34": {
+                "public_dns_name": "", 
+                "Name": "ubuntu-nagios-prasad"
+            }, 
+            "i-d824b80b": {
+                "Department": "Engineering", 
+                "public_dns_name": "ec2-54-208-132-115.compute-1.amazonaws.com", 
+                "Name": "ELK Testing"
+            }, 
+            "subnet-88d7b0a3": {
+                "cidr_block": "172.16.5.0/24", 
+                "Name": "public-east-1a"
+            }, 
+            "subnet-1b1d9f30": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public"
+            }, 
+            "vpc-3d889958": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.71.0.0/16", 
+                "purpose": "REAN Consulting - DO NOT TOUCH w/o Talking to Shane", 
+                "name": "DevOps"
+            }, 
+            "i-a99c7401": {
+                "public_dns_name": "", 
+                "Name": "Jumphost"
+            }, 
+            "i-ac526c7c": {
+                "public_dns_name": "", 
+                "Name": "sophos-tst-vpn-sai"
+            }, 
+            "i-e15a0c32": {
+                "public_dns_name": "ec2-52-2-139-140.compute-1.amazonaws.com", 
+                "Name": "Interview-2015-07-15-Client"
+            }, 
+            "i-2efa7686": {
+                "public_dns_name": "ec2-52-3-126-230.compute-1.amazonaws.com", 
+                "Name": "hw-test-raju"
+            }, 
+            "subnet-73e55b58": {
+                "cidr_block": "172.16.1.0/24", 
+                "Name": "al_rmp_pub1"
+            }, 
+            "subnet-d1c7cfeb": {
+                "cidr_block": "172.16.143.0/24", 
+                "Name": "devops-tools"
+            }, 
+            "i-e05a0c33": {
+                "public_dns_name": "ec2-52-2-111-217.compute-1.amazonaws.com", 
+                "Name": "Interview-2015-07-15-server"
+            }, 
+            "subnet-9f0557e8": {
+                "cidr_block": "172.31.96.0/20", 
+                "Name": "PRAVTE2"
+            }, 
+            "i-0ca933df": {
+                "public_dns_name": "ec2-52-3-65-4.compute-1.amazonaws.com", 
+                "Name": "reancloud_Sophos01"
+            }, 
+            "i-12a11bba": {
+                "public_dns_name": "", 
+                "Name": "test-pri-win-sai"
+            }, 
+            "i-72ddc18d": {
+                "public_dns_name": "", 
+                "Name": "ami-backup-test", 
+                "ReanBackup": "08:03-H2:D6:W2:M2"
+            }, 
+            "subnet-29aa575e": {
+                "cidr_block": "172.31.16.0/20", 
+                "Name": "Public"
+            }, 
+            "i-f3e2505b": {
+                "public_dns_name": "ec2-52-2-90-48.compute-1.amazonaws.com", 
+                "Name": "satish-jenkins-demo"
+            }, 
+            "i-47cf1594": {
+                "public_dns_name": "", 
+                "Name": "Yogesh_Ubuntu"
+            }, 
+            "subnet-d00a67fb": {
+                "cidr_block": "10.0.20.0/24", 
+                "Name": "public_test1"
+            }, 
+            "i-2f61df86": {
+                "public_dns_name": "", 
+                "Name": "DO-NOT-TERMINATE-Assignment"
+            }, 
+            "i-370cb09f": {
+                "public_dns_name": "ec2-52-3-126-21.compute-1.amazonaws.com", 
+                "Name": "sid TOMCAT test 1"
+            }, 
+            "vpc-408f8525": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.142.0/23", 
+                "Name": "devops-tools"
+            }, 
+            "vpc-dc49deb9": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "sophosADtest"
+            }, 
+            "i-7dbb3ed5": {
+                "public_dns_name": "ec2-52-0-57-189.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad1"
+            }, 
+            "subnet-2435550f": {
+                "cidr_block": "172.16.7.0/24", 
+                "Name": "private-east-1a"
+            }, 
+            "subnet-5ef50775": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "sophosAD-pub1"
+            }, 
+            "i-90df7438": {
+                "public_dns_name": "ec2-52-2-89-72.compute-1.amazonaws.com", 
+                "Name": "app-a"
+            }, 
+            "i-aff14c07": {
+                "public_dns_name": "", 
+                "Name": "karthik_linux"
+            }, 
+            "i-80c84d69": {
+                "public_dns_name": "ec2-52-0-137-23.compute-1.amazonaws.com", 
+                "Name": "ubuntu-nagios-prasad-client1"
+            }, 
+            "subnet-530e6f78": {
+                "cidr_block": "172.16.141.0/24", 
+                "Name": "phabricatorpoc"
+            }, 
+            "i-9db26335": {
+                "public_dns_name": "ec2-54-175-197-118.compute-1.amazonaws.com", 
+                "Name": "Serverspec-VPC_Test"
+            }, 
+            "i-afe53b46": {
+                "public_dns_name": "", 
+                "Name": "test-sai"
+            }, 
+            "vpc-825e79e7": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "al_rmp_vpc"
+            }, 
+            "i-3a10ad92": {
+                "public_dns_name": "ec2-52-3-67-142.compute-1.amazonaws.com", 
+                "Name": "test-shanti"
+            }, 
+            "subnet-4de55b66": {
+                "cidr_block": "172.16.2.0/24", 
+                "Name": "al_rmp_pri1"
+            }, 
+            "i-a155d009": {
+                "public_dns_name": "", 
+                "Name": "ELK", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-4adccf70": {
+                "cidr_block": "10.10.10.0/24", 
+                "Name": "Jenkins_Subnet"
+            }, 
+            "subnet-d6c7cfec": {
+                "cidr_block": "172.16.142.0/24", 
+                "Name": "devops-tools"
+            }, 
+            "i-d7bd447f": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_server_test-DO-NOT-TERMINATE"
+            }, 
+            "i-26450ef5": {
+                "public_dns_name": "ec2-52-2-254-2.compute-1.amazonaws.com", 
+                "Name": "test-sh"
+            }, 
+            "i-ec6dbb44": {
+                "public_dns_name": "ec2-52-2-83-244.compute-1.amazonaws.com", 
+                "Name": "Test-NAT"
+            }, 
+            "subnet-a53217d2": {
+                "cidr_block": "172.16.8.0/24", 
+                "Name": "private-east-1b"
+            }, 
+            "subnet-3105681a": {
+                "cidr_block": "10.0.21.0/24", 
+                "Name": "private_test1"
+            }, 
+            "i-a6f7ba71": {
+                "public_dns_name": "ec2-52-5-60-231.compute-1.amazonaws.com", 
+                "Ozy-Jmeter-N.Virginia-Master": "Ozy-Jmeter-N.Virginia-Master", 
+                "Name": "Ozy_Jmeter_Master", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-181a7933": {
+                "cidr_block": "172.32.1.0/24", 
+                "Name": "Rean_test_public"
+            }, 
+            "i-7a41bfd2": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_client2-DO-NOT-TERMINATE"
+            }, 
+            "i-35fa57e6": {
+                "public_dns_name": "", 
+                "Name": "Ubuntu-14.04-zabbix client"
+            }, 
+            "i-8c740e5f": {
+                "Department": "Engineering", 
+                "public_dns_name": "", 
+                "Dont_stop_or_craig_will_yell_at_me": "Maybe", 
+                "Name": "UpSource POC"
+            }, 
+            "i-f9168150": {
+                "public_dns_name": "", 
+                "Name": "bastion-test-sai"
+            }, 
+            "i-db915e73": {
+                "public_dns_name": "", 
+                "Name": "test-certificate-RDP"
+            }, 
+            "i-66537fb6": {
+                "public_dns_name": "", 
+                "Name": "reancloud_Sophos"
+            }, 
+            "subnet-a0ca7bd7": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "sophosAD-pub2"
+            }, 
+            "i-170a5c38": {
+                "public_dns_name": "", 
+                "DO_NOT_TERMINATE": "YES", 
+                "DailyBkp": "7", 
+                "Name": "cfn-testing-16"
+            }, 
+            "subnet-570b1411": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "i-4410aaad": {
+                "public_dns_name": "", 
+                "Name": "RedHat_Test"
+            }, 
+            "subnet-7a7f1851": {
+                "cidr_block": "10.0.10.0/24", 
+                "Name": "Public-VPC_test"
+            }, 
+            "vpc-96f0edf3": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "Use": "Testing Jenkins Pipeline - Ankit", 
+                "cidr_block": "10.10.0.0/16", 
+                "Name": "Jenkins_VPC"
+            }, 
+            "i-61ba43c9": {
+                "public_dns_name": "", 
+                "Name": "Rean_Ansible_client1-DO-NOT-TERMINATE"
+            }, 
+            "subnet-13215164": {
+                "cidr_block": "172.16.4.0/24", 
+                "Name": "al_rmp_pri2"
+            }, 
+            "vpc-2afbf14f": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.140.0/23", 
+                "Name": "phabricatorpoc"
+            }, 
+            "i-8e218926": {
+                "public_dns_name": "", 
+                "Name": "Windows_AD"
+            }, 
+            "i-e84b093e": {
+                "public_dns_name": "", 
+                "Name": "jmeter-master"
+            }, 
+            "subnet-21762c56": {
+                "cidr_block": "172.16.140.0/24", 
+                "Name": "phabricatorpoc"
+            }, 
+            "subnet-de053af6": {
+                "cidr_block": "172.31.32.0/20"
+            }, 
+            "i-40733093": {
+                "public_dns_name": "", 
+                "Name": "AD-Splunk"
+            }, 
+            "i-0b1dafa3": {
+                "public_dns_name": "", 
+                "Name": "sid1"
+            }, 
+            "i-ec128545": {
+                "public_dns_name": "", 
+                "Name": "test-lin-vpn-sai"
+            }, 
+            "i-ead36042": {
+                "public_dns_name": "", 
+                "Name": "venu-reantrainee"
+            }
+        }
+    }
+]

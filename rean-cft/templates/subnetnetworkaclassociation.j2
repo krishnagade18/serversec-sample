@@ -1,0 +1,7 @@
+"{{data.Name}}" : {
+ "Type" : "AWS::EC2::SubnetNetworkAclAssociation",
+ "Properties" : {
+    "SubnetId" : {{data.SubnetId|inline}},
+    "NetworkAclId" : {{data.NetworkAclId|inline}}
+ }
+}

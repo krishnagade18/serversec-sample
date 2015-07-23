@@ -1,0 +1,15 @@
+"{{data.Name}}" : {
+ "Type" : "AWS::EC2::NetworkAcl",
+ "Properties" : {
+    "VpcId" : {{data.VpcId|inline}},
+    "Tags" : [
+    {% for tag in data.Tags %}
+        {% if not loop.last %}
+            {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"},
+        {% else %}
+            {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"}
+        {% endif %}
+    {% endfor %}
+]
+ }
+}

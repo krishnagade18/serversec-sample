@@ -1,0 +1,1135 @@
+[
+    {
+        "vpc-b10ec6d4": [
+            [
+                "igw-b205f7d7,Name=raju-igw|"
+            ], 
+            {
+                "subnet-78ef4d1d": [
+                    [
+                        "acl-13c71076,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-720dee2b": [
+                    [
+                        "acl-13c71076,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-0960b66c,Name=raju-route|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-e1cf2984": [
+            [
+                "igw-87c0dde5,"
+            ], 
+            {
+                "subnet-b43fcad1": [
+                    [
+                        "acl-3205e457,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-be2cb875": [
+                            "sg-46fc7123"
+                        ], 
+                        "i-40e19e8b": [
+                            "sg-7e21d71b"
+                        ]
+                    }
+                ], 
+                "subnet-a088bde6": [
+                    [
+                        "acl-3205e457,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-93735e51": [
+                            "sg-119c0d74"
+                        ], 
+                        "i-7faa88bd": [
+                            "sg-74900111"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "vpc-788c4e1d": [
+            [
+                "igw-1d9c6a78,"
+            ], 
+            {
+                "subnet-6d0fd408": [
+                    [
+                        "acl-11448b74,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-85a168e0,routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-83049f48": [
+                            "sg-8b388bee"
+                        ]
+                    }
+                ], 
+                "subnet-7c0fd419": [
+                    [
+                        "acl-11448b74,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-b26687eb": [
+                    [
+                        "acl-11448b74,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-85a168e0,routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-4d57748f": [
+                            "sg-72a31f17"
+                        ]
+                    }
+                ], 
+                "subnet-620fd407": [
+                    [
+                        "acl-11448b74,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-fbc62fa2": [
+                    [
+                        "acl-11448b74,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-85a168e0,routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-a5f60bc0": [
+            [
+                "igw-e6886583,"
+            ], 
+            {
+                "subnet-019c5764": [
+                    [
+                        "acl-0d16e968,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-9c2dd3f9,routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-63f20f06": [
+            [
+                "igw-4b85682e,"
+            ], 
+            {
+                "subnet-96905bf3": [
+                    [
+                        "acl-8713ece2,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-ff29d79a,routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-af4b86ca": [
+            [
+                "igw-fcf30299,Name=Sandeep DMZ IGW|"
+            ], 
+            {
+                "subnet-bfc86dda": [
+                    [
+                        "acl-fa20e99f,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-579e5532,Name=Sandeep PDMZ|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-a8c86dcd": [
+                    [
+                        "acl-fa20e99f,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-549e5531,Name=Sandeep DMZ|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-8dc86de8": [
+                    [
+                        "acl-fa20e99f,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-5d9e5538,Name=Sandeep Private|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-dab079bf": [
+            [
+                "igw-6876850d,Name=bakery|"
+            ], 
+            {
+                "subnet-a86a8bf1": [
+                    [
+                        "acl-12528777,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-dece19bb,Name=Private Subnets|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-4c6d8c15": [
+                    [
+                        "acl-12528777,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-dece19bb,Name=Private Subnets|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-666a8b3f": [
+                    [
+                        "acl-12528777,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-a9cf18cc,Name=Public Subnets|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-5dc76738": [
+                    [
+                        "acl-12528777,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-a9cf18cc,Name=Public Subnets|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-21c76744": [
+                    [
+                        "acl-12528777,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-dece19bb,Name=Private Subnets|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-94c767f1": [
+                    [
+                        "acl-12528777,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-dece19bb,Name=Private Subnets|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-fd6db698": [
+            [
+                "igw-e0f03185,test=test|Application=arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2|aws:cloudformation:stack-name=test-ch8|aws:cloudformation:stack-id=arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2|aws:cloudformation:logical-id=InternetGateway|"
+            ], 
+            {
+                "subnet-f0119595": [
+                    [
+                        "acl-f310b396,test=test|Application=arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2|aws:cloudformation:stack-id=arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2|aws:cloudformation:stack-name=test-ch8|aws:cloudformation:logical-id=NetworkAcl|network_acl_entries=[Acl:100   Acl:101   Acl:102   Acl:32767   Acl:100   Acl:101   Acl:102   Acl:32767]|", 
+                        "rtb-cb228eae,test=test|Application=arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2|aws:cloudformation:stack-id=arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2|aws:cloudformation:stack-name=test-ch8|aws:cloudformation:logical-id=RouteTable|routes=[Route:12.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-f4374e3f": [
+                            "sg-4aef7e2f"
+                        ], 
+                        "i-39374ef2": [
+                            "sg-4aef7e2f"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "vpc-6bb2690e": [
+            [
+                "igw-a1589ec4,aws:cloudformation:stack-name=aws-stack7|aws:cloudformation:stack-id=arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2|Name=Plumgrid-IGW|aws:cloudformation:logical-id=InternetGateway|"
+            ], 
+            {
+                "subnet-b0cd37e9": [
+                    [
+                        "acl-8be744ee,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-52379a37,aws:cloudformation:stack-name=aws-stack7|aws:cloudformation:stack-id=arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2|Name=Plumgrid-RT|aws:cloudformation:logical-id=RouteTable|routes=[Route:10.20.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-7e4f15bc": [
+                            "sg-6d46d108"
+                        ]
+                    }
+                ], 
+                "subnet-b1cd37e8": [
+                    [
+                        "acl-8be744ee,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-52379a37,aws:cloudformation:stack-name=aws-stack7|aws:cloudformation:stack-id=arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2|Name=Plumgrid-RT|aws:cloudformation:logical-id=RouteTable|routes=[Route:10.20.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-f536ea90": [
+            [], 
+            {
+                "subnet-6247fa07": [
+                    [
+                        "acl-6254f107,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-e72fbb2c": [
+                            "sg-7eff721b"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "subnet": {
+            "subnet-b43fcad1": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "subnet-b1cd37e8": {
+                "Application": "PGExternal", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "cidr_block": "10.20.2.0/24", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "aws:cloudformation:logical-id": "Subnet2"
+            }, 
+            "subnet-f0119595": {
+                "aws:cloudformation:logical-id": "Subnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test", 
+                "cidr_block": "12.0.0.0/24"
+            }, 
+            "i-e72fbb2c": {
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "MyEC2Instance", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "network_interfaces": "[u'eni-0e91466a']", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "public_dns_name": ""
+            }, 
+            "i-4d57748f": {
+                "public_dns_name": "ec2-52-8-78-173.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-cc1b3b94']", 
+                "Name": "ipa-client 2"
+            }, 
+            "i-be2cb875": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e6954282']", 
+                "Name": "ayatest1"
+            }, 
+            "subnet-666a8b3f": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Public Subnet"
+            }, 
+            "subnet-bfc86dda": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Sandeep PDMZ"
+            }, 
+            "vpc-af4b86ca": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Sandeep Test"
+            }, 
+            "subnet-7c0fd419": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Private subnet_sp2"
+            }, 
+            "subnet-6d0fd408": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet_sp"
+            }, 
+            "vpc-dab079bf": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Bakery"
+            }, 
+            "subnet-a8c86dcd": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Sandeep DMZ"
+            }, 
+            "i-39374ef2": {
+                "Name": "tets-", 
+                "aws:cloudformation:logical-id": "WebServerGroup", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "network_interfaces": "[u'eni-d63787b2']", 
+                "public_dns_name": "", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "aws:autoscaling:groupName": "test-ch8-WebServerGroup-XL2T29R3L0LU", 
+                "test": "test"
+            }, 
+            "vpc-6bb2690e": {
+                "is_default": "False", 
+                "Name": "Plumgrid-VPC", 
+                "aws:cloudformation:logical-id": "VPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "cidr_block": "10.20.0.0/16"
+            }, 
+            "vpc-f536ea90": {
+                "is_default": "False", 
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "myVPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "cidr_block": "10.0.0.0/16"
+            }, 
+            "subnet-b0cd37e9": {
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "cidr_block": "10.20.0.0/24", 
+                "Name": "PGManagement", 
+                "aws:cloudformation:logical-id": "Subnet1"
+            }, 
+            "subnet-78ef4d1d": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "raju-pub"
+            }, 
+            "subnet-720dee2b": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "raju-pri"
+            }, 
+            "vpc-b10ec6d4": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "raju"
+            }, 
+            "subnet-620fd407": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Private subnet_sp"
+            }, 
+            "subnet-a088bde6": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "subnet-94c767f1": {
+                "cidr_block": "10.0.110.0/24", 
+                "Name": "DB Subnet"
+            }, 
+            "subnet-019c5764": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-21c76744": {
+                "cidr_block": "10.0.100.0/24", 
+                "Name": "Web Subnet"
+            }, 
+            "subnet-a86a8bf1": {
+                "cidr_block": "10.0.111.0/24", 
+                "Name": "DB Subnet"
+            }, 
+            "subnet-5dc76738": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public Subnet"
+            }, 
+            "subnet-b26687eb": {
+                "cidr_block": "10.0.5.0/25", 
+                "Name": "av.zone 1c"
+            }, 
+            "i-93735e51": {
+                "test": "test", 
+                "public_dns_name": "ec2-54-67-75-247.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-9891b2c0']", 
+                "Name": "Jenkins_test_chn"
+            }, 
+            "i-f4374e3f": {
+                "public_dns_name": "", 
+                "aws:cloudformation:logical-id": "WebServerInstance", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "network_interfaces": "[u'eni-e3378787']", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test"
+            }, 
+            "i-7e4f15bc": {
+                "Name": "RHOS6Compute02", 
+                "aws:cloudformation:logical-id": "RHOS6Compute02", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "network_interfaces": "[u'eni-965e7bce', u'eni-955e7bcd']", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "public_dns_name": ""
+            }, 
+            "subnet-6247fa07": {
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "mySubnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "cidr_block": "10.0.0.0/24"
+            }, 
+            "vpc-788c4e1d": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Splunk_vpc"
+            }, 
+            "i-40e19e8b": {
+                "public_dns_name": "ec2-54-67-13-86.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-b52d9cd1']", 
+                "Name": "ipa-client"
+            }, 
+            "i-83049f48": {
+                "public_dns_name": "ec2-52-8-149-71.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-3c845c58']", 
+                "Name": "freeipa"
+            }, 
+            "vpc-fd6db698": {
+                "is_default": "False", 
+                "aws:cloudformation:logical-id": "VPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "instance_tenancy": "default", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test", 
+                "cidr_block": "12.0.0.0/16"
+            }, 
+            "subnet-96905bf3": {
+                "cidr_block": "172.16.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-4c6d8c15": {
+                "cidr_block": "10.0.101.0/24", 
+                "Name": "Web Subnet"
+            }, 
+            "subnet-8dc86de8": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Sandeep Private"
+            }, 
+            "vpc-63f20f06": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "privdns.b.example1.com"
+            }, 
+            "vpc-a5f60bc0": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "privdns.example.com"
+            }, 
+            "i-7faa88bd": {
+                "public_dns_name": "ec2-52-8-17-219.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-07d2f15f']", 
+                "Name": "test shell jen"
+            }, 
+            "vpc-e1cf2984": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "DefaultVPC"
+            }, 
+            "subnet-fbc62fa2": {
+                "cidr_block": "10.0.6.0/25", 
+                "Name": "Public_subnet2"
+            }
+        }, 
+        "ec2": {
+            "subnet-b43fcad1": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "subnet-b1cd37e8": {
+                "Application": "PGExternal", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "cidr_block": "10.20.2.0/24", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "aws:cloudformation:logical-id": "Subnet2"
+            }, 
+            "subnet-f0119595": {
+                "aws:cloudformation:logical-id": "Subnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test", 
+                "cidr_block": "12.0.0.0/24"
+            }, 
+            "i-e72fbb2c": {
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "MyEC2Instance", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "network_interfaces": "[u'eni-0e91466a']", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "public_dns_name": ""
+            }, 
+            "i-4d57748f": {
+                "public_dns_name": "ec2-52-8-78-173.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-cc1b3b94']", 
+                "Name": "ipa-client 2"
+            }, 
+            "i-be2cb875": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e6954282']", 
+                "Name": "ayatest1"
+            }, 
+            "subnet-666a8b3f": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Public Subnet"
+            }, 
+            "subnet-bfc86dda": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Sandeep PDMZ"
+            }, 
+            "vpc-af4b86ca": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Sandeep Test"
+            }, 
+            "subnet-7c0fd419": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Private subnet_sp2"
+            }, 
+            "subnet-6d0fd408": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet_sp"
+            }, 
+            "vpc-dab079bf": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Bakery"
+            }, 
+            "subnet-a8c86dcd": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Sandeep DMZ"
+            }, 
+            "i-39374ef2": {
+                "Name": "tets-", 
+                "aws:cloudformation:logical-id": "WebServerGroup", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "network_interfaces": "[u'eni-d63787b2']", 
+                "public_dns_name": "", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "aws:autoscaling:groupName": "test-ch8-WebServerGroup-XL2T29R3L0LU", 
+                "test": "test"
+            }, 
+            "vpc-6bb2690e": {
+                "is_default": "False", 
+                "Name": "Plumgrid-VPC", 
+                "aws:cloudformation:logical-id": "VPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "cidr_block": "10.20.0.0/16"
+            }, 
+            "vpc-f536ea90": {
+                "is_default": "False", 
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "myVPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "cidr_block": "10.0.0.0/16"
+            }, 
+            "subnet-b0cd37e9": {
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "cidr_block": "10.20.0.0/24", 
+                "Name": "PGManagement", 
+                "aws:cloudformation:logical-id": "Subnet1"
+            }, 
+            "subnet-78ef4d1d": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "raju-pub"
+            }, 
+            "subnet-720dee2b": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "raju-pri"
+            }, 
+            "vpc-b10ec6d4": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "raju"
+            }, 
+            "subnet-620fd407": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Private subnet_sp"
+            }, 
+            "subnet-a088bde6": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "subnet-94c767f1": {
+                "cidr_block": "10.0.110.0/24", 
+                "Name": "DB Subnet"
+            }, 
+            "subnet-019c5764": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-21c76744": {
+                "cidr_block": "10.0.100.0/24", 
+                "Name": "Web Subnet"
+            }, 
+            "subnet-a86a8bf1": {
+                "cidr_block": "10.0.111.0/24", 
+                "Name": "DB Subnet"
+            }, 
+            "subnet-5dc76738": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public Subnet"
+            }, 
+            "subnet-b26687eb": {
+                "cidr_block": "10.0.5.0/25", 
+                "Name": "av.zone 1c"
+            }, 
+            "i-93735e51": {
+                "test": "test", 
+                "public_dns_name": "ec2-54-67-75-247.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-9891b2c0']", 
+                "Name": "Jenkins_test_chn"
+            }, 
+            "i-f4374e3f": {
+                "public_dns_name": "", 
+                "aws:cloudformation:logical-id": "WebServerInstance", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "network_interfaces": "[u'eni-e3378787']", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test"
+            }, 
+            "i-7e4f15bc": {
+                "Name": "RHOS6Compute02", 
+                "aws:cloudformation:logical-id": "RHOS6Compute02", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "network_interfaces": "[u'eni-965e7bce', u'eni-955e7bcd']", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "public_dns_name": ""
+            }, 
+            "subnet-6247fa07": {
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "mySubnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "cidr_block": "10.0.0.0/24"
+            }, 
+            "vpc-788c4e1d": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Splunk_vpc"
+            }, 
+            "i-40e19e8b": {
+                "public_dns_name": "ec2-54-67-13-86.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-b52d9cd1']", 
+                "Name": "ipa-client"
+            }, 
+            "i-83049f48": {
+                "public_dns_name": "ec2-52-8-149-71.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-3c845c58']", 
+                "Name": "freeipa"
+            }, 
+            "vpc-fd6db698": {
+                "is_default": "False", 
+                "aws:cloudformation:logical-id": "VPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "instance_tenancy": "default", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test", 
+                "cidr_block": "12.0.0.0/16"
+            }, 
+            "subnet-96905bf3": {
+                "cidr_block": "172.16.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-4c6d8c15": {
+                "cidr_block": "10.0.101.0/24", 
+                "Name": "Web Subnet"
+            }, 
+            "subnet-8dc86de8": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Sandeep Private"
+            }, 
+            "vpc-63f20f06": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "privdns.b.example1.com"
+            }, 
+            "vpc-a5f60bc0": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "privdns.example.com"
+            }, 
+            "i-7faa88bd": {
+                "public_dns_name": "ec2-52-8-17-219.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-07d2f15f']", 
+                "Name": "test shell jen"
+            }, 
+            "vpc-e1cf2984": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "DefaultVPC"
+            }, 
+            "subnet-fbc62fa2": {
+                "cidr_block": "10.0.6.0/25", 
+                "Name": "Public_subnet2"
+            }
+        }, 
+        "vpc": {
+            "subnet-b43fcad1": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "subnet-b1cd37e8": {
+                "Application": "PGExternal", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "cidr_block": "10.20.2.0/24", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "aws:cloudformation:logical-id": "Subnet2"
+            }, 
+            "subnet-f0119595": {
+                "aws:cloudformation:logical-id": "Subnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test", 
+                "cidr_block": "12.0.0.0/24"
+            }, 
+            "i-e72fbb2c": {
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "MyEC2Instance", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "network_interfaces": "[u'eni-0e91466a']", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "public_dns_name": ""
+            }, 
+            "i-4d57748f": {
+                "public_dns_name": "ec2-52-8-78-173.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-cc1b3b94']", 
+                "Name": "ipa-client 2"
+            }, 
+            "i-be2cb875": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e6954282']", 
+                "Name": "ayatest1"
+            }, 
+            "subnet-666a8b3f": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Public Subnet"
+            }, 
+            "subnet-bfc86dda": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Sandeep PDMZ"
+            }, 
+            "vpc-af4b86ca": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Sandeep Test"
+            }, 
+            "subnet-7c0fd419": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Private subnet_sp2"
+            }, 
+            "subnet-6d0fd408": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet_sp"
+            }, 
+            "vpc-dab079bf": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Bakery"
+            }, 
+            "subnet-a8c86dcd": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Sandeep DMZ"
+            }, 
+            "i-39374ef2": {
+                "Name": "tets-", 
+                "aws:cloudformation:logical-id": "WebServerGroup", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "network_interfaces": "[u'eni-d63787b2']", 
+                "public_dns_name": "", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "aws:autoscaling:groupName": "test-ch8-WebServerGroup-XL2T29R3L0LU", 
+                "test": "test"
+            }, 
+            "vpc-6bb2690e": {
+                "is_default": "False", 
+                "Name": "Plumgrid-VPC", 
+                "aws:cloudformation:logical-id": "VPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "cidr_block": "10.20.0.0/16"
+            }, 
+            "vpc-f536ea90": {
+                "is_default": "False", 
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "myVPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "cidr_block": "10.0.0.0/16"
+            }, 
+            "subnet-b0cd37e9": {
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "cidr_block": "10.20.0.0/24", 
+                "Name": "PGManagement", 
+                "aws:cloudformation:logical-id": "Subnet1"
+            }, 
+            "subnet-78ef4d1d": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "raju-pub"
+            }, 
+            "subnet-720dee2b": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "raju-pri"
+            }, 
+            "vpc-b10ec6d4": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "raju"
+            }, 
+            "subnet-620fd407": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "Private subnet_sp"
+            }, 
+            "subnet-a088bde6": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "subnet-94c767f1": {
+                "cidr_block": "10.0.110.0/24", 
+                "Name": "DB Subnet"
+            }, 
+            "subnet-019c5764": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-21c76744": {
+                "cidr_block": "10.0.100.0/24", 
+                "Name": "Web Subnet"
+            }, 
+            "subnet-a86a8bf1": {
+                "cidr_block": "10.0.111.0/24", 
+                "Name": "DB Subnet"
+            }, 
+            "subnet-5dc76738": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public Subnet"
+            }, 
+            "subnet-b26687eb": {
+                "cidr_block": "10.0.5.0/25", 
+                "Name": "av.zone 1c"
+            }, 
+            "i-93735e51": {
+                "test": "test", 
+                "public_dns_name": "ec2-54-67-75-247.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-9891b2c0']", 
+                "Name": "Jenkins_test_chn"
+            }, 
+            "i-f4374e3f": {
+                "public_dns_name": "", 
+                "aws:cloudformation:logical-id": "WebServerInstance", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "network_interfaces": "[u'eni-e3378787']", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test"
+            }, 
+            "i-7e4f15bc": {
+                "Name": "RHOS6Compute02", 
+                "aws:cloudformation:logical-id": "RHOS6Compute02", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/aws-stack7/e2fba510-2960-11e5-a1e1-5001ff318cd2", 
+                "network_interfaces": "[u'eni-965e7bce', u'eni-955e7bcd']", 
+                "aws:cloudformation:stack-name": "aws-stack7", 
+                "public_dns_name": ""
+            }, 
+            "subnet-6247fa07": {
+                "ayatest1": "123", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "mySubnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/USWestNCali/c4583700-150a-11e5-81c3-508813d72498", 
+                "aws:cloudformation:stack-name": "USWestNCali", 
+                "cidr_block": "10.0.0.0/24"
+            }, 
+            "vpc-788c4e1d": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Splunk_vpc"
+            }, 
+            "i-40e19e8b": {
+                "public_dns_name": "ec2-54-67-13-86.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-b52d9cd1']", 
+                "Name": "ipa-client"
+            }, 
+            "i-83049f48": {
+                "public_dns_name": "ec2-52-8-149-71.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-3c845c58']", 
+                "Name": "freeipa"
+            }, 
+            "vpc-fd6db698": {
+                "is_default": "False", 
+                "aws:cloudformation:logical-id": "VPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "instance_tenancy": "default", 
+                "Application": "arn:aws:cloudformation:us-west-1:411815166437:stack/test-ch8/1c6ce600-2c9b-11e5-a2a0-50d5017048d2", 
+                "aws:cloudformation:stack-name": "test-ch8", 
+                "test": "test", 
+                "cidr_block": "12.0.0.0/16"
+            }, 
+            "subnet-96905bf3": {
+                "cidr_block": "172.16.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-4c6d8c15": {
+                "cidr_block": "10.0.101.0/24", 
+                "Name": "Web Subnet"
+            }, 
+            "subnet-8dc86de8": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Sandeep Private"
+            }, 
+            "vpc-63f20f06": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "privdns.b.example1.com"
+            }, 
+            "vpc-a5f60bc0": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "privdns.example.com"
+            }, 
+            "i-7faa88bd": {
+                "public_dns_name": "ec2-52-8-17-219.us-west-1.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-07d2f15f']", 
+                "Name": "test shell jen"
+            }, 
+            "vpc-e1cf2984": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "DefaultVPC"
+            }, 
+            "subnet-fbc62fa2": {
+                "cidr_block": "10.0.6.0/25", 
+                "Name": "Public_subnet2"
+            }
+        }
+    }, 
+    {
+        "sg-6deb3f08": "rules=[IPPermissions:tcp(22-22), IPPermissions:icmp(-1--1)]|name=launch-wizard-46|", 
+        "sg-64b70201": "rules=[IPPermissions:tcp(3306-3306)]|name=rds-launch-wizard|", 
+        "sg-b2f948d7": "rules=[IPPermissions:tcp(80-80)]|name=alfresco-staging-elb|", 
+        "sg-74ee3a11": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-0a42bc6f": "rules=[IPPermissions:tcp(22-22)]|name=batch2-sg|", 
+        "sg-87df14e2": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-39|", 
+        "sg-2ae0514f": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(3306-3306)]|name=alfresco-production-rds|", 
+        "sg-39a2145c": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-3cb17e59": "rules=[IPPermissions:tcp(22-22)]|name=myssh|", 
+        "sg-8fc70cea": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-38|", 
+        "sg-2c59a649": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(80-80)]|name=launch-wizard-7|", 
+        "sg-e27d8387": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(1024-65535), IPPermissions:tcp(80-80)]|name=launch-wizard-13|", 
+        "sg-4fef7e2a": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-3414d951": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(8140-8140), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(8443-8443), IPPermissions:tcp(443-443)]|name=launch-wizard-24|", 
+        "sg-e0fd0f85": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22)]|name=SSH-SG|", 
+        "sg-1df63d78": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-41|", 
+        "sg-dc1bacb9": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22)]|name=alfresco-staging|", 
+        "sg-9d1be5f8": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-10|", 
+        "sg-2f48b84a": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80)]|name=launch-wizard-2|", 
+        "sg-e3e61886": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(80-80)]|name=launch-wizard-8|", 
+        "sg-52c77337": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:-1(None-None)]|name=bakeryJenkins|", 
+        "sg-74900111": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-65|", 
+        "sg-73fd4a16": "rules=[IPPermissions:tcp(80-80)]|name=alfresco-dev-elb|", 
+        "sg-9a0dc4ff": "rules=[IPPermissions:tcp(18010-18010), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:-1(None-None)]|name=launch-wizard-30|", 
+        "sg-dedf27bb": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-17|", 
+        "sg-8853e1ed": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22), IPPermissions:tcp(8089-8089), IPPermissions:tcp(8000-8000), IPPermissions:tcp(443-443), IPPermissions:tcp(9997-9997)]|name=launch-wizard-51|", 
+        "sg-89f948ec": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(3306-3306)]|name=alfresco-staging-rds|", 
+        "sg-6512df00": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(8140-8140), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(8443-8443), IPPermissions:tcp(443-443)]|name=launch-wizard-25|", 
+        "sg-2625ed43": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-35|", 
+        "sg-8e60aceb": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-26|", 
+        "sg-7339f216": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-43|", 
+        "sg-65945900": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-22|", 
+        "sg-9165b9f4": "rules=[IPPermissions:tcp(22-22), IPPermissions:-1(None-None)]|name=CentOS 6 -x86_64- - with Updates-6 - 2014-09-29-AutogenByAWSMP-1|", 
+        "sg-93f047f6": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-69|", 
+        "sg-654dbc00": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-1|", 
+        "sg-311dc554": "rules=[IPPermissions:tcp(22-22), IPPermissions:-1(None-None)]|name=CentOS 6 -x86_64- - with Updates-6 - 2014-09-29-AutogenByAWSMP-2|", 
+        "sg-2f854e4a": "rules=[IPPermissions:tcp(22-22), IPPermissions:-1(None-None)]|name=launch-wizard-37|", 
+        "sg-15f63d70": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-40|", 
+        "sg-c857faad": "rules=[IPPermissions:tcp(22-22)]|name=default|", 
+        "sg-4073ce25": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(0-65535)]|name=launch-wizard-53|", 
+        "sg-3933b65c": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-55|", 
+        "sg-a839f1cd": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(22-22)]|name=launch-wizard-36|", 
+        "sg-eeea3e8b": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-3d31c358": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80)]|name=launch-wizard-5|", 
+        "sg-aca016c9": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80)]|name=amzn-raju|", 
+        "sg-09b4016c": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-59|", 
+        "sg-0a0cf46f": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-20|", 
+        "sg-daee3abf": "rules=[IPPermissions:tcp(22-22), IPPermissions:icmp(-1--1)]|name=launch-wizard-45|", 
+        "sg-cc69b5a9": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22), IPPermissions:tcp(8089-8089), IPPermissions:tcp(80-80), IPPermissions:tcp(8000-8000), IPPermissions:tcp(443-443), IPPermissions:tcp(9997-9997)]|name=splunk--sg|", 
+        "sg-993eccfc": "rules=[IPPermissions:tcp(3389-3389)]|name=RDP|", 
+        "sg-d8b11fbd": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-7cd11c19": "rules=[IPPermissions:udp(8443-8443), IPPermissions:tcp(8140-8140), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:udp(8140-8140), IPPermissions:tcp(8443-8443), IPPermissions:tcp(443-443)]|name=launch-wizard-23|", 
+        "sg-2eda244b": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(80-80)]|name=launch-wizard-9|", 
+        "sg-468e2023": "rules=[IPPermissions:-1(None-None), IPPermissions:udp(1-65535), IPPermissions:tcp(1-65535)]|name=Sophos UTM 9-9-308-AutogenByAWSMP-|", 
+        "sg-548e2031": "rules=[IPPermissions:tcp(22-22), IPPermissions:-1(None-None)]|name=launch-wizard-56|", 
+        "sg-7950e21c": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(0-65535)]|name=launch-wizard-52|", 
+        "sg-cbd60eae": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-48|", 
+        "sg-8c0c89e9": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-54|", 
+        "sg-768f4013": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(445-445), IPPermissions:udp(137-137), IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22), IPPermissions:tcp(139-139)]|name=HWSG|", 
+        "sg-34f17e51": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-63|", 
+        "sg-566e9133": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(80-80)]|name=launch-wizard-6|", 
+        "sg-4064b825": "rules=[IPPermissions:-1(None-None)]|name=CentOS 6 -x86_64- - with Updates-6 - 2014-09-29-AutogenByAWSMP-|", 
+        "sg-61c43c04": "rules=[IPPermissions:tcp(18010-18010), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:-1(None-None)]|name=launch-wizard-19|", 
+        "sg-9160acf4": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-27|", 
+        "sg-9325f6f6": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-47|", 
+        "sg-5be0513e": "rules=[IPPermissions:tcp(80-80)]|name=alfresco-production-elb|", 
+        "sg-55d12930": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-18|", 
+        "sg-a3fd4ac6": "rules=[IPPermissions:tcp(3306-3306)]|name=alfresco-dev-rds|", 
+        "sg-cd0ab9a8": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=launch-wizard-50|", 
+        "sg-46fc7123": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-62|", 
+        "sg-119c0d74": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=Ubuntu_jenkins_test_chn|", 
+        "sg-4339f226": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-44|", 
+        "sg-cc23eba9": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(21-21), IPPermissions:tcp(20-20)]|name=launch-wizard-34|", 
+        "sg-744bbb11": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80)]|name=launch-wizard-3|", 
+        "sg-aeb77ecb": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(22-22), IPPermissions:tcp(21-21)]|name=sftp-SG|", 
+        "sg-e0da6e85": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-d714d9b2": "rules=[IPPermissions:tcp(3306-3306)]|name=RDS-SG|", 
+        "sg-fe0f8f9b": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(0-65535)]|name=launch-wizard-61|", 
+        "sg-3db84b58": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(1433-1433)]|name=launch-wizard-4|", 
+        "sg-0d0ab968": "rules=[IPPermissions:tcp(4444-4444), IPPermissions:udp(443-443)]|name=Sophos UTM Manager 4-4-300-AutogenByAWSMP-|", 
+        "sg-9f28e0fa": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-33|", 
+        "sg-a91baccc": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22)]|name=alfresco-production|", 
+        "sg-14ff3671": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-29|", 
+        "sg-03910066": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-64|", 
+        "sg-4aef7e2f": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80)]|name=test-ch8-InstanceSecurityGroup-E634AMME9AK6|", 
+        "sg-a1a450c4": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-e870ac8d": "rules=[IPPermissions:tcp(22-22), IPPermissions:-1(None-None)]|name=ds-sg|", 
+        "sg-1a7c827f": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(1024-65535), IPPermissions:tcp(80-80)]|name=launch-wizard-12|", 
+        "sg-7e21d71b": "rules=[IPPermissions:tcp(22-22)]|name=ssh|", 
+        "sg-3dc47758": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-72|", 
+        "sg-5612da33": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22)]|name=launch-wizard-32|", 
+        "sg-d308c3b6": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-42|", 
+        "sg-adb77dc8": "rules=[IPPermissions:udp(1-65535), IPPermissions:tcp(1-65535)]|name=Sophos UTM 9 BYOL-9-209-AutogenByAWSMP-|", 
+        "sg-4f708e2a": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(1024-65535), IPPermissions:tcp(80-80)]|name=launch-wizard-14|", 
+        "sg-a868b4cd": "rules=[IPPermissions:tcp(22-22), IPPermissions:-1(None-None)]|name=ds-sg|", 
+        "sg-1ce96879": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-49|", 
+        "sg-6d46d108": "rules=[IPPermissions:-1(None-None)]|name=aws-stack7-SecurityGroup-R7V0K7R7I344|", 
+        "sg-852fe2e0": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(8140-8140), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(8443-8443), IPPermissions:tcp(443-443)]|name=foreman|", 
+        "sg-1970ac7c": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22), IPPermissions:tcp(8089-8089), IPPermissions:tcp(80-80), IPPermissions:tcp(8000-8000), IPPermissions:tcp(443-443), IPPermissions:tcp(9997-9997)]|name=splunksg|", 
+        "sg-d3708eb6": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22)]|name=launch-wizard-15|", 
+        "sg-e10f8f84": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(0-65535)]|name=launch-wizard-60|", 
+        "sg-ce38f8ab": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-21|", 
+        "sg-92a214f7": "rules=[IPPermissions:udp(1-65535), IPPermissions:tcp(1-65535)]|name=Sophos UTM 9 -BYOL--9-308-AutogenByAWSMP-|", 
+        "sg-9147d0f4": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-4eef7e2b": "rules=[IPPermissions:tcp(80-80)]|name=test-ch8-LoadBalancerSecurityGroup-LPN4JD4RN09Y|", 
+        "sg-27cf0642": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-28|", 
+        "sg-c61ed6a3": "rules=[IPPermissions:tcp(3306-3306), IPPermissions:tcp(8080-8080), IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=launch-wizard-31|", 
+        "sg-7eff721b": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-b112ecd4": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(1024-65535), IPPermissions:tcp(80-80)]|name=launch-wizard-11|", 
+        "sg-72a31f17": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(0-65535)]|name=Splunk SG|", 
+        "sg-8b388bee": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=ipa client|", 
+        "sg-24b40141": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-57|", 
+        "sg-39b4015c": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-58|", 
+        "sg-2bae574e": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(80-80)]|name=launch-wizard-16|", 
+        "sg-32fd4a57": "rules=[IPPermissions:tcp(8080-8080), IPPermissions:-1(None-None)]|name=alfresco-dev|", 
+        "sg-fa34ca9f": "rules=[IPPermissions:tcp(22-22)]|name=Batch-Process-Shravan|"
+    }
+]

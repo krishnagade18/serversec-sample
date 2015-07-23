@@ -1,0 +1,10 @@
+#SubnetRouteTableAssociation,subnetrtaname,DependsOn,SubnetId,RouteTableId
+SubnetRouteTableAssociation,subnetrtaname1,,subnet1,routetable1
+#SecurityGroup,sgname,DependsOn,VpcId,GroupDescription
+SecurityGroup,SecurityGroup1,,ref:VPC,Allow All Traffic
+#SecurityGroupEgress, sgegressname, GroupId, CidrIp | DestinationSecurityGroupId, FromPort, ToPort
+SecurityGroupEgress,SGEgress1,,SecurityGroup1,0.0.0.0/0,1,65535
+SecurityGroupEgress,SGEgress2,,SecurityGroup2,destinationsg,1,65535
+#SecurityGroupIngress, sgingressname, GroupId, CidrIp | SourceSecurityGroupId, FromPort, ToPort
+SecurityGroupIngress,SGingress1,,SecurityGroup1,0.0.0.0/0,1,65535
+SecurityGroupIngress,SGingress2,,SecurityGroup2,sourcesg,1,65535

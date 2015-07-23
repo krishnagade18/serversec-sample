@@ -1,0 +1,11 @@
+"{{data.Name}}" : {
+    "Type" : "AWS::EC2::VPCGatewayAttachment",
+    "Properties" : {
+      	"VpcId" : {{data.VpcId|inline}},
+	      	{% if data.GatewayType == 'vpn' %}
+	       		"VpnGatewayId":{{data.GatewayId|inline}}
+	      	{% else %}
+	       		"InternetGatewayId":{{data.GatewayId|inline}}
+	      	{% endif %}
+    }
+}

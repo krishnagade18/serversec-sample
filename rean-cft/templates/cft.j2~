@@ -1,0 +1,53 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+
+    "Description": "Auto Generated CFT",
+
+    "Resources": {
+        {% for resource in resources %}
+            {% for data in csv_data[resource] %}
+                {% include "%s.j2" %resource.lower() %}
+                {% if not loop.last %}
+                    ,
+                {% endif %}
+            {% endfor %}
+            {% if not loop.last %}
+                ,
+            {% endif %}
+        {% endfor %}
+    },
+	"EC2" : {
+			"Type" : "AWS::EC2::Instance",
+			"Properties" : {
+				"KeyName" : "awslinux",
+				"InstanceType" : "t2.micro",
+				"Tags" : [{
+						"Key" : "Name",
+						"Value" : "EC2"
+					}
+				],
+				"ImageId" : "ami-1ecae776",
+				"SubnetId" : {
+					"Ref" : "DBSN"
+				},
+				"SecurityGroupIds" : [{
+						"Ref" : "SecurityGroup"
+					}
+				]
+
+			}
+		}
+	},
+    "Outputs": {
+        "VpcId": {
+            "Value": {
+                "Ref": "MYVPC"
+            }
+        },
+		"InstanceId" : {
+			"Value" : {
+				"Ref" : "EC2"
+			}
+		}
+    }
+}

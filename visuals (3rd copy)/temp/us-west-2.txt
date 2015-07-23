@@ -1,0 +1,116 @@
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-3777fc52</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>172.16.0.0/16</td></tr><tr><td><b>Name</td><td>Sai_VPC</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-3a1fb65f</td></tr><tr><td><b>Name</td><td>Sai-VPC</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-35e28050</td></tr><tr><td><b>cidr_block</td><td>172.16.0.0/24</td></tr><tr><td><b>Name</td><td>Public_Sai_VPC</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-f142d394</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-8b9b05ee</td></tr><tr><td><b>Name</td><td>Pub_RT_Sai_VPC</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-4195d1b6</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-b3751bd4']</td></tr><tr><td><b>Name</td><td>bastion-test-sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-db3dd4bf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-be83ff49</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-e5593882']</td></tr><tr><td><b>Name</td><td>test_sophos_Sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-22fd1246</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-9f38b8e8</td></tr><tr><td><b>cidr_block</td><td>172.16.1.0/24</td></tr><tr><td><b>Name</td><td>Private_Sai_VPC</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-f142d394</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-d39b05b6</td></tr><tr><td><b>Name</td><td>Pri_RT_Sai_VPC</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-3b7f48cd</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-563ec51f']</td></tr><tr><td><b>Name</td><td>test-VPN-Sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-6afe110e</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-b58411d0</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/16</td></tr><tr><td><b>Name</td><td>AD_AWS_Sophos</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-045bf361</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-4d1b943a</td></tr><tr><td><b>cidr_block</td><td>10.0.4.0/24</td></tr><tr><td><b>Name</td><td>private_subnet1_moosa</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-ff4ddd9a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-bfbd24da</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-451d16b3</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-e6538eaf']</td></tr><tr><td><b>Name</td><td>Web-Instance3-moosa</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebc32a8f</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-86b0d9e3</td></tr><tr><td><b>cidr_block</td><td>10.0.3.0/24</td></tr><tr><td><b>Name</td><td>public_subnet2_moosa</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-ff4ddd9a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-3a0953cd</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-bfecacd8']</td></tr><tr><td><b>Name</td><td>Web-Instance4-moosa</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-359c6f51</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-2f9af74a</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/24</td></tr><tr><td><b>Name</td><td>Public subnet</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-ff4ddd9a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-bebd24db</td></tr><tr><td><b>routes</td><td>[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-316c28c6</td></tr><tr><td><b>public_dns_name</td><td>ec2-54-68-4-38.us-west-2.compute.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-bf1779d8']</td></tr><tr><td><b>Name</td><td>Reancloud_Windows</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebc32a8f</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-95aaad62</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-10-157-198.us-west-2.compute.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-e7defe80']</td></tr><tr><td><b>Name</td><td>reancloud_Sophos02</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebc32a8f</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-69f1b49e</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-bbf897dc']</td></tr><tr><td><b>Name</td><td>reancloud_Sophos2</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebc32a8f</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-026125f5</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-25-69-43.us-west-2.compute.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-20177947']</td></tr><tr><td><b>Name</td><td>Reancloud_Linux</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebc32a8f</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-381b944f</td></tr><tr><td><b>cidr_block</td><td>10.0.2.0/24</td></tr><tr><td><b>Name</td><td>public_subnet1_moosa</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-ff4ddd9a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-8a2a217c</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-30449979']</td></tr><tr><td><b>Name</td><td>SophosUTM1-Moosa</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebc32a8f</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-6db3da08</td></tr><tr><td><b>cidr_block</td><td>10.0.5.0/24</td></tr><tr><td><b>Name</td><td>private_subnet2_moosa</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-ff4ddd9a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-bebd24db</td></tr><tr><td><b>routes</td><td>[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-e36cfa86</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/16</td></tr><tr><td><b>Name</td><td>netapp_vpc</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-5d7ed438</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-efd7a38a</td></tr><tr><td><b>cidr_block</td><td>10.0.1.0/24</td></tr><tr><td><b>Name</td><td>private_netapp_subnet</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-9dee73f8</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-7df56f18</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-1e0c627b</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/24</td></tr><tr><td><b>Name</td><td>Public subnet</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-9dee73f8</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-7df56f18</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-96bdeb61</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-084a346f']</td></tr><tr><td><b>Name</td><td>Test_instance3</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-1d3dca79</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-c8d7a3ad</td></tr><tr><td><b>cidr_block</td><td>10.0.2.0/24</td></tr><tr><td><b>Name</td><td>public_netapp_subnet</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-9dee73f8</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-f6419693</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/16</td></tr><tr><td><b>Name</td><td>Cvenkata</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-41cc6e24</td></tr><tr><td><b>cidr_block</td><td>10.0.2.0/24</td></tr><tr><td><b>Name</td><td>Cvenkata Private1</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-1a73a77f</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-c931e0ac</td></tr><tr><td><b>Owner</td><td>Venkata</td></tr><tr><td><b>Name</td><td>Main Route</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-9f47a6c6</td></tr><tr><td><b>cidr_block</td><td>10.0.4.0/24</td></tr><tr><td><b>Name</td><td>Cvenkata Private3</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-1a73a77f</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-c931e0ac</td></tr><tr><td><b>Owner</td><td>Venkata</td></tr><tr><td><b>Name</td><td>Main Route</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-32945445</td></tr><tr><td><b>cidr_block</td><td>10.0.3.0/24</td></tr><tr><td><b>Name</td><td>Cvenkata Private2</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-1a73a77f</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-c931e0ac</td></tr><tr><td><b>Owner</td><td>Venkata</td></tr><tr><td><b>Name</td><td>Main Route</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-95e121e2</td></tr><tr><td><b>cidr_block</td><td>10.0.5.0/24</td></tr><tr><td><b>Name</td><td>Cvenkata Private 5</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-1a73a77f</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-c931e0ac</td></tr><tr><td><b>Owner</td><td>Venkata</td></tr><tr><td><b>Name</td><td>Main Route</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-c98a75ac</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>True</td></tr><tr><td><b>cidr_block</td><td>172.31.0.0/16</td></tr><tr><td><b>Name</td><td>Amazon VPC</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-e6729a83</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-8015dce5</td></tr><tr><td><b>cidr_block</td><td>172.31.32.0/20</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-c4748aa1</td></tr><tr><td><b>Customer</td><td>101058</td></tr><tr><td><b>Run</td><td>7</td></tr><tr><td><b>Name</td><td>R7:101058</td></tr><tr><td><b>Setup</td><td>CloudVelox</td></tr><tr><td><b>Site</td><td>e6520d50-0a55-11e5-9f3a-0200b7405bdf</td></tr><tr><td><b>RunType</td><td>MIGRATION</td></tr><tr><td><b>Cloner</td><td>54.68.244.112</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-60592597</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-10026377']</td></tr><tr><td><b>Name</td><td>test_puppet_c1</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-f01e0907</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-4c32042b']</td></tr><tr><td><b>Name</td><td>app-a</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-8b68a9ef</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-27ca26d0</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-66180202']</td></tr><tr><td><b>Name</td><td>testingpuppet</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-e8157b1f</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-2941d34e']</td></tr><tr><td><b>Name</td><td>Cypher-baseline-instance</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-2f74974b</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-f3fd1a04</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-b7415dd3']</td></tr><tr><td><b>Name</td><td>op-vm</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-cf4342aa</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-6846a79e</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-194a4b7e']</td></tr><tr><td><b>Name</td><td>praveen</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-9e245069</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-e86af38f']</td></tr><tr><td><b>Name</td><td>Foreman_puppet</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-b3779645</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-25-63-142.us-west-2.compute.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-47babc20']</td></tr><tr><td><b>Name</td><td>ha</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-7b010f3d</td></tr><tr><td><b>cidr_block</td><td>172.31.0.0/20</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-c4748aa1</td></tr><tr><td><b>Customer</td><td>101058</td></tr><tr><td><b>Run</td><td>7</td></tr><tr><td><b>Name</td><td>R7:101058</td></tr><tr><td><b>Setup</td><td>CloudVelox</td></tr><tr><td><b>Site</td><td>e6520d50-0a55-11e5-9f3a-0200b7405bdf</td></tr><tr><td><b>RunType</td><td>MIGRATION</td></tr><tr><td><b>Cloner</td><td>54.68.244.112</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-1a5513d3</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-6f6bb037']</td></tr><tr><td><b>Name</td><td>splunkserver4puppet</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-3eb6f1f7</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-94e03bcc']</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr><tr><td><b>Name</td><td>pupwinagent2</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-f38df13a</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-44e6361c']</td></tr><tr><td><b>Name</td><td>pupwinagent1 -  DONOTDELETE</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-8f8df146</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-45e6361d']</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr><tr><td><b>Name</td><td>pupwinagent2</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-03336cca</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-21863079']</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr><tr><td><b>Name</td><td>pupwinagent3</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-bd4f3674</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-5ffd2007']</td></tr><tr><td><b>Name</td><td>pupwinagent2</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-af8866d8</td></tr><tr><td><b>cidr_block</td><td>172.31.16.0/20</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-c4748aa1</td></tr><tr><td><b>Customer</td><td>101058</td></tr><tr><td><b>Run</td><td>7</td></tr><tr><td><b>Name</td><td>R7:101058</td></tr><tr><td><b>Setup</td><td>CloudVelox</td></tr><tr><td><b>Site</td><td>e6520d50-0a55-11e5-9f3a-0200b7405bdf</td></tr><tr><td><b>RunType</td><td>MIGRATION</td></tr><tr><td><b>Cloner</td><td>54.68.244.112</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-ef70bf26</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-27-226-72.us-west-2.compute.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-fa8208b3']</td></tr><tr><td><b>Name</td><td></td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-50488734</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-b12af847</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-f7d5af81']</td></tr><tr><td><b>Name</td><td>puppetmaster-test - DONOTDELETE</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-03666cf5</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-c812ce81']</td></tr><tr><td><b>Name</td><td>rit_test</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-e2dd2e86</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-e2d10e14</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-f82f6b8e']</td></tr><tr><td><b>Name</td><td>puppetmaster</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-4343eab5</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-9f3a71e9']</td></tr><tr><td><b>Name</td><td>splunkuniversalforwarder</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-bae1dcdf</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-a1f6df57</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-a13ac6e8']</td></tr><tr><td><b>Name</td><td>test-CloudVelox</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-7814371d</td></tr></html>

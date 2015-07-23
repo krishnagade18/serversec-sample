@@ -1,0 +1,1103 @@
+[
+    {
+        "vpc-3777fc52": [
+            [
+                "igw-3a1fb65f,Name=Sai-VPC|"
+            ], 
+            {
+                "subnet-35e28050": [
+                    [
+                        "acl-f142d394,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-8b9b05ee,Name=Pub_RT_Sai_VPC|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-4195d1b6": [
+                            "sg-db3dd4bf"
+                        ], 
+                        "i-be83ff49": [
+                            "sg-22fd1246"
+                        ]
+                    }
+                ], 
+                "subnet-9f38b8e8": [
+                    [
+                        "acl-f142d394,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-d39b05b6,Name=Pri_RT_Sai_VPC|routes=[Route:172.16.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-3b7f48cd": [
+                            "sg-6afe110e"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "vpc-b58411d0": [
+            [
+                "igw-045bf361,"
+            ], 
+            {
+                "subnet-4d1b943a": [
+                    [
+                        "acl-ff4ddd9a,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-bfbd24da,routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-451d16b3": [
+                            "sg-ebc32a8f"
+                        ]
+                    }
+                ], 
+                "subnet-86b0d9e3": [
+                    [
+                        "acl-ff4ddd9a,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-3a0953cd": [
+                            "sg-359c6f51"
+                        ]
+                    }
+                ], 
+                "subnet-2f9af74a": [
+                    [
+                        "acl-ff4ddd9a,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-bebd24db,routes=[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-69f1b49e": [
+                            "sg-ebc32a8f"
+                        ], 
+                        "i-95aaad62": [
+                            "sg-ebc32a8f"
+                        ], 
+                        "i-316c28c6": [
+                            "sg-ebc32a8f"
+                        ], 
+                        "i-026125f5": [
+                            "sg-ebc32a8f"
+                        ]
+                    }
+                ], 
+                "subnet-381b944f": [
+                    [
+                        "acl-ff4ddd9a,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-8a2a217c": [
+                            "sg-ebc32a8f"
+                        ]
+                    }
+                ], 
+                "subnet-6db3da08": [
+                    [
+                        "acl-ff4ddd9a,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-bebd24db,routes=[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-f6419693": [
+            [], 
+            {
+                "subnet-41cc6e24": [
+                    [
+                        "acl-1a73a77f,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-c931e0ac,Owner=Venkata|Name=Main Route|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-95e121e2": [
+                    [
+                        "acl-1a73a77f,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-c931e0ac,Owner=Venkata|Name=Main Route|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-9f47a6c6": [
+                    [
+                        "acl-1a73a77f,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-c931e0ac,Owner=Venkata|Name=Main Route|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-32945445": [
+                    [
+                        "acl-1a73a77f,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-c931e0ac,Owner=Venkata|Name=Main Route|routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-e36cfa86": [
+            [
+                "igw-5d7ed438,"
+            ], 
+            {
+                "subnet-efd7a38a": [
+                    [
+                        "acl-9dee73f8,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-7df56f18,routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-1e0c627b": [
+                    [
+                        "acl-9dee73f8,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|", 
+                        "rtb-7df56f18,routes=[Route:10.0.0.0/16   Route:0.0.0.0/0]|"
+                    ], 
+                    {
+                        "i-96bdeb61": [
+                            "sg-1d3dca79"
+                        ]
+                    }
+                ], 
+                "subnet-c8d7a3ad": [
+                    [
+                        "acl-9dee73f8,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ]
+            }
+        ], 
+        "vpc-c98a75ac": [
+            [
+                "igw-e6729a83,"
+            ], 
+            {
+                "subnet-8015dce5": [
+                    [
+                        "acl-c4748aa1,Customer=101058|Run=7|Name=R7:101058|Setup=CloudVelox|Site=e6520d50-0a55-11e5-9f3a-0200b7405bdf|RunType=MIGRATION|Cloner=54.68.244.112|network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-60592597": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-f01e0907": [
+                            "sg-8b68a9ef"
+                        ], 
+                        "i-27ca26d0": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-e8157b1f": [
+                            "sg-2f74974b"
+                        ], 
+                        "i-f3fd1a04": [
+                            "sg-cf4342aa"
+                        ], 
+                        "i-6846a79e": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-9e245069": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-5e14f6a8": [
+                            "sg-cc11dfa8"
+                        ]
+                    }
+                ], 
+                "subnet-7b010f3d": [
+                    [
+                        "acl-c4748aa1,Customer=101058|Run=7|Name=R7:101058|Setup=CloudVelox|Site=e6520d50-0a55-11e5-9f3a-0200b7405bdf|RunType=MIGRATION|Cloner=54.68.244.112|network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-1a5513d3": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-3eb6f1f7": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-f38df13a": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-8f8df146": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-03336cca": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-bd4f3674": [
+                            "sg-bae1dcdf"
+                        ]
+                    }
+                ], 
+                "subnet-af8866d8": [
+                    [
+                        "acl-c4748aa1,Customer=101058|Run=7|Name=R7:101058|Setup=CloudVelox|Site=e6520d50-0a55-11e5-9f3a-0200b7405bdf|RunType=MIGRATION|Cloner=54.68.244.112|network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-ef70bf26": [
+                            "sg-50488734"
+                        ], 
+                        "i-b12af847": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-03666cf5": [
+                            "sg-e2dd2e86"
+                        ], 
+                        "i-e2d10e14": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-4343eab5": [
+                            "sg-bae1dcdf"
+                        ], 
+                        "i-a1f6df57": [
+                            "sg-7814371d"
+                        ], 
+                        "i-3b8048f2": [
+                            "sg-bae1dcdf"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "subnet": {
+            "i-3b8048f2": {
+                "public_dns_name": "ec2-54-68-140-216.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-9835a1d1']", 
+                "Name": "dmr-ins"
+            }, 
+            "subnet-35e28050": {
+                "cidr_block": "172.16.0.0/24", 
+                "Name": "Public_Sai_VPC"
+            }, 
+            "i-451d16b3": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e6538eaf']", 
+                "Name": "Web-Instance3-moosa"
+            }, 
+            "subnet-95e121e2": {
+                "cidr_block": "10.0.5.0/24", 
+                "Name": "Cvenkata Private 5"
+            }, 
+            "subnet-8015dce5": {
+                "cidr_block": "172.31.32.0/20"
+            }, 
+            "i-be83ff49": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e5593882']", 
+                "Name": "test_sophos_Sai"
+            }, 
+            "i-6846a79e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-194a4b7e']", 
+                "Name": "praveen"
+            }, 
+            "subnet-1e0c627b": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-9f38b8e8": {
+                "cidr_block": "172.16.1.0/24", 
+                "Name": "Private_Sai_VPC"
+            }, 
+            "subnet-41cc6e24": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Cvenkata Private1"
+            }, 
+            "i-3a0953cd": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-bfecacd8']", 
+                "Name": "Web-Instance4-moosa"
+            }, 
+            "i-4195d1b6": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-b3751bd4']", 
+                "Name": "bastion-test-sai"
+            }, 
+            "i-95aaad62": {
+                "public_dns_name": "ec2-52-10-157-198.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-e7defe80']", 
+                "Name": "reancloud_Sophos02"
+            }, 
+            "subnet-32945445": {
+                "cidr_block": "10.0.3.0/24", 
+                "Name": "Cvenkata Private2"
+            }, 
+            "vpc-3777fc52": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "Sai_VPC"
+            }, 
+            "subnet-9f47a6c6": {
+                "cidr_block": "10.0.4.0/24", 
+                "Name": "Cvenkata Private3"
+            }, 
+            "i-b12af847": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-f7d5af81']", 
+                "Name": "puppetmaster-test - DONOTDELETE", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-1a5513d3": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-6f6bb037']", 
+                "Name": "splunkserver4puppet", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-381b944f": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "public_subnet1_moosa"
+            }, 
+            "vpc-c98a75ac": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "Amazon VPC"
+            }, 
+            "i-9e245069": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e86af38f']", 
+                "Name": "Foreman_puppet"
+            }, 
+            "subnet-86b0d9e3": {
+                "cidr_block": "10.0.3.0/24", 
+                "Name": "public_subnet2_moosa"
+            }, 
+            "i-026125f5": {
+                "public_dns_name": "ec2-52-25-69-43.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-20177947']", 
+                "Name": "Reancloud_Linux"
+            }, 
+            "i-f38df13a": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-44e6361c']", 
+                "Name": "pupwinagent1 -  DONOTDELETE", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-8f8df146": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-45e6361d']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent2"
+            }, 
+            "subnet-4d1b943a": {
+                "cidr_block": "10.0.4.0/24", 
+                "Name": "private_subnet1_moosa"
+            }, 
+            "vpc-b58411d0": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "AD_AWS_Sophos"
+            }, 
+            "i-03336cca": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-21863079']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent3"
+            }, 
+            "subnet-af8866d8": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "i-ef70bf26": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-fa8208b3']", 
+                "Name": ""
+            }, 
+            "i-316c28c6": {
+                "public_dns_name": "ec2-54-68-4-38.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-bf1779d8']", 
+                "Name": "Reancloud_Windows"
+            }, 
+            "i-f01e0907": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-4c32042b']", 
+                "Name": "app-a"
+            }, 
+            "i-27ca26d0": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-66180202']", 
+                "Name": "testingpuppet", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-e8157b1f": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-2941d34e']", 
+                "Name": "Cypher-baseline-instance"
+            }, 
+            "i-f3fd1a04": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-b7415dd3']", 
+                "Name": "op-vm"
+            }, 
+            "i-3eb6f1f7": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-94e03bcc']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent2"
+            }, 
+            "i-4343eab5": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-9f3a71e9']", 
+                "Name": "splunkuniversalforwarder", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-5e14f6a8": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-a9c9cace']", 
+                "Name": "Rundeck(do not terminate)"
+            }, 
+            "i-a1f6df57": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-a13ac6e8']", 
+                "Name": "test-CloudVelox"
+            }, 
+            "vpc-f6419693": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Cvenkata"
+            }, 
+            "subnet-7b010f3d": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "i-60592597": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-10026377']", 
+                "Name": "test_puppet_c1"
+            }, 
+            "i-69f1b49e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-bbf897dc']", 
+                "Name": "reancloud_Sophos2"
+            }, 
+            "vpc-e36cfa86": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "netapp_vpc"
+            }, 
+            "subnet-6db3da08": {
+                "cidr_block": "10.0.5.0/24", 
+                "Name": "private_subnet2_moosa"
+            }, 
+            "i-03666cf5": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-c812ce81']", 
+                "Name": "rit_test"
+            }, 
+            "i-3b7f48cd": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-563ec51f']", 
+                "Name": "test-VPN-Sai"
+            }, 
+            "subnet-efd7a38a": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "private_netapp_subnet"
+            }, 
+            "i-e2d10e14": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-f82f6b8e']", 
+                "Name": "puppetmaster", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-8a2a217c": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-30449979']", 
+                "Name": "SophosUTM1-Moosa"
+            }, 
+            "i-96bdeb61": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-084a346f']", 
+                "Name": "Test_instance3"
+            }, 
+            "subnet-c8d7a3ad": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "public_netapp_subnet"
+            }, 
+            "subnet-2f9af74a": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "i-bd4f3674": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-5ffd2007']", 
+                "Name": "pupwinagent2", 
+                "DO_NOT_TERMINATE": "YES"
+            }
+        }, 
+        "ec2": {
+            "i-3b8048f2": {
+                "public_dns_name": "ec2-54-68-140-216.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-9835a1d1']", 
+                "Name": "dmr-ins"
+            }, 
+            "subnet-35e28050": {
+                "cidr_block": "172.16.0.0/24", 
+                "Name": "Public_Sai_VPC"
+            }, 
+            "i-451d16b3": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e6538eaf']", 
+                "Name": "Web-Instance3-moosa"
+            }, 
+            "subnet-95e121e2": {
+                "cidr_block": "10.0.5.0/24", 
+                "Name": "Cvenkata Private 5"
+            }, 
+            "subnet-8015dce5": {
+                "cidr_block": "172.31.32.0/20"
+            }, 
+            "i-be83ff49": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e5593882']", 
+                "Name": "test_sophos_Sai"
+            }, 
+            "i-6846a79e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-194a4b7e']", 
+                "Name": "praveen"
+            }, 
+            "subnet-1e0c627b": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-9f38b8e8": {
+                "cidr_block": "172.16.1.0/24", 
+                "Name": "Private_Sai_VPC"
+            }, 
+            "subnet-41cc6e24": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Cvenkata Private1"
+            }, 
+            "i-3a0953cd": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-bfecacd8']", 
+                "Name": "Web-Instance4-moosa"
+            }, 
+            "i-4195d1b6": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-b3751bd4']", 
+                "Name": "bastion-test-sai"
+            }, 
+            "i-95aaad62": {
+                "public_dns_name": "ec2-52-10-157-198.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-e7defe80']", 
+                "Name": "reancloud_Sophos02"
+            }, 
+            "subnet-32945445": {
+                "cidr_block": "10.0.3.0/24", 
+                "Name": "Cvenkata Private2"
+            }, 
+            "vpc-3777fc52": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "Sai_VPC"
+            }, 
+            "subnet-9f47a6c6": {
+                "cidr_block": "10.0.4.0/24", 
+                "Name": "Cvenkata Private3"
+            }, 
+            "i-b12af847": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-f7d5af81']", 
+                "Name": "puppetmaster-test - DONOTDELETE", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-1a5513d3": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-6f6bb037']", 
+                "Name": "splunkserver4puppet", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-381b944f": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "public_subnet1_moosa"
+            }, 
+            "vpc-c98a75ac": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "Amazon VPC"
+            }, 
+            "i-9e245069": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e86af38f']", 
+                "Name": "Foreman_puppet"
+            }, 
+            "subnet-86b0d9e3": {
+                "cidr_block": "10.0.3.0/24", 
+                "Name": "public_subnet2_moosa"
+            }, 
+            "i-026125f5": {
+                "public_dns_name": "ec2-52-25-69-43.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-20177947']", 
+                "Name": "Reancloud_Linux"
+            }, 
+            "i-f38df13a": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-44e6361c']", 
+                "Name": "pupwinagent1 -  DONOTDELETE", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-8f8df146": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-45e6361d']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent2"
+            }, 
+            "subnet-4d1b943a": {
+                "cidr_block": "10.0.4.0/24", 
+                "Name": "private_subnet1_moosa"
+            }, 
+            "vpc-b58411d0": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "AD_AWS_Sophos"
+            }, 
+            "i-03336cca": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-21863079']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent3"
+            }, 
+            "subnet-af8866d8": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "i-ef70bf26": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-fa8208b3']", 
+                "Name": ""
+            }, 
+            "i-316c28c6": {
+                "public_dns_name": "ec2-54-68-4-38.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-bf1779d8']", 
+                "Name": "Reancloud_Windows"
+            }, 
+            "i-f01e0907": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-4c32042b']", 
+                "Name": "app-a"
+            }, 
+            "i-27ca26d0": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-66180202']", 
+                "Name": "testingpuppet", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-e8157b1f": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-2941d34e']", 
+                "Name": "Cypher-baseline-instance"
+            }, 
+            "i-f3fd1a04": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-b7415dd3']", 
+                "Name": "op-vm"
+            }, 
+            "i-3eb6f1f7": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-94e03bcc']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent2"
+            }, 
+            "i-4343eab5": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-9f3a71e9']", 
+                "Name": "splunkuniversalforwarder", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-5e14f6a8": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-a9c9cace']", 
+                "Name": "Rundeck(do not terminate)"
+            }, 
+            "i-a1f6df57": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-a13ac6e8']", 
+                "Name": "test-CloudVelox"
+            }, 
+            "vpc-f6419693": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Cvenkata"
+            }, 
+            "subnet-7b010f3d": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "i-60592597": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-10026377']", 
+                "Name": "test_puppet_c1"
+            }, 
+            "i-69f1b49e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-bbf897dc']", 
+                "Name": "reancloud_Sophos2"
+            }, 
+            "vpc-e36cfa86": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "netapp_vpc"
+            }, 
+            "subnet-6db3da08": {
+                "cidr_block": "10.0.5.0/24", 
+                "Name": "private_subnet2_moosa"
+            }, 
+            "i-03666cf5": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-c812ce81']", 
+                "Name": "rit_test"
+            }, 
+            "i-3b7f48cd": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-563ec51f']", 
+                "Name": "test-VPN-Sai"
+            }, 
+            "subnet-efd7a38a": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "private_netapp_subnet"
+            }, 
+            "i-e2d10e14": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-f82f6b8e']", 
+                "Name": "puppetmaster", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-8a2a217c": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-30449979']", 
+                "Name": "SophosUTM1-Moosa"
+            }, 
+            "i-96bdeb61": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-084a346f']", 
+                "Name": "Test_instance3"
+            }, 
+            "subnet-c8d7a3ad": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "public_netapp_subnet"
+            }, 
+            "subnet-2f9af74a": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "i-bd4f3674": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-5ffd2007']", 
+                "Name": "pupwinagent2", 
+                "DO_NOT_TERMINATE": "YES"
+            }
+        }, 
+        "vpc": {
+            "i-3b8048f2": {
+                "public_dns_name": "ec2-54-68-140-216.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-9835a1d1']", 
+                "Name": "dmr-ins"
+            }, 
+            "subnet-35e28050": {
+                "cidr_block": "172.16.0.0/24", 
+                "Name": "Public_Sai_VPC"
+            }, 
+            "i-451d16b3": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e6538eaf']", 
+                "Name": "Web-Instance3-moosa"
+            }, 
+            "subnet-95e121e2": {
+                "cidr_block": "10.0.5.0/24", 
+                "Name": "Cvenkata Private 5"
+            }, 
+            "subnet-8015dce5": {
+                "cidr_block": "172.31.32.0/20"
+            }, 
+            "i-be83ff49": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e5593882']", 
+                "Name": "test_sophos_Sai"
+            }, 
+            "i-6846a79e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-194a4b7e']", 
+                "Name": "praveen"
+            }, 
+            "subnet-1e0c627b": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "subnet-9f38b8e8": {
+                "cidr_block": "172.16.1.0/24", 
+                "Name": "Private_Sai_VPC"
+            }, 
+            "subnet-41cc6e24": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "Cvenkata Private1"
+            }, 
+            "i-3a0953cd": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-bfecacd8']", 
+                "Name": "Web-Instance4-moosa"
+            }, 
+            "i-4195d1b6": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-b3751bd4']", 
+                "Name": "bastion-test-sai"
+            }, 
+            "i-95aaad62": {
+                "public_dns_name": "ec2-52-10-157-198.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-e7defe80']", 
+                "Name": "reancloud_Sophos02"
+            }, 
+            "subnet-32945445": {
+                "cidr_block": "10.0.3.0/24", 
+                "Name": "Cvenkata Private2"
+            }, 
+            "vpc-3777fc52": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "172.16.0.0/16", 
+                "Name": "Sai_VPC"
+            }, 
+            "subnet-9f47a6c6": {
+                "cidr_block": "10.0.4.0/24", 
+                "Name": "Cvenkata Private3"
+            }, 
+            "i-b12af847": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-f7d5af81']", 
+                "Name": "puppetmaster-test - DONOTDELETE", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-1a5513d3": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-6f6bb037']", 
+                "Name": "splunkserver4puppet", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "subnet-381b944f": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "public_subnet1_moosa"
+            }, 
+            "vpc-c98a75ac": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16", 
+                "Name": "Amazon VPC"
+            }, 
+            "i-9e245069": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-e86af38f']", 
+                "Name": "Foreman_puppet"
+            }, 
+            "subnet-86b0d9e3": {
+                "cidr_block": "10.0.3.0/24", 
+                "Name": "public_subnet2_moosa"
+            }, 
+            "i-026125f5": {
+                "public_dns_name": "ec2-52-25-69-43.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-20177947']", 
+                "Name": "Reancloud_Linux"
+            }, 
+            "i-f38df13a": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-44e6361c']", 
+                "Name": "pupwinagent1 -  DONOTDELETE", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-8f8df146": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-45e6361d']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent2"
+            }, 
+            "subnet-4d1b943a": {
+                "cidr_block": "10.0.4.0/24", 
+                "Name": "private_subnet1_moosa"
+            }, 
+            "vpc-b58411d0": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "AD_AWS_Sophos"
+            }, 
+            "i-03336cca": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-21863079']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent3"
+            }, 
+            "subnet-af8866d8": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "i-ef70bf26": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-fa8208b3']", 
+                "Name": ""
+            }, 
+            "i-316c28c6": {
+                "public_dns_name": "ec2-54-68-4-38.us-west-2.compute.amazonaws.com", 
+                "network_interfaces": "[u'eni-bf1779d8']", 
+                "Name": "Reancloud_Windows"
+            }, 
+            "i-f01e0907": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-4c32042b']", 
+                "Name": "app-a"
+            }, 
+            "i-27ca26d0": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-66180202']", 
+                "Name": "testingpuppet", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-e8157b1f": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-2941d34e']", 
+                "Name": "Cypher-baseline-instance"
+            }, 
+            "i-f3fd1a04": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-b7415dd3']", 
+                "Name": "op-vm"
+            }, 
+            "i-3eb6f1f7": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-94e03bcc']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Name": "pupwinagent2"
+            }, 
+            "i-4343eab5": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-9f3a71e9']", 
+                "Name": "splunkuniversalforwarder", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-5e14f6a8": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-a9c9cace']", 
+                "Name": "Rundeck(do not terminate)"
+            }, 
+            "i-a1f6df57": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-a13ac6e8']", 
+                "Name": "test-CloudVelox"
+            }, 
+            "vpc-f6419693": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "Cvenkata"
+            }, 
+            "subnet-7b010f3d": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "i-60592597": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-10026377']", 
+                "Name": "test_puppet_c1"
+            }, 
+            "i-69f1b49e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-bbf897dc']", 
+                "Name": "reancloud_Sophos2"
+            }, 
+            "vpc-e36cfa86": {
+                "instance_tenancy": "default", 
+                "is_default": "False", 
+                "cidr_block": "10.0.0.0/16", 
+                "Name": "netapp_vpc"
+            }, 
+            "subnet-6db3da08": {
+                "cidr_block": "10.0.5.0/24", 
+                "Name": "private_subnet2_moosa"
+            }, 
+            "i-03666cf5": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-c812ce81']", 
+                "Name": "rit_test"
+            }, 
+            "i-3b7f48cd": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-563ec51f']", 
+                "Name": "test-VPN-Sai"
+            }, 
+            "subnet-efd7a38a": {
+                "cidr_block": "10.0.1.0/24", 
+                "Name": "private_netapp_subnet"
+            }, 
+            "i-e2d10e14": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-f82f6b8e']", 
+                "Name": "puppetmaster", 
+                "DO_NOT_TERMINATE": "YES"
+            }, 
+            "i-8a2a217c": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-30449979']", 
+                "Name": "SophosUTM1-Moosa"
+            }, 
+            "i-96bdeb61": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-084a346f']", 
+                "Name": "Test_instance3"
+            }, 
+            "subnet-c8d7a3ad": {
+                "cidr_block": "10.0.2.0/24", 
+                "Name": "public_netapp_subnet"
+            }, 
+            "subnet-2f9af74a": {
+                "cidr_block": "10.0.0.0/24", 
+                "Name": "Public subnet"
+            }, 
+            "i-bd4f3674": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-5ffd2007']", 
+                "Name": "pupwinagent2", 
+                "DO_NOT_TERMINATE": "YES"
+            }
+        }
+    }, 
+    {
+        "sg-cbef0faf": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(4444-4444)]|name=sophos utm |", 
+        "sg-36b78d53": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=Drupal powered by Bitnami-7-34-1 on Ubuntu 14-04-1-AutogenByAWSMP-2|", 
+        "sg-273c0242": "rules=[IPPermissions:udp(0-65535), IPPermissions:tcp(0-65535), IPPermissions:tcp(22-22), IPPermissions:icmp(-1--1), IPPermissions:tcp(0-65535), IPPermissions:udp(0-65535), IPPermissions:tcp(8443-8443), IPPermissions:icmp(-1--1)]|name=ElasticMapReduce-master|", 
+        "sg-14d72070": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-a72adec3": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-14|", 
+        "sg-bae1dcdf": "rules=[IPPermissions:-1(None-None)]|name=allopen|", 
+        "sg-ebc32a8f": "rules=[IPPermissions:-1(None-None)]|name=All Open|", 
+        "sg-7766a713": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-16|", 
+        "sg-cf4342aa": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-7|", 
+        "sg-cc11dfa8": "rules=[IPPermissions:tcp(22-22), IPPermissions:-1(None-None)]|name=rundeck SG|", 
+        "sg-3665aa52": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-19|", 
+        "sg-f8244e9d": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-24|", 
+        "sg-3ee20d5a": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-79bda71c": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-11|", 
+        "sg-7d24eb19": "rules=[IPPermissions:tcp(22-22)]|name=appa|", 
+        "sg-79dec41c": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-9|", 
+        "sg-0d37c069": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-5|", 
+        "sg-6afe110e": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443), IPPermissions:icmp(-1--1)]|name=SSH|", 
+        "sg-c8d423ac": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-3|", 
+        "sg-1a66da7f": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-4f29332a": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-8|", 
+        "sg-6b08240e": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-2|", 
+        "sg-8b68a9ef": "rules=[IPPermissions:tcp(22-22)]|name=appa1|", 
+        "sg-845c3fe1": "rules=[IPPermissions:tcp(3389-3389)]|name=CvenkataJumpBoxSG|", 
+        "sg-e85e3d8d": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-7814371d": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=launch-wizard-1|", 
+        "sg-11bfa574": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-10|", 
+        "sg-db3dd4bf": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=launch-wizard-13|", 
+        "sg-22fd1246": "rules=[IPPermissions:udp(4500-4500), IPPermissions:tcp(22-22), IPPermissions:udp(500-500), IPPermissions:tcp(4444-4444), IPPermissions:icmp(-1--1)]|name=Sophos |", 
+        "sg-72b48e17": "rules=[IPPermissions:tcp(3306-3306)]|name=rds-launch-wizard-4|", 
+        "sg-15df2871": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-4|", 
+        "sg-32a1c257": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(0-65535), IPPermissions:udp(0-65535)]|name=CvenkataADSG|", 
+        "sg-cff6ccaa": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=Drupal powered by Bitnami-7-34-1 on Ubuntu 14-04-1-AutogenByAWSMP-1|", 
+        "sg-359c6f51": "rules=[IPPermissions:tcp(22-22), IPPermissions:tcp(0-65535), IPPermissions:tcp(80-80), IPPermissions:tcp(443-443)]|name=ca-sophosutm-test|", 
+        "sg-50488734": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-18|", 
+        "sg-1d3dca79": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-6|", 
+        "sg-518f4235": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-17|", 
+        "sg-2f74974b": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-12|", 
+        "sg-e2dd2e86": "rules=[IPPermissions:tcp(3389-3389)]|name=launch-wizard-15|", 
+        "sg-4ec32a2a": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-263c0243": "rules=[IPPermissions:udp(0-65535), IPPermissions:tcp(0-65535), IPPermissions:icmp(-1--1), IPPermissions:tcp(0-65535), IPPermissions:udp(0-65535), IPPermissions:icmp(-1--1)]|name=ElasticMapReduce-slave|", 
+        "sg-91a561f5": "rules=[IPPermissions:tcp(3389-3389), IPPermissions:tcp(1433-1433), IPPermissions:tcp(80-80), IPPermissions:tcp(49152-65535), IPPermissions:tcp(443-443)]|name=sg_netapp|"
+    }
+]

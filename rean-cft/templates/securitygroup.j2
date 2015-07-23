@@ -1,0 +1,8 @@
+
+    "{{data.Name}}": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "VpcId" : {{data.VpcId|inline}},
+        "GroupDescription": "{{data.GroupDescription}}"
+      }
+     }

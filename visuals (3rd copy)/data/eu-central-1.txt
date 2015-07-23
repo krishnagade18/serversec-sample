@@ -1,0 +1,160 @@
+[
+    {
+        "vpc-1fcc2b76": [
+            [
+                "igw-e9a84f80,"
+            ], 
+            {
+                "subnet-a9e80ec0": [
+                    [
+                        "acl-1af01773,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ], 
+                "subnet-935a5beb": [
+                    [
+                        "acl-1af01773,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {
+                        "i-4fc26c8e": [
+                            "sg-f2a4709b"
+                        ]
+                    }
+                ]
+            }
+        ], 
+        "vpc-6ec01207": [
+            [], 
+            {
+                "subnet-aec462c7": [
+                    [
+                        "acl-43f6292a,network_acl_entries=[Acl:100   Acl:32767   Acl:100   Acl:32767]|"
+                    ], 
+                    {}
+                ]
+            }
+        ]
+    }, 
+    {
+        "subnet": {
+            "vpc-6ec01207": {
+                "is_default": "False", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "myVPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:411815166437:stack/EUCentralFrank/84cdb610-1527-11e5-92da-50fa5c50ac6e", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "EUCentralFrank", 
+                "eufrank": "123", 
+                "cidr_block": "10.0.0.0/16"
+            }, 
+            "subnet-a9e80ec0": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "subnet-935a5beb": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "subnet-aec462c7": {
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "mySubnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:411815166437:stack/EUCentralFrank/84cdb610-1527-11e5-92da-50fa5c50ac6e", 
+                "aws:cloudformation:stack-name": "EUCentralFrank", 
+                "eufrank": "123", 
+                "cidr_block": "10.0.0.0/24"
+            }, 
+            "vpc-1fcc2b76": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16"
+            }, 
+            "i-4fc26c8e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-ff09a484']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Ozy-Jmeter-Frankfurt": "Ozy-Jmeter-Frankfurt", 
+                "Name": "Ozy-Jmeter-Slave"
+            }
+        }, 
+        "ec2": {
+            "vpc-6ec01207": {
+                "is_default": "False", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "myVPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:411815166437:stack/EUCentralFrank/84cdb610-1527-11e5-92da-50fa5c50ac6e", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "EUCentralFrank", 
+                "eufrank": "123", 
+                "cidr_block": "10.0.0.0/16"
+            }, 
+            "subnet-a9e80ec0": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "subnet-935a5beb": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "subnet-aec462c7": {
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "mySubnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:411815166437:stack/EUCentralFrank/84cdb610-1527-11e5-92da-50fa5c50ac6e", 
+                "aws:cloudformation:stack-name": "EUCentralFrank", 
+                "eufrank": "123", 
+                "cidr_block": "10.0.0.0/24"
+            }, 
+            "vpc-1fcc2b76": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16"
+            }, 
+            "i-4fc26c8e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-ff09a484']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Ozy-Jmeter-Frankfurt": "Ozy-Jmeter-Frankfurt", 
+                "Name": "Ozy-Jmeter-Slave"
+            }
+        }, 
+        "vpc": {
+            "vpc-6ec01207": {
+                "is_default": "False", 
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "myVPC", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:411815166437:stack/EUCentralFrank/84cdb610-1527-11e5-92da-50fa5c50ac6e", 
+                "instance_tenancy": "default", 
+                "aws:cloudformation:stack-name": "EUCentralFrank", 
+                "eufrank": "123", 
+                "cidr_block": "10.0.0.0/16"
+            }, 
+            "subnet-a9e80ec0": {
+                "cidr_block": "172.31.16.0/20"
+            }, 
+            "subnet-935a5beb": {
+                "cidr_block": "172.31.0.0/20"
+            }, 
+            "subnet-aec462c7": {
+                "Name": "TestOrbitera", 
+                "aws:cloudformation:logical-id": "mySubnet", 
+                "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:411815166437:stack/EUCentralFrank/84cdb610-1527-11e5-92da-50fa5c50ac6e", 
+                "aws:cloudformation:stack-name": "EUCentralFrank", 
+                "eufrank": "123", 
+                "cidr_block": "10.0.0.0/24"
+            }, 
+            "vpc-1fcc2b76": {
+                "instance_tenancy": "default", 
+                "is_default": "True", 
+                "cidr_block": "172.31.0.0/16"
+            }, 
+            "i-4fc26c8e": {
+                "public_dns_name": "", 
+                "network_interfaces": "[u'eni-ff09a484']", 
+                "DO_NOT_TERMINATE": "YES", 
+                "Ozy-Jmeter-Frankfurt": "Ozy-Jmeter-Frankfurt", 
+                "Name": "Ozy-Jmeter-Slave"
+            }
+        }
+    }, 
+    {
+        "sg-3544a35c": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-84c961ed": "rules=[IPPermissions:-1(None-None)]|name=default|", 
+        "sg-7ef65e17": "rules=[IPPermissions:tcp(22-22)]|name=launch-wizard-1|", 
+        "sg-f2a4709b": "rules=[IPPermissions:tcp(0-65535)]|name=Ozy-Jmeter-All Open|"
+    }
+]

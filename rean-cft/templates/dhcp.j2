@@ -1,0 +1,10 @@
+
+"{{dhcp.Name}}" : {
+    "Type": "AWS::EC2::DHCPOptions",
+    "Properties": {
+        "DomainName": "us-west-2.compute.internal",
+        "DomainNameServers": [
+          "AmazonProvidedDNS"
+        ]
+    }
+}

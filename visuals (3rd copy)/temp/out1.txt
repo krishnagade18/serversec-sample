@@ -1,0 +1,232 @@
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-2afbf14f</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>172.16.140.0/23</td></tr><tr><td><b>Name</td><td>phabricatorpoc</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-22410147</td></tr><tr><td><b>Name</td><td>phabricatorpoc</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-530e6f78</td></tr><tr><td><b>cidr_block</td><td>172.16.141.0/24</td></tr><tr><td><b>Name</td><td>phabricatorpoc</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-5c879239</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-21762c56</td></tr><tr><td><b>cidr_block</td><td>172.16.140.0/24</td></tr><tr><td><b>Name</td><td>phabricatorpoc</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-5c879239</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-ac16647f</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-125-162.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-a4deb0ef']</td></tr><tr><td><b>Name</td><td>Review Board</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-17966b70</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-f9ae8f2a</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-41-122.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-0aeca041']</td></tr><tr><td><b>Name</td><td></td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-17966b70</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-d824b80b</td></tr><tr><td><b>Department</td><td>Engineering</td></tr><tr><td><b>public_dns_name</td><td>ec2-54-208-132-115.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-77049b3c']</td></tr><tr><td><b>Name</td><td>ELK Testing</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-50cd3537</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-faaff09f</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>10.20.0.0/16</td></tr><tr><td><b>Name</td><td>CAASCALC</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-6d5bc708</td></tr><tr><td><b>Name</td><td>CAASCALC</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-29b4ea13</td></tr><tr><td><b>cidr_block</td><td>10.20.0.0/24</td></tr><tr><td><b>Name</td><td>CAASCALC</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-915b0bf4</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-c5ec30a0</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>True</td></tr><tr><td><b>cidr_block</td><td>172.31.0.0/16</td></tr><tr><td><b>Name</td><td>moosa-tes1-VPC</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-94ab53f1</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-de053af6</td></tr><tr><td><b>cidr_block</td><td>172.31.32.0/20</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-0f94456a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-a763b1c2</td></tr><tr><td><b>routes</td><td>[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-2efa7686</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-3-126-230.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-e0124acf']</td></tr><tr><td><b>Name</td><td>hw-test-raju</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-9c942f34</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-0ae2b125']</td></tr><tr><td><b>Name</td><td>ubuntu-nagios-prasad</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-2f61df86</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-6e2bd641']</td></tr><tr><td><b>Name</td><td>DO-NOT-TERMINATE-Assignment</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-a155d009</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-733b665c']</td></tr><tr><td><b>Name</td><td>ELK</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-8e218926</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-fa87cfd5']</td></tr><tr><td><b>Name</td><td>Windows_AD</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-a31e9b0b</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-de500df1']</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr><tr><td><b>Name</td><td>ELK</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-db915e73</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-4ae09d65']</td></tr><tr><td><b>Name</td><td>test-certificate-RDP</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-90df7438</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-196-176.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-1ec58d31']</td></tr><tr><td><b>Name</td><td>app-a</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-dc68a7bb</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-aff14c07</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-bf2c7a90']</td></tr><tr><td><b>Name</td><td>karthik_linux</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-a6f7ba71</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-5-60-231.compute-1.amazonaws.com</td></tr><tr><td><b>Ozy-Jmeter-N.Virginia-Master</td><td>Ozy-Jmeter-N.Virginia-Master</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-b4bd6098']</td></tr><tr><td><b>Name</td><td>Ozy_Jmeter_Master</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-7dbb3ed5</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-82015cad']</td></tr><tr><td><b>Name</td><td>ubuntu-nagios-prasad1</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-370cb09f</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-994617b6']</td></tr><tr><td><b>Name</td><td>sid TOMCAT test 1</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-0b1dafa3</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-e73d6bc8']</td></tr><tr><td><b>Name</td><td>sid1</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-c91f5b60</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-fd1cbbd2']</td></tr><tr><td><b>Name</td><td>reancloud-ADLDS</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-f3e2505b</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-90-48.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-9bbbecb4']</td></tr><tr><td><b>Name</td><td>satish-jenkins-demo</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-0887ef6d</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-ead36042</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-107-63.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-993562b6']</td></tr><tr><td><b>Name</td><td>venu-reantrainee</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-e84b093e</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-254-228.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-4a81d266']</td></tr><tr><td><b>Name</td><td>jmeter-master</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-9fe26a48</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-0-228-117.compute-1.amazonaws.com</td></tr><tr><td><b>Ozy-Jmeter-Slave</td><td>Ozy-Jmeter-Slave</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-f036c9dc']</td></tr><tr><td><b>Name</td><td>Ozy-Jmeter-Slave</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-dda1c8b9</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-d7ca467f</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-07ebb228']</td></tr><tr><td><b>Name</td><td>ubuntu-nagios-prasad-client</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-0a6fa5a2</td></tr><tr><td><b>elasticbeanstalk:environment-name</td><td>Default-Environment</td></tr><tr><td><b>Name</td><td>Default-Environment</td></tr><tr><td><b>elasticbeanstalk:environment-id</td><td>e-jfxbzu23eq</td></tr><tr><td><b>aws:cloudformation:logical-id</td><td>AWSEBAutoScalingGroup</td></tr><tr><td><b>aws:cloudformation:stack-id</td><td>arn:aws:cloudformation:us-east-1:411815166437:stack/awseb-e-jfxbzu23eq-stack/18325900-1a65-11e5-ab28-50e2416294a8</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-84b9c0ab']</td></tr><tr><td><b>aws:cloudformation:stack-name</td><td>awseb-e-jfxbzu23eq-stack</td></tr><tr><td><b>aws:autoscaling:groupName</td><td>awseb-e-jfxbzu23eq-stack-AWSEBAutoScalingGroup-1QARA48JDU5WB</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-0-176-221.compute-1.amazonaws.com</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-5b3dd33c</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-29aa575e</td></tr><tr><td><b>cidr_block</td><td>172.31.16.0/20</td></tr><tr><td><b>Name</td><td>Public</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-0f94456a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-a763b1c2</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:172.31.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-f7815c24</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-1-106-174.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-37a3137c']</td></tr><tr><td><b>name</td><td>AD-test-Instance-ASG</td></tr><tr><td><b>aws:autoscaling:groupName</td><td>AD-test-ASG</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-d7f55804</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-1182395a']</td></tr><tr><td><b>Name</td><td>Ubuntu-14.04-zabbix server</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-0ca933df</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-3-65-4.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-b7d44ffc']</td></tr><tr><td><b>Name</td><td>reancloud_Sophos01</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-a1a5ff72</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-829ad9c9']</td></tr><tr><td><b>Name</td><td>swarup_after _scom_downloaded</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-0887ef6d</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-66537fb6</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-3e59ac75']</td></tr><tr><td><b>Name</td><td>reancloud_Sophos</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-40733093</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-e92353a2']</td></tr><tr><td><b>Name</td><td>AD-Splunk</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-0335fa64</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-47cf1594</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-c654e88d']</td></tr><tr><td><b>Name</td><td>Yogesh_Ubuntu</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-26450ef5</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-254-2.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-6466192f']</td></tr><tr><td><b>Name</td><td>test-sh</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-8c33175f</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-3-85-190.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-6d91d326']</td></tr><tr><td><b>Name</td><td>Yogesh_CentOS 6.5</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-834c1350</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-82e5a2c9']</td></tr><tr><td><b>Name</td><td>swarup-2</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-0887ef6d</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-db9ffb08</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-64a2382f']</td></tr><tr><td><b>Name</td><td>Amazon_Linux_Supervisor</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-0887ef6d</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-dec2180d</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-4f55e904']</td></tr><tr><td><b>Name</td><td>Yogesh_Redhat</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-35fa57e6</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-12823959']</td></tr><tr><td><b>Name</td><td>Ubuntu-14.04-zabbix client</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-9c70c94f</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-7469e63f']</td></tr><tr><td><b>Name</td><td>ipaclient</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-3cb6bc58</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-f3059bd8</td></tr><tr><td><b>cidr_block</td><td>172.31.64.0/20</td></tr><tr><td><b>Name</td><td>PRIVATE</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-0f94456a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-c3ef02a7</td></tr><tr><td><b>Name</td><td>PRAVATE ROUTE TABE</td></tr><tr><td><b>routes</td><td>[Route:172.31.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-3a10ad92</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-3-67-142.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-bfaff990']</td></tr><tr><td><b>Name</td><td>test-shanti</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-f7395acd</td></tr><tr><td><b>cidr_block</td><td>172.31.48.0/20</td></tr><tr><td><b>Name</td><td>WICS-NICS</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-0f94456a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-a763b1c2</td></tr><tr><td><b>routes</td><td>[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-170a5c38</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-b001118a', u'eni-5bfdd461']</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr><tr><td><b>DailyBkp</td><td>7</td></tr><tr><td><b>Name</td><td>cfn-testing-16</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-320581db</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-eefd7bd3']</td></tr><tr><td><b>Name</td><td>sid TOMCAT test 2</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-4410aaad</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-3-154-199.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-a662e79b']</td></tr><tr><td><b>Name</td><td>RedHat_Test</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-19ed69f0</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-247-210.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-33a4230e']</td></tr><tr><td><b>Name</td><td>soumya</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-80c84d69</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-5610956b']</td></tr><tr><td><b>Name</td><td>ubuntu-nagios-prasad-client1</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-5a1094b3</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-39-6.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-8a9315b7']</td></tr><tr><td><b>Name</td><td>nagios-prasad-host</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-c8ec6821</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-88981fb5']</td></tr><tr><td><b>Name</td><td>trainee</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-9cf126fb</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-551094bc</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-120-247.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-859315b8']</td></tr><tr><td><b>Name</td><td>nagios-prasad-server</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-73c86b9a</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-074a953a']</td></tr><tr><td><b>Name</td><td>tomcat</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-40502925</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-afe53b46</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-0734fc3a']</td></tr><tr><td><b>Name</td><td>test-sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-8acafeee</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-570b1411</td></tr><tr><td><b>cidr_block</td><td>172.31.0.0/20</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-0f94456a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-a763b1c2</td></tr><tr><td><b>routes</td><td>[Route:172.31.0.0/16   Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-72ddc18d</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-0ab1c550']</td></tr><tr><td><b>Name</td><td>ami-backup-test</td></tr><tr><td><b>ReanBackup</td><td>08:03-H2:D6:W2:M2</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-0887ef6d</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-9f0557e8</td></tr><tr><td><b>cidr_block</td><td>172.31.96.0/20</td></tr><tr><td><b>Name</td><td>PRAVTE2</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-0f94456a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:99   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-c3ef02a7</td></tr><tr><td><b>Name</td><td>PRAVATE ROUTE TABE</td></tr><tr><td><b>routes</td><td>[Route:172.31.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-f0392595</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/16</td></tr><tr><td><b>Name</td><td>Nikita_VPC</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-85155de0</td></tr><tr><td><b>Name</td><td>Nikita_igw</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-e64d6091</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/24</td></tr><tr><td><b>Name</td><td>Nikita_public_subnet</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-1f4a547a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-5edffb8d</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-26d7956d']</td></tr><tr><td><b>Name</td><td>Nikita_CodeDeploy</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-807aade7</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-19fcd8ca</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-01c2804a']</td></tr><tr><td><b>Name</td><td>Nikita_Jenkins</td></tr><tr><td><b>DO_NOT_TERMINATE</td><td>YES</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-807aade7</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-924d60e5</td></tr><tr><td><b>cidr_block</td><td>10.0.1.0/25</td></tr><tr><td><b>Name</td><td>Nikita_private_Subnet</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-1f4a547a</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-b96b4c6a</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-42044909']</td></tr><tr><td><b>Name</td><td>donotterminate-test shell</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ee9d4b89</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-3d889958</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>10.71.0.0/16</td></tr><tr><td><b>purpose</td><td>REAN Consulting - DO NOT TOUCH w/o Talking to Shane</td></tr><tr><td><b>name</td><td>DevOps</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-b7612dd2</td></tr><tr><td><b>environment</td><td>REAN DevOps</td></tr><tr><td><b>name</td><td>DevOps</td></tr><tr><td><b>purpose</td><td>REAN DevOps</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-bce7f086</td></tr><tr><td><b>environment</td><td>REAN DevOps</td></tr><tr><td><b>cidr_block</td><td>10.71.0.0/16</td></tr><tr><td><b>name</td><td>PublicSubnet3</td></tr><tr><td><b>purpose</td><td>REAN DevOps</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-01100364</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-727ec69b</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-a641f89b']</td></tr><tr><td><b>Name</td><td>do-not-delete test-jen</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-69448a0e</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-32aabe57</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>172.32.0.0/16</td></tr><tr><td><b>Name</td><td>Rean_test_VPC</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-a71b59c2</td></tr><tr><td><b>Name</td><td>Rean_test_igw</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-181a7933</td></tr><tr><td><b>cidr_block</td><td>172.32.1.0/24</td></tr><tr><td><b>Name</td><td>Rean_test_public</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-836c7ae6</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-61ba43c9</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-5c3b4e73']</td></tr><tr><td><b>Name</td><td>Rean_Ansible_client1-DO-NOT-TERMINATE</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebe41c8c</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-7a41bfd2</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-94394cbb']</td></tr><tr><td><b>Name</td><td>Rean_Ansible_client2-DO-NOT-TERMINATE</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebe41c8c</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-d7bd447f</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-8d3b4ea2']</td></tr><tr><td><b>Name</td><td>Rean_Ansible_server_test-DO-NOT-TERMINATE</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-ebe41c8c</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-96f0edf3</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>Use</td><td>Testing Jenkins Pipeline - Ankit</td></tr><tr><td><b>cidr_block</td><td>10.10.0.0/16</td></tr><tr><td><b>Name</td><td>Jenkins_VPC</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-f39fd696</td></tr><tr><td><b>Name</td><td>Jenkins_IGW_Ankit</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-4adccf70</td></tr><tr><td><b>cidr_block</td><td>10.10.10.0/24</td></tr><tr><td><b>Name</td><td>Jenkins_Subnet</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-e11a0584</td></tr><tr><td><b>Name</td><td>Jenkins_Test_Ankit</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-a8916acc</td></tr><tr><td><b>Name</td><td>Jenkins_Test_Ankit</td></tr><tr><td><b>routes</td><td>[Route:10.10.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-2f4bcec6</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-1-242-189.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-c6bb3ffb']</td></tr><tr><td><b>Name</td><td>Jenkins_Ank_DoNotDelete</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-7d18cc1a</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-5c093c39</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/16</td></tr><tr><td><b>Name</td><td>VPC_test</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-1a5b357f</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-1b1d9f30</td></tr><tr><td><b>cidr_block</td><td>10.0.0.0/24</td></tr><tr><td><b>Name</td><td>Public</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-a50328c0</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-d00a67fb</td></tr><tr><td><b>cidr_block</td><td>10.0.20.0/24</td></tr><tr><td><b>Name</td><td>public_test1</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-a50328c0</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-ec6dbb44</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-83-244.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-cf374de0']</td></tr><tr><td><b>Name</td><td>Test-NAT</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-e514d382</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-7a7f1851</td></tr><tr><td><b>cidr_block</td><td>10.0.10.0/24</td></tr><tr><td><b>Name</td><td>Public-VPC_test</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-a50328c0</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-b2fc421a</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-132-168.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-b5e9b89a']</td></tr><tr><td><b>Name</td><td>DontDelete_Jenkins_Test</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-0cb8736b</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-9db26335</td></tr><tr><td><b>public_dns_name</td><td>ec2-54-175-197-118.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-39126816']</td></tr><tr><td><b>Name</td><td>Serverspec-VPC_Test</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-311bdc56</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-3105681a</td></tr><tr><td><b>cidr_block</td><td>10.0.21.0/24</td></tr><tr><td><b>Name</td><td>private_test1</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-a50328c0</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-b1d8d1d4</td></tr><tr><td><b>Name</td><td>Private_test1_rt</td></tr><tr><td><b>routes</td><td>[Route:10.0.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-825e79e7</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>172.16.0.0/16</td></tr><tr><td><b>Name</td><td>al_rmp_vpc</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-5826bc3d</td></tr><tr><td><b>Name</td><td>al_rmp_igw</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-4de55b66</td></tr><tr><td><b>cidr_block</td><td>172.16.2.0/24</td></tr><tr><td><b>Name</td><td>al_rmp_pri1</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-62f7c807</td></tr><tr><td><b>Name</td><td>al_rmp_route_priv</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-12a11bba</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-246d3f0b']</td></tr><tr><td><b>Name</td><td>test-pri-win-sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-658b4102</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-ec128545</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-fd4a89d2']</td></tr><tr><td><b>Name</td><td>test-lin-vpn-sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-a9646ccd</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-3821514f</td></tr><tr><td><b>cidr_block</td><td>172.16.3.0/24</td></tr><tr><td><b>Name</td><td>al_rmp_pub2</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-21ead544</td></tr><tr><td><b>Name</td><td>al_rmp_route_pub</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-ac526c7c</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-878079cc']</td></tr><tr><td><b>Name</td><td>sophos-tst-vpn-sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-1c1b1378</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-73e55b58</td></tr><tr><td><b>cidr_block</td><td>172.16.1.0/24</td></tr><tr><td><b>Name</td><td>al_rmp_pub1</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-21ead544</td></tr><tr><td><b>Name</td><td>al_rmp_route_pub</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-f9168150</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-2544870a']</td></tr><tr><td><b>Name</td><td>bastion-test-sai</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-c08b96a4</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-88d7b0a3</td></tr><tr><td><b>cidr_block</td><td>172.16.5.0/24</td></tr><tr><td><b>Name</td><td>public-east-1a</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-21ead544</td></tr><tr><td><b>Name</td><td>al_rmp_route_pub</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-a99c7401</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-12d9ba3d']</td></tr><tr><td><b>Name</td><td>Jumphost</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-967333f2</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-b976e711</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-f20721dd']</td></tr><tr><td><b>Name</td><td>test-sai-ipa</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-a9646ccd</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-a53217d2</td></tr><tr><td><b>cidr_block</td><td>172.16.8.0/24</td></tr><tr><td><b>Name</td><td>private-east-1b</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-25aa5a41</td></tr><tr><td><b>Name</td><td>private-east-1b</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-2435550f</td></tr><tr><td><b>cidr_block</td><td>172.16.7.0/24</td></tr><tr><td><b>Name</td><td>private-east-1a</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-25aa5a41</td></tr><tr><td><b>Name</td><td>private-east-1b</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-83866e2b</td></tr><tr><td><b>public_dns_name</td><td></td></tr><tr><td><b>network_interfaces</td><td>[u'eni-a6d6b589']</td></tr><tr><td><b>Name</td><td>testhost</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-967333f2</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-13215164</td></tr><tr><td><b>cidr_block</td><td>172.16.4.0/24</td></tr><tr><td><b>Name</td><td>al_rmp_pri2</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-62f7c807</td></tr><tr><td><b>Name</td><td>al_rmp_route_priv</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-c8376cbf</td></tr><tr><td><b>cidr_block</td><td>172.16.6.0/24</td></tr><tr><td><b>Name</td><td>public-east-1b</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-16e6be73</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> Route Table</h2><table><tr><td><b>id</td><td>rtb-91a959f5</td></tr><tr><td><b>Name</td><td>public-1b-rt</td></tr><tr><td><b>routes</td><td>[Route:172.16.0.0/16   Route:0.0.0.0/0]</td></tr></html>
+<html><h2> VPC</h2><table><tr><td><b>id</td><td>vpc-030e1166</td></tr><tr><td><b>instance_tenancy</td><td>default</td></tr><tr><td><b>Organization</td><td>Engineering</td></tr><tr><td><b>is_default</td><td>False</td></tr><tr><td><b>cidr_block</td><td>172.16.144.0/22</td></tr><tr><td><b>Name</td><td>Common-Svcs</td></tr></html>
+    <html><h2> Internet Gate Way</h2><table><tr><td><b>id</td><td>igw-add79fc8</td></tr><tr><td><b>Organization</td><td>Engineering</td></tr><tr><td><b>Name</td><td>Common-Svcs</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-37523a1c</td></tr><tr><td><b>Organization</td><td>Engineering</td></tr><tr><td><b>cidr_block</td><td>172.16.144.0/24</td></tr><tr><td><b>Name</td><td>Common-Svcs</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-4940592c</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-8bdfb823</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-2-143-18.compute-1.amazonaws.com</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-fde1ced2']</td></tr><tr><td><b>Name</td><td>Phabricator2</td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-51e43436</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-5b9db02c</td></tr><tr><td><b>Organization</td><td>Engineering</td></tr><tr><td><b>cidr_block</td><td>172.16.145.0/24</td></tr><tr><td><b>Name</td><td>Common-Svcs</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-4940592c</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+    <html><h2> Subnet</h2><table><tr><td><b>id</td><td>subnet-a87433f1</td></tr><tr><td><b>Organization</td><td>Engineering</td></tr><tr><td><b>cidr_block</td><td>172.16.146.0/24</td></tr><tr><td><b>Name</td><td>Common-Svcs</td></tr></html>
+        <html><h2> Network ACL</h2><table><tr><td><b>id</td><td>acl-4940592c</td></tr><tr><td><b>network_acl_entries</td><td>[Acl:100   Acl:32767   Acl:100   Acl:32767]</td></tr></html>
+        <html><h2> EC2</h2><table><tr><td><b>id</td><td>i-a265e00e</td></tr><tr><td><b>Name</td><td>upsource</td></tr><tr><td><b>network_interfaces</td><td>[u'eni-151c1d4f']</td></tr><tr><td><b>Environment</td><td>Common-Svcs</td></tr><tr><td><b>aws:autoscaling:groupName</td><td>upsource</td></tr><tr><td><b>public_dns_name</td><td>ec2-52-3-152-120.compute-1.amazonaws.com</td></tr><tr><td><b>Organization</td><td></td></tr></html>
+            <html><h2> Security Group</h2><table><tr><td><b>id</td><td>sg-51e43436</td></tr></html>

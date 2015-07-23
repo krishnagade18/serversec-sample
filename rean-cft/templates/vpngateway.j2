@@ -1,0 +1,16 @@
+
+  "{{data.Name}}" : {
+     "Type" : "AWS::EC2::VPNGateway",
+     "Properties" : {
+        "Type" : "{{data.Type}}",
+        "Tags" : [
+        {% for tag in data.Tags %}
+            {% if not loop.last %}
+                {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"},
+            {% else %}
+                {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"}
+            {% endif %}
+        {% endfor %}
+    ]
+     }
+  }

@@ -1,0 +1,198 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "vpcfa0f869f": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "20.0.0.0/16",
+        "InstanceTenancy": "default",
+        "EnableDnsSupport": "true",
+        "EnableDnsHostnames": "true",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "rean"
+          }
+        ]
+      }
+    },
+    "subnet55b2d230": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "20.0.0.0/24",
+        "AvailabilityZone": "us-west-2a",
+        "VpcId": {
+          "Ref": "vpcfa0f869f"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "rean-public-1"
+          }
+        ]
+      }
+    },
+    "igw67a00e02": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "rean-internet"
+          }
+        ]
+      }
+    },
+    "dopt1b6e7379": {
+      "Type": "AWS::EC2::DHCPOptions",
+      "Properties": {
+        "DomainName": "us-west-2.compute.internal",
+        "DomainNameServers": [
+          "AmazonProvidedDNS"
+        ]
+      }
+    },
+    "acl72900717": {
+      "Type": "AWS::EC2::NetworkAcl",
+      "Properties": {
+        "VpcId": {
+          "Ref": "vpcfa0f869f"
+        }
+      }
+    },
+    "rtb45059820": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "vpcfa0f869f"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "rean-routetb"
+          }
+        ]
+      }
+    },
+    "sgall": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "all traffic",
+        "VpcId": {
+          "Ref": "vpcfa0f869f"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "all"
+          }
+        ]
+      }
+    },
+    "acl7": {
+      "Type": "AWS::EC2::NetworkAclEntry",
+      "Properties": {
+        "CidrBlock": "0.0.0.0/0",
+        "Egress": "true",
+        "Protocol": "-1",
+        "RuleAction": "allow",
+        "RuleNumber": "100",
+        "NetworkAclId": {
+          "Ref": "acl72900717"
+        }
+      }
+    },
+    "acl8": {
+      "Type": "AWS::EC2::NetworkAclEntry",
+      "Properties": {
+        "CidrBlock": "0.0.0.0/0",
+        "Protocol": "-1",
+        "RuleAction": "allow",
+        "RuleNumber": "100",
+        "NetworkAclId": {
+          "Ref": "acl72900717"
+        }
+      }
+    },
+    "subnetacl4": {
+      "Type": "AWS::EC2::SubnetNetworkAclAssociation",
+      "Properties": {
+        "NetworkAclId": {
+          "Ref": "acl72900717"
+        },
+        "SubnetId": {
+          "Ref": "subnet55b2d230"
+        }
+      }
+    },
+    "gw4": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "vpcfa0f869f"
+        },
+        "InternetGatewayId": {
+          "Ref": "igw67a00e02"
+        }
+      },
+      "DependsOn": "igw67a00e02"
+    },
+    "route4": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "RouteTableId": {
+          "Ref": "rtb45059820"
+        },
+        "GatewayId": {
+          "Ref": "igw67a00e02"
+        }
+      },
+      "DependsOn": "gw4"
+    },
+    "mySubnetRouteTableAssociation" : {
+       "Type" : "AWS::EC2::SubnetRouteTableAssociation",
+       "Properties" : {
+          "SubnetId" : { 
+            "Ref" : "subnet55b2d230" 
+          },
+          "RouteTableId" : { 
+            "Ref" : "rtb45059820" 
+          }
+       },
+       "DependsOn": "rtb45059820"
+    },
+    "dchpassoc4": {
+      "Type": "AWS::EC2::VPCDHCPOptionsAssociation",
+      "Properties": {
+        "VpcId": {
+          "Ref": "vpcfa0f869f"
+        },
+        "DhcpOptionsId": {
+          "Ref": "dopt1b6e7379"
+        }
+      }
+    },
+    "ingress4": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "GroupId": {
+          "Ref": "sgall"
+        },
+        "IpProtocol": "-1",
+        "CidrIp": "0.0.0.0/0"
+      }
+    },
+    "egress4": {
+      "Type": "AWS::EC2::SecurityGroupEgress",
+      "Properties": {
+        "GroupId": {
+          "Ref": "sgall"
+        },
+        "IpProtocol": "-1",
+        "CidrIp": "0.0.0.0/0"
+      }
+    }
+  },
+  "Description": "tst"
+}

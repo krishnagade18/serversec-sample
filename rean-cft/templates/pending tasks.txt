@@ -1,0 +1,15 @@
+VPNGatewayRoutePropagation
+	support for multiple RouteTableIds
+Route
+	Type (gateway|eni|ec2|rt) support
+
+SecurityGroup
+
+SecurityGroupEgress
+
+SecurityGroupIngress
+
+
+*** check all templates (DependsOn key exist or not)
+
+ cat output.json | python -mjson.tool > indent_output.json

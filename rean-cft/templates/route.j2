@@ -1,0 +1,19 @@
+      "{{data.Name}}" : {
+         "Type" : "AWS::EC2::Route",
+  	 	{% if not data.DependsOn == '' %}
+        "DependsOn" : "{{data.DependsOn}}",
+        {% endif %}
+         "Properties" : {
+            "RouteTableId" : {{data.RouteTableId|inline}},
+            "DestinationCidrBlock" : "{{data.DestinationCidrBlock}}",
+                {% if data.RType == 'gateway' %}
+                    "GatewayId":{{data.RName|inline}}
+                {% elif data.RType == 'eni' %}
+                    "NetworkInterfaceId":{{data.RName|inline}}
+                {% elif data.RType == 'ec2' %}
+                    "InstanceId":{{data.RName|inline}}
+                {% else %}
+                    "RouteTableId":{{data.RName|inline}}
+                {% endif %}
+         }  
+      }

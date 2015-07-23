@@ -1,0 +1,187 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Automated Template for Creation of VPC",
+    "Resources": {
+        "AttachGateway1": {
+            "Properties": {
+                "InternetGatewayId": {
+                    "Ref": "InternetGateway"
+                },
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::VPCGatewayAttachment"
+        },
+        "CustomerGateway1": {
+            "Properties": {
+                "BgpAsn": "64000",
+                "IpAddress": "1.1.1.1",
+                "Tags": [
+                    {
+                        "Key": "key1",
+                        "Value": "value1"
+                    },
+                    {
+                        "Key": "key2",
+                        "Value": "value2"
+                    }
+                ],
+                "Type": "ipsec.1"
+            },
+            "Type": "AWS::EC2::CustomerGateway"
+        },
+        "GW1": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "rean-internet"
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::InternetGateway"
+        },
+        "Subnet1": {
+            "Properties": {
+                "AvailabilityZone": "us-west-2a",
+                "CidrBlock": "20.0.0.0/24",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "rean-public-1"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC1"
+                }
+            },
+            "Type": "AWS::EC2::Subnet"
+        },
+        "VPC1": {
+            "Properties": {
+                "CidrBlock": "10.0.0.0/16",
+                "DependsOn": "dep1",
+                "EnableDnsHostnames": "false",
+                "EnableDnsSupport": "false",
+                "InstanceTenancy": "dedicated",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "VPC1"
+                    },
+                    {
+                        "Key": "Region",
+                        "Value": "US"
+                    }
+                ]
+            },
+            "Type": "AWS::EC2::VPC"
+        },
+        "VPNGatewayRouteProp1": {
+            "DependsOn": "AttachVpnGateway",
+            "Properties": {
+                "RouteTableIds": [
+                    {
+                        "Ref": "PrivateRouteTable"
+                    }
+                ],
+                "VpnGatewayId": {
+                    "Ref": "VPNGateway"
+                }
+            },
+            "Type": "AWS::EC2::VPNGatewayRoutePropagation"
+        },
+        "aclentry1": {
+            "Properties": {
+                "CidrBlock": "172.16.0.0/24",
+                "Egress": "true",
+                "Icmp": {
+                    "Code": "-1",
+                    "Type": "-1"
+                },
+                "NetworkAclId": "acl1",
+                "PortRange": {
+                    "From": "53",
+                    "To": "53"
+                },
+                "Protocol": "-1",
+                "RuleAction": "allow",
+                "RuleNumber": "100"
+            },
+            "Type": "AWS::EC2::NetworkAclEntry"
+        },
+        "aclname1": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "key1",
+                        "Value": "value1"
+                    },
+                    {
+                        "Key": "key2",
+                        "Value": "value2"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::NetworkAcl"
+        },
+        "myVPNGateway": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "key1",
+                        "Value": "value1"
+                    },
+                    {
+                        "Key": "key2",
+                        "Value": "value2"
+                    }
+                ],
+                "Type": "ipsec.1"
+            },
+            "Type": "AWS::EC2::VPNGateway"
+        },
+        "route1": {
+            "DependsOn": "attachgateway",
+            "Properties": {
+                "DestinationCidrBlock": "0.0.0.0/0",
+                "GatewayId": "internetgateway",
+                "RouteTableId": "routetable1"
+            },
+            "Type": "AWS::EC2::Route"
+        },
+        "routetable1": {
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "key1",
+                        "Value": "value1"
+                    },
+                    {
+                        "Key": "key2",
+                        "Value": "value2"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "VPC"
+                }
+            },
+            "Type": "AWS::EC2::RouteTable"
+        },
+        "subnetaclassoc1": {
+            "Properties": {
+                "NetworkAclId": {
+                    "Ref": "aclname1"
+                },
+                "SubnetId": {
+                    "Ref": "subnet1"
+                }
+            },
+            "Type": "AWS::EC2::SubnetNetworkAclAssociation"
+        }
+    }
+}

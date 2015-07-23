@@ -1,0 +1,10 @@
+"{{data.Name}}" : {
+  "Type" : "AWS::EC2::VPNGatewayRoutePropagation",
+  {% if not data.DependsOn == '' %}
+    "DependsOn" : "{{data.DependsOn}}",
+  {% endif %}
+  "Properties" : {
+    "RouteTableIds" : {{data.RouteTableIds|RouteTableIds}},
+    "VpnGatewayId" : {{data.VpnGatewayId|inline}}
+  }
+}

@@ -1,0 +1,20 @@
+
+"{{data.Name}}" : {
+ "Type" : "AWS::EC2::VPC",
+ "Properties" : {
+    "CidrBlock" : "{{data.CidrBlock}}",
+    "EnableDnsSupport" : "{{data.EnableDnsSupport}}",
+    "EnableDnsHostnames" : "{{data.EnableDnsHostnames}}",
+    "InstanceTenancy" : {{data.InstanceTenancy|instancetenancy}},
+    "Tags" : 	[
+        {% for tag in data.Tags %}
+            {% if not loop.last %}
+                {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"},
+            {% else %}
+                {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"}
+            {% endif %}
+        {% endfor %}
+    ]
+    
+ }
+}

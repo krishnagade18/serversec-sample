@@ -1,0 +1,13 @@
+      "{{data.Name}}" : {
+         "Type" : "AWS::EC2::NetworkAclEntry",
+         "Properties" : {
+            "NetworkAclId" : {{data.NetworkAclId|inline}},
+            "RuleNumber" : "{{data.RuleNumber}}",
+            "RuleAction" : "{{data.RuleAction}}",
+            "Protocol" : "{{data.Protocol}}",
+            "Egress" : "{{data.Egress}}",
+            "CidrBlock" : "{{data.CidrBlock}}",
+            "Icmp" : { "Code" : "{{data.Icmpcode}}", "Type" : "{{data.Icmptype}}" },
+            "PortRange" : { "From" : "{{data.PortRangeFrom}}", "To" : "{{data.PortRangeTo}}" }
+         }
+      }

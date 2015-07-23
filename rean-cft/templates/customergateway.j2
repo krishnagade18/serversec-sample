@@ -1,0 +1,17 @@
+"{{data.Name}}" : {
+   "Type" : "AWS::EC2::CustomerGateway",
+   "Properties" : {
+      "Type" : "{{data.Type}}",
+      "BgpAsn" : "{{data.BgpAsn}}",
+      "IpAddress" : "{{data.IpAddress}}",
+      "Tags" : [
+      {% for tag in data.Tags %}
+          {% if not loop.last %}
+              {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"},
+          {% else %}
+              {"Key": "{{tag.Key}}", "Value": "{{tag.Value}}"}
+          {% endif %}
+      {% endfor %}
+  ]
+   }
+}

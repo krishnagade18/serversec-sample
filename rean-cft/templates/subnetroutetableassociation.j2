@@ -1,0 +1,7 @@
+      "{{data.Name}}" : {
+         "Type" : "AWS::EC2::SubnetRouteTableAssociation",
+         "Properties" : {
+            "SubnetId" : {{data.SubnetId|inline}},
+            "RouteTableId" : {{data.RouteTableId|inline}}
+         }
+      }

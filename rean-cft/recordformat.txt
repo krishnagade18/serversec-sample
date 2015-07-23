@@ -1,0 +1,250 @@
+#vpc, vpcname, CidrBlock, EnableDnsSupport, EnableDnsHostnames, InstanceTenancy (default|dedicated), Tags
+vpc, VPC1, 10.0.0.0/16, false, false, dedicated, key1=value1:key2=value2
+      "VPC1" : {
+         "Type" : "AWS::EC2::VPC",
+         "Properties" : {
+            "CidrBlock" : "10.0.0.0/16",
+    	    "EnableDnsSupport" : "false",
+    	    "EnableDnsHostnames" : "false",
+            "InstanceTenancy" : "dedicated",
+            "Tags" : 	[ {"Key" : "key1", "Value" : "value1"}
+			{"Key" : "key2", "Value" : "value2"} ]
+         }
+      }
+
+#InternetGateway, igwname, Tags
+InternetGateway, InternetGateway1, key1=value1:key2=value2
+      "InternetGateway1" : {
+         "Type" : "AWS::EC2::InternetGateway",
+         "Properties" : {
+            "Tags" : 	[ {"Key" : "key1", "Value" : "value1"}
+			{"Key" : "key2", "Value" : "value2"} ]
+         }
+      }
+
+#VPNGateway, vpngwname, Type, Tags
+VPNGateway, myVPNGateway, ipsec.1, key1=value1:key2=value2
+      "myVPNGateway" : {
+         "Type" : "AWS::EC2::VPNGateway",
+         "Properties" : {
+            "Type" : "ipsec.1",
+            "Tags" : 	[ {"Key" : "key1", "Value" : "value1"}
+			{"Key" : "key2", "Value" : "value2"} ]
+         }
+      }
+
+#CustomerGateway, cgwname, BgpAsn, IpAddress, Type, Tags
+CustomerGateway, CustomerGateway1, 64000, 1.1.1.1, ipsec.1, key1=value1:key2=value2
+      "CustomerGateway1" : {
+         "Type" : "AWS::EC2::CustomerGateway",
+         "Properties" : {
+            "Type" : "ipsec.1",
+            "BgpAsn" : "64000",
+            "IpAddress" : "1.1.1.1"
+            "Tags" : 	[ {"Key" : "key1", "Value" : "value1"}
+			{"Key" : "key2", "Value" : "value2"} ]
+         }
+      }
+
+
+#VPCGatewayAttachment, attachigwname, VpcId, GatewayType (internet|vpn), GatewayId
+VPCGatewayAttachment, AttachGateway1, VPC, internet, InternetGateway
+"AttachGateway1" : {
+   "Type" : "AWS::EC2::VPCGatewayAttachment",
+   "Properties" : {
+      "VpcId" : { "Ref" : "VPC" },
+      "InternetGatewayId" : { "Ref" : "InternetGateway" }
+   }
+}
+VPCGatewayAttachment, AttachGateway, VPC, vpn, VPNGateway
+"AttachVpnGateway" : {
+   "Type" : "AWS::EC2::VPCGatewayAttachment",
+   "Properties" : {
+      "VpcId" : { "Ref" : "VPC" },
+      "VpnGatewayId" : { "Ref" : "VPNGateway" }
+   }
+
+#VPNGatewayRoutePropagation, vpngwrpname, DependsOn, RouteTableIds, VpnGatewayId
+VPNGatewayRoutePropagation, VPNGatewayRouteProp1, AttachVpnGateway, PrivateRouteTable, VPNGateway
+
+"VPNGatewayRouteProp1" : {
+  "Type" : "AWS::EC2::VPNGatewayRoutePropagation",
+  "DependsOn" : "AttachVpnGateway"
+  "Properties" : {
+    "RouteTableIds" : [{"Ref" : "PrivateRouteTable"}],
+    "VpnGatewayId" : {"Ref" : "VPNGateway"}
+  }
+}
+
+#Subnet, subnetname, VpcId, AvailabilityZone, CidrBlock, Tags
+Subnet, subnet1, VPC, us-west-2a, 10.0.1.0/24, key1=value1:key2=value2
+
+      "subnet1" : {
+         "Type" : "AWS::EC2::Subnet",
+         "Properties" : {
+            "VpcId" : { "Ref" : "VPC" },
+            "CidrBlock" : "10.0.1.0/24",
+            "AvailabilityZone" : "us-west-2a",
+            "Tags" : 	[ {"Key" : "key1", "Value" : "value1"}
+			{"Key" : "key2", "Value" : "value2"} ]
+         }
+      }
+
+#NetworkAcl, aclname, VpcId, Tags
+NetworkAcl, aclname1, VPC, key1=value1:key2=value2
+      "aclname1" : {
+         "Type" : "AWS::EC2::NetworkAcl",
+         "Properties" : {
+            "VpcId" : { "Ref" : "VPC" },
+            "Tags" : 	[ {"Key" : "key1", "Value" : "value1"}
+			{"Key" : "key2", "Value" : "value2"} ]
+         }
+      }
+
+#SubnetNetworkAclAssociation, subnetaclassocname, SubnetId, NetworkAclId
+SubnetNetworkAclAssociation, subnetaclassoc1, subnet1, aclname1
+      "subnetaclassoc1" : {
+         "Type" : "AWS::EC2::SubnetNetworkAclAssociation",
+         "Properties" : {
+            "SubnetId" : { "Ref" : "subnet1" },
+            "NetworkAclId" : { "Ref" : "aclname1" },
+         }
+      }
+
+#NetworkAclEntry, aclentry1name, NetworkAclId, RuleNumber, RuleAction, Protocol, Egress, CidrBlock, Icmpcode, Icmptype, PortRangeFrom, PortRangeTo
+NetworkAclEntry, aclentry1, acl1, 100,allow,-1,true,172.16.0.0/24,-1,-1,53,53
+      "aclentry1" : {
+         "Type" : "AWS::EC2::NetworkAclEntry",
+         "Properties" : {
+            "NetworkAclId" : { "Ref" : "acl1" },
+            "RuleNumber" : "100",
+            "RuleAction" : "allow",
+            "Protocol" : "-1",
+            "Egress" : "true",
+            "CidrBlock" : "172.16.0.0/24",
+            "Icmp" : { "Code" : "-1", "Type" : "-1" },
+            "PortRange" : { "From" : "53", "To" : "53" }
+         }
+      }
+
+#RouteTable, routetablename, VpcId, Tags
+RouteTable, routetable1, VPC, key1=value1:key2=value2
+
+      "routetable1" : {
+         "Type" : "AWS::EC2::RouteTable",
+         "Properties" : {
+            "VpcId" : { "Ref" : "VPC" },
+            "Tags" : 	[ {"Key" : "key1", "Value" : "value1"}
+			{"Key" : "key2", "Value" : "value2"} ]
+         }
+      }
+
+#Route, routename, DependsOn, RouteTableId, DestinationCidrBlock, Type (gateway|eni|ec2|rt), name
+Route, route1, attachgateway, routetable1, 0.0.0.0/0, gateway,internetgateway
+      "route1" : {
+         "Type" : "AWS::EC2::Route",
+  	 "DependsOn" : "attachgateway"
+         "Properties" : {
+            "RouteTableId" : { "Ref" : "routetable1" },
+            "DestinationCidrBlock" : "0.0.0.0/0",
+            "GatewayId" : { "Ref" : "internetgateway" }
+         }
+      }
+
+Route, route1, attachondemandaeni1, routetable1, 0.0.0.0/0, eni, ondemandaeni1
+      "route1" : {
+         "Type" : "AWS::EC2::Route",
+  	 "DependsOn" : "attachgateway"
+         "Properties" : {
+            "RouteTableId" : { "Ref" : "routetable1" },
+            "DestinationCidrBlock" : "0.0.0.0/0",
+            "NetworkInterfaceId" : { "Ref" : "ondemandaeni1" }
+         }
+      }
+
+Route, route1, , routetable1, 0.0.0.0/0, ec2, instance1
+      "route1" : {
+         "Type" : "AWS::EC2::Route",
+         "Properties" : {
+            "RouteTableId" : { "Ref" : "routetable1" },
+            "DestinationCidrBlock" : "0.0.0.0/0",
+            "InstanceId" : { "Ref" : "instance1" }
+         }
+      }
+
+Route, route1, , routetable1, 0.0.0.0/0, rt, routetable1
+      "route1" : {
+         "Type" : "AWS::EC2::Route",
+         "Properties" : {
+            "RouteTableId" : { "Ref" : "routetable1" },
+            "DestinationCidrBlock" : "0.0.0.0/0",
+            "RouteTableId" : { "Ref" : "routetable1" }
+         }
+      }
+
+#SubnetRouteTableAssociation, subnetrtaname, SubnetId, RouteTableId
+SubnetRouteTableAssociation, subnetrtaname1, subnet1, routetable1
+      "subnetrtaname1" : {
+         "Type" : "AWS::EC2::SubnetRouteTableAssociation",
+         "Properties" : {
+            "SubnetId" : { "Ref" : "subnet" },
+            "RouteTableId" : { "Ref" : "routetable1" }
+         }
+      }
+
+#SecurityGroup, sgname, VpcId, GroupDescription
+SecurityGroup, SecurityGroup1, VPC, Allow All Traffic
+    "SecurityGroup1": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "VpcId" : { "Ref" : "VPC" },
+        "GroupDescription": "Allow All Traffic"
+      }
+
+#SecurityGroupEgress, sgegressname, GroupId, CidrIp | DestinationSecurityGroupId, FromPort, ToPort
+SecurityGroupEgress, SGEgress1, SecurityGroup1, 0.0.0.0/0,1,65535
+    "SGEgress1": {
+      "Type": "AWS::EC2::SecurityGroupEgress",
+      "GroupId": {"Fn::GetAtt": ["SecurityGroup1", "GroupId"]},
+      "Properties":{
+        "IpProtocol": "tcp",
+        "FromPort": "1",
+        "ToPort": "65535",
+        "CidrIp" : "0.0.0.0/0"
+     }
+
+SecurityGroupEgress, SGEgress1, SecurityGroup1, destinationsg,1,65535
+    "SGEgress1": {
+      "Type": "AWS::EC2::SecurityGroupEgress",
+      "GroupId": {"Fn::GetAtt": ["SecurityGroup1", "GroupId"]},
+      "Properties":{
+        "IpProtocol": "tcp",
+        "FromPort": "1",
+        "ToPort": "65535",
+        "DestinationSecurityGroupId": {"Fn::GetAtt": ["destinationsg", "GroupId"]}
+     }
+
+#SecurityGroupIngress, sgingressname, GroupId, CidrIp | SourceSecurityGroupId, FromPort, ToPort
+SecurityGroupIngress, SGingress1, SecurityGroup1, 0.0.0.0/0,1,65535
+    "InboundRule": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "GroupId": {"Fn::GetAtt": ["SecurityGroup1", "GroupId"]},
+      "Properties":{
+        "IpProtocol": "tcp",
+        "FromPort": "0",
+        "ToPort": "65535",
+        "CidrIp" : "0.0.0.0/0"
+      }
+    }
+SecurityGroupIngress, SGingress1, SecurityGroup1, sourcesg,1,65535
+    "InboundRule": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "GroupId": {"Fn::GetAtt": ["SecurityGroup1", "GroupId"]},
+      "Properties":{
+        "IpProtocol": "tcp",
+        "FromPort": "0",
+        "ToPort": "65535",
+        "SourceSecurityGroupId": {"Fn::GetAtt": ["sourcesg", "GroupId"]}
+      }
+    }
+

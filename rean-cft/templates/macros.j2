@@ -1,0 +1,8 @@
+
+{% macro ref(value) -%}
+    {% if value.startswith('ref') %}
+        abc
+    {% else %}
+        {{value}}
+    {% endif %}
+{%- endmacro %}

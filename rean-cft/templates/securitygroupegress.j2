@@ -1,0 +1,14 @@
+    "{{data.Name}}": {
+      "Type": "AWS::EC2::SecurityGroupEgress",
+      "Properties":{
+        "IpProtocol": "tcp",
+        "FromPort": "{{data.FromPort}}",
+        "ToPort": "{{data.ToPort}}",
+        "GroupId": {{data.GroupId|inline}},
+         {% if data.Dtype == 'cidr' %}
+            "CidrIp":"{{data.Dvalue}}"
+        {% else %}
+            "SourceSecurityGroupId": {{data.Dvalue|inline}}
+        {% endif %}
+     }
+    }

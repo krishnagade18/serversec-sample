@@ -1,0 +1,31 @@
+#description
+Automated Template for Creation of VPC
+#vpc,Name,CidrBlock,EnableDnsSupport,EnableDnsHostnames,InstanceTenancy,Tags
+vpc,CAVPC,10.93.0.0/16,FALSE,FALSE,default,name=cavpc|env=prod
+#InternetGateway,igwname,Tags
+InternetGateway,CAInternetGateway,name=CAInternetGateway
+#VPCGatewayAttachment,attachigwname,VpcId,GatewayType(internet|vpn),GatewayId
+VPCGatewayAttachment,IGAttachment,ref:CAVPC,internet,InternetGateway
+#Subnet,subnetname,VpcId,AvailabilityZone,CidrBlock,Tags
+Subnet,ap1-b-xlb-00,ref:CAVPC,us-east-1b,10.93.0.0/24,name=ap1-b-xlb-00|env=prod,
+Subnet,ap1-c-xlb-00,ref:CAVPC,us-east-1c,10.93.1.0/24,name=ap1-c-xlb-00|env=prod,
+Subnet,ap1-d-mgt-00,ref:CAVPC,us-east-1d,10.93.10.0/24,name=ap1-d-mgt-00|env=prod,
+Subnet,ap1-b-dbs-00,ref:CAVPC,us-east-1b,10.93.104.0/24,name=ap1-b-dbs-00|env=test,
+Subnet,ap1-c-dbs-00,ref:CAVPC,us-east-1c,10.93.105.0/24,name=ap1-c-dbs-00|env=test,
+#NetworkInterface,name,SourceDestCheck,SubnetID,PrivateIpAddress,Tags,Description
+#NetworkInterface,sophoseni,FALSE,ref:ap1-b-xlb-00,10.0.0.16,name=sophoseni,attach this later to sophos
+#RouteTable,routetablename,VpcId,Tags
+RouteTable,ax1-mgt-rt,ref:CAVPC,name=ax1-mgt-rt
+#SubnetRouteTableAssociation,subnetrtaname,SubnetId,RouteTableId
+SubnetRouteTableAssociation,subnetrta1,ref:ap1-b-xlb-00,ref:ax1-mgt-rt
+SubnetRouteTableAssociation,subnetrta2,ref:ap1-c-xlb-00,ref:ax1-mgt-rt
+#Route,routename,DependsOn,RouteTableId,DestinationCidrBlock,Type (gateway|eni|ec2|rt),name
+Route,route1,IGAttachment,ref:ax1mgt-rt,0.0.0.0/0,eni,ref:sophoseni
+#NetworkAcl,aclname,VpcId,Tags
+NetworkAcl,ap1-common-nacl,ref:CAVPC,name=ap1-common-nacl
+#SubnetNetworkAclAssociation,subnetaclassocname,SubnetId,NetworkAclId
+SubnetNetworkAclAssociation,subnet1acl1,ref:ap1-b-xlb-00,ref:ap1-common-nacl
+#NetworkAclEntry,aclentry1name,NetworkAclId,RuleNumber,RuleAction,Protocol,Egress,CidrBlock,Icmpcode,Icmptype,
+PortRangeFrom,PortRangeTo
+NetworkAclEntry, aclentry1, acl1, 100,allow,-1,true,172.16.0.0/24,-1,-1,53,53
+NetworkAclEntry,CAaclentry1,ref:NetworkAcl,100,allow,,

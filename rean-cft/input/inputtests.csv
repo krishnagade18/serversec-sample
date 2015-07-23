@@ -1,0 +1,43 @@
+#vpc,Name,CidrBlock,EnableDnsSupport,EnableDnsHostnames,InstanceTenancy,Tags
+vpc,MYVPC,10.93.0.0/16,FALSE,FALSE,ddefault,name=MYVPC
+#InternetGateway,igwname,Tags
+InternetGateway,MYInternetGateway,name=MYInternetGateway
+#VPCGatewayAttachment,attachigwname,VpcId,GatewayType,GatewayId
+VPCGatewayAttachment,IGAttachment,ref:MYVPC,internet,ref:MYInternetGateway
+#Subnet,subnetname,VpcId,AvailabilityZone,CidrBlock,Tags
+Subnet,DMZSN,ref:MYVPC,us-east-1b,10.93.0.0/24,name=DMZSN
+Subnet,APPSN,ref:MYVPC,us-east-1c,10.93.1.0/24,name=APPSN
+Subnet,DBSN,ref:MYVPC,us-east-1e,10.93.10.0/24,name=DBSN
+#NetworkInterface,name,SourceDestCheck,SubnetID,PrivateIpAddress,Tags,Description
+NetworkInterface,sophoseni,FALSE,ref:DMZSN,10.93.0.16,name=sophoseni,attach this later to sophos
+#RouteTable,routetablename,VpcId,Tags
+RouteTable,DMZRT,ref:MYVPC,name=DMZRT
+RouteTable,APPRT,ref:MYVPC,name=APPRT
+RouteTable,DBRT,ref:MYVPC,name=DBRT
+#SubnetRouteTableAssociation,subnetrtaname,SubnetId,RouteTableId
+SubnetRouteTableAssociation,subnetrta1,ref:DMZSN,ref:DMZRT
+SubnetRouteTableAssociation,subnetrta2,ref:APPSN,ref:APPRT
+SubnetRouteTableAssociation,subnetrta3,ref:DBSN,ref:DBRT
+#Route,routename,DependsOn,RouteTableId,DestinationCidrBlock,RType (gateway|eni|ec2|rt),RName
+Route,route1,IGAttachment,ref:DMZRT,0.0.0.0/0,gateway,ref:MYInternetGateway
+Route,route2,IGAttachment,ref:APPRT,0.0.0.0/0,eni,ref:sophoseni
+Route,route3,IGAttachment,ref:DBRT,0.0.0.0/0,eni,ref:sophoseni
+#NetworkAcl,aclname,VpcId,Tags
+NetworkAcl,NACL1,ref:MYVPC,name=NACL1
+NetworkAcl,NACL2,ref:MYVPC,name=NACL2
+NetworkAcl,NACL3,ref:MYVPC,name=NACL3
+#SecurityGroup,SecurityGroupName,VpcId,GroupDescription
+SecurityGroup,SecurityGroup1,ref:MYVPC,MY SECURITY GROUP
+#SecurityGroupEgress,Name,GroupId,Dtype,Dvalue,FromPort,ToPort
+SecurityGroupEgress,SGEgress1,getatt:SecurityGroup1:GroupId,cidr,0.0.0.0/0,1,65535
+SecurityGroupEgress,SGEgress2,getatt:SecurityGroup1:GroupId,sg,getatt:SecurityGroup1:GroupId,1,65535
+#SecurityGroupIngress,sgingressname,GroupId,Dtype,Dvalue,FromPort,ToPort
+SecurityGroupIngress,SGingress1,getatt:SecurityGroup1:GroupId,sg,getatt:SecurityGroup1:GroupId,1,65535
+#SubnetNetworkAclAssociation,subnetaclassocname,SubnetId,NetworkAclId
+SubnetNetworkAclAssociation,subnet1acl1,ref:DMZSN,ref:NACL1
+SubnetNetworkAclAssociation,subnet1acl2,ref:APPSN,ref:NACL2
+SubnetNetworkAclAssociation,subnet1acl3,ref:DBSN,ref:NACL3
+#NetworkAclEntry,aclentry1name,NetworkAclId,RuleNumber,RuleAction,Protocol,Egress,CidrBlock,Icmpcode,Icmptype,PortRangeFrom,PortRangeTo
+NetworkAclEntry, aclentry1,ref:NACL1,100,allow,-1,true,172.16.0.0/24,-1,-1,53,53
+NetworkAclEntry, aclentry2,ref:NACL2,100,allow,-1,false,172.16.0.0/24,-1,-1,80,80
+NetworkAclEntry, aclentry3,ref:NACL3,100,allow,-1,false,10.0.0.0/24,-1,-1,443,443
