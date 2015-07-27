@@ -1,0 +1,23 @@
+{
+	"Resources" : {
+		"VPC" : {
+			"Type" : "AWS::EC2::VPC",
+			"Properties" : {
+				"CidrBlock" : "10.20.0.0/16",
+				"Tags" : [{
+						"Key" : "Name",
+						"Value" : "HW-VPC"
+					}
+				]
+			}
+		}
+	},
+	"Outputs" : {
+		"VPCID" : {
+			"Value" : {
+				"Ref" : "VPC"
+			},
+			"Description" : "VPC ID of the newly created VPC"
+		}
+	}
+}
